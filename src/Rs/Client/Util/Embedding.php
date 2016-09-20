@@ -2,6 +2,8 @@
 
 namespace Gedcomx\Rs\Client\Util;
 
+use Gedcomx\Extensions\FamilySearch\FamilySearchPlatform;
+
 /**
  * Static method for embedding (merging) Gedcomx objects
  * 
@@ -11,6 +13,15 @@ namespace Gedcomx\Rs\Client\Util;
  */
 class Embedding
 {
+    public static function embed($destination, $source)
+    {
+        if($destination instanceof FamilySearchPlatform) {
+            Embedding::embedFamilySearchPlatform($destination, $source);
+        } else {
+            Embedding::embedGedcomx($destination, $source);
+        }
+    }
+    
     /**
      * Merge a Gedcomx object into another
      * 
@@ -305,6 +316,12 @@ class Embedding
         Embedding::embedExtensibleData($destination, $source);
     }
     
+    /**
+     * Merge one ExtensibleData into another
+     * 
+     * @param \Gedcomx\Common\ExtensibleData $destination
+     * @param \Gedcomx\Common\ExtensibleData $source
+     */
     public static function embedExtensibleData($destination, $source)
     {
         if ($source->getExtensionElements() != null) {
@@ -313,6 +330,12 @@ class Embedding
         }
     }
     
+    /**
+     * Merge one Subject into another
+     * 
+     * @param \Gedcomx\Conclusion\Subject $destination
+     * @param \Gedcomx\Conclusion\Subject $source
+     */
     public static function embedSubject($destination, $source)
     {
         $destination->setExtracted($destination->getExtracted() == null ? $source->getExtracted() : $destination->getExtracted());
@@ -352,6 +375,12 @@ class Embedding
         Embedding::embedConclusion($destination, $source);
     }
     
+    /**
+     * Merge one Conclusion into another
+     * 
+     * @param \Gedcomx\Conclusion\Conclusion $destination
+     * @param \Gedcomx\Conclusion\Conclusion $source
+     */
     public static function embedConclusion($destination, $source)
     {
         if( $destination->getLang() != null ){
@@ -401,6 +430,12 @@ class Embedding
         Embedding::embedHypermediaEnabledData($destination, $source);
     }
     
+    /**
+     * Merge one FamilySearchPlatform into another
+     * 
+     * @param \Gedcomx\Extensions\FamilySearch\FamilySearchPlatform $destination
+     * @param \Gedcomx\Extensions\FamilySearch\FamilySearchPlatform $source
+     */
     public static function embedFamilySearchPlatform($destination, $source)
     {
         $childRelationships = $source->getChildAndParentsRelationships();
@@ -448,6 +483,12 @@ class Embedding
         Embedding::embedGedcomx($destination, $source);
     }
     
+    /**
+     * Merge one ChildAndParentsRelationship into another
+     * 
+     * @param \Gedcomx\Extensions\FamilySearch\Platform\Tree\ChildAndParentsRelationship $destination
+     * @param \Gedcomx\Extensions\FamilySearch\Platform\Tree\ChildAndParentsRelationship $source
+     */
     public static function embedChildAndParentsRelationship($destination, $source)
     {
         if ($source->getMotherFacts() != null) {
@@ -467,6 +508,12 @@ class Embedding
         Embedding::embedSubject($destination, $source);
     }
     
+    /**
+     * Merge one Discussion into another
+     * 
+     * @param \Gedcomx\Extensions\FamilySearch\Platform\Discussions\Discussion $destination
+     * @param \Gedcomx\Extensions\FamilySearch\Platform\Discussions\Discussion $source
+     */
     public static function embedDiscussion($destination, $source)
     {
         $comments = $source->getComments();
@@ -485,7 +532,7 @@ class Embedding
                     }
                 }
                 if (!$found) {
-                    $this->addComment($comment);
+                    $destination->addComment($comment);
                 }
             }
         }

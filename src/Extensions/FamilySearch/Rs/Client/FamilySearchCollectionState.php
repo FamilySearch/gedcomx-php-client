@@ -310,30 +310,4 @@ class FamilySearchCollectionState extends CollectionState
 			$this->stateFactory
 		);
 	}
-
-    /**
-	 * Executes the specified link and embeds the response in the current Gedcomx entity.
-	 *
-     * @param \Gedcomx\Links\Link                              $link
-     * @param \Gedcomx\Rs\Client\Options\StateTransitionOption $option,...
-     *
-     * @throws \Gedcomx\Rs\Client\Exception\GedcomxApplicationException
-     */
-	protected function embed(Link $link, StateTransitionOption $option = null ){
-		if ($link->getHref() != null) {
-			$lastEmbeddedRequest = $this->createRequestForEmbeddedResource('GET', $link);
-			$lastEmbeddedResponse = $this->passOptionsTo('invoke',array($lastEmbeddedRequest), func_get_args());
-			if ($lastEmbeddedResponse->getStatusCode() == 200) {
-				$json = json_decode($lastEmbeddedResponse->getBody(),true);
-            	Embedding::embedFamilySearchPlatform($this->entity, new FamilySearchPlatform($json));
-			}
-			else if (floor($lastEmbeddedResponse->getStatusCode()/100) == 5 ) {
-				throw new GedcomxApplicationException(sprintf("Unable to load embedded resources: server says \"%s\" at %s.", $lastEmbeddedResponse->getStatusCode(), $lastEmbeddedRequest->getUri()), $lastEmbeddedResponse);
-			}
-			else {
-				//todo: log a warning? throw an error?
-			}
-		}
-
-	}
 }

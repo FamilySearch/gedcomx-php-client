@@ -994,7 +994,7 @@ abstract class GedcomxApplicationState
             if ($this->lastEmbeddedResponse->getStatusCode() == 200) {
                 $json = json_decode($this->lastEmbeddedResponse->getBody(), true);
                 $entityClass = get_class($this->entity);
-                Embedding::embedGedcomx($this->entity, new $entityClass($json));
+                Embedding::embed($this->entity, new $entityClass($json));
             }
             else if (floor($this->lastEmbeddedResponse->getStatusCode()/100) == 5 ) {
                 throw new GedcomxApplicationException(sprintf("Unable to load embedded resources: server says \"%s\" at %s.", $this->lastEmbeddedResponse.getClientResponseStatus().getReasonPhrase(), $this->lastEmbeddedRequest.getURI()), $this->lastEmbeddedResponse);
