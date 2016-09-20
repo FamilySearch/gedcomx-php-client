@@ -1,6 +1,6 @@
 {
-    "name": "gedcomx/gedcomx-php",
-    "homepage": "https://github.com/FamilySearch/gedcomx-php",
+    "name": "gedcomx/gedcomx-php-client",
+    "homepage": "https://github.com/FamilySearch/gedcomx-php-client",
     "description": "PHP libraries for GEDCOM X.",
     "keywords": ["gedcomx","familysearch","sdk", "genealogy"],
     "type": "library",
@@ -12,13 +12,14 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/FamilySearch/gedcomx-php/issues"
+        "issues": "https://github.com/FamilySearch/gedcomx-php-client/issues"
     },
     "require": {
         "php": ">=5.5",
         "ml/json-ld": "1.*",
         "psr/log": "^1.0",
-        "guzzlehttp/guzzle": "6.2.*"
+        "guzzlehttp/guzzle": "6.2.*",
+        "gedcomx/gedcomx-php": "dev-split"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*",

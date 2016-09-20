@@ -4,9 +4,55 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f6094efcb9479ab86f25ba5e03907371",
-    "content-hash": "0967265d88c36f7a6558d962a1528282",
+    "hash": "d92d842687fb861bc64a6f8c6a2889d7",
+    "content-hash": "d62a07e3f76165555806fb4f836d5648",
     "packages": [
+        {
+            "name": "gedcomx/gedcomx-php",
+            "version": "dev-split",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FamilySearch/gedcomx-php.git",
+                "reference": "fe4ef23985d3de6f4f67878465671478d8db23e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FamilySearch/gedcomx-php/zipball/fe4ef23985d3de6f4f67878465671478d8db23e3",
+                "reference": "fe4ef23985d3de6f4f67878465671478d8db23e3",
+                "shasum": ""
+            },
+            "require-dev": {
+                "fzaninotto/faker": "1.4.*",
+                "intervention/image": "2.0.*",
+                "phpunit/phpunit": "3.7.*",
+                "satooshi/php-coveralls": "1.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gedcomx\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "FamilySearch",
+                    "homepage": "https://familysearch.org"
+                }
+            ],
+            "description": "PHP libraries for GEDCOM X.",
+            "homepage": "https://github.com/FamilySearch/gedcomx-php",
+            "keywords": [
+                "familysearch",
+                "gedcomx",
+                "genealogy",
+                "sdk"
+            ],
+            "time": "2016-09-20 15:42:23"
+        },
         {
             "name": "guzzlehttp/guzzle",
             "version": "6.2.1",
@@ -326,22 +372,30 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+                "reference": "5277094ed527a1c4477177d102fe4c53551953e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
-                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/5277094ed527a1c4477177d102fe4c53551953e0",
+                "reference": "5277094ed527a1c4477177d102fe4c53551953e0",
                 "shasum": ""
             },
+            "require": {
+                "php": ">=5.3.0"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
             "autoload": {
-                "psr-0": {
-                    "Psr\\Log\\": ""
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -355,12 +409,13 @@
                 }
             ],
             "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
             "keywords": [
                 "log",
                 "psr",
                 "psr-3"
             ],
-            "time": "2012-12-21 11:40:51"
+            "time": "2016-09-19 16:02:08"
         }
     ],
     "packages-dev": [
@@ -1198,16 +1253,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v3.1.3",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "a7630397b91be09cdd2fe57fd13612e258700598"
+                "reference": "431d28df9c7bb6e77f8f6289d8670b044fabb9e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/a7630397b91be09cdd2fe57fd13612e258700598",
-                "reference": "a7630397b91be09cdd2fe57fd13612e258700598",
+                "url": "https://api.github.com/repos/symfony/config/zipball/431d28df9c7bb6e77f8f6289d8670b044fabb9e8",
+                "reference": "431d28df9c7bb6e77f8f6289d8670b044fabb9e8",
                 "shasum": ""
             },
             "require": {
@@ -1247,20 +1302,20 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-26 08:04:17"
+            "time": "2016-08-27 18:50:07"
         },
         {
             "name": "symfony/console",
-            "version": "v3.1.3",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "f9e638e8149e9e41b570ff092f8007c477ef0ce5"
+                "reference": "8ea494c34f0f772c3954b5fbe00bffc5a435e563"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/f9e638e8149e9e41b570ff092f8007c477ef0ce5",
-                "reference": "f9e638e8149e9e41b570ff092f8007c477ef0ce5",
+                "url": "https://api.github.com/repos/symfony/console/zipball/8ea494c34f0f772c3954b5fbe00bffc5a435e563",
+                "reference": "8ea494c34f0f772c3954b5fbe00bffc5a435e563",
                 "shasum": ""
             },
             "require": {
@@ -1307,11 +1362,11 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-26 08:04:17"
+            "time": "2016-08-19 06:48:39"
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.1.3",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -1371,7 +1426,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.1.3",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -1479,7 +1534,7 @@
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v3.1.3",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stopwatch.git",
@@ -1528,16 +1583,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.9",
+            "version": "v2.8.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "0ceab136f43ed9d3e97b3eea32a7855dc50c121d"
+                "reference": "e7540734bad981fe59f8ef14b6fc194ae9df8d9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/0ceab136f43ed9d3e97b3eea32a7855dc50c121d",
-                "reference": "0ceab136f43ed9d3e97b3eea32a7855dc50c121d",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/e7540734bad981fe59f8ef14b6fc194ae9df8d9c",
+                "reference": "e7540734bad981fe59f8ef14b6fc194ae9df8d9c",
                 "shasum": ""
             },
             "require": {
@@ -1573,12 +1628,14 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-07-17 09:06:15"
+            "time": "2016-09-02 01:57:56"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "gedcomx/gedcomx-php": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
