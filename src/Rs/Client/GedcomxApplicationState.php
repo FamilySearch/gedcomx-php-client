@@ -10,6 +10,7 @@ use Gedcomx\Rs\Client\Exception\GedcomxApplicationException;
 use Gedcomx\Rs\Client\Options\HeaderParameter;
 use Gedcomx\Rs\Client\Options\StateTransitionOption;
 use Gedcomx\Rs\Client\Util\EmbeddedLinkLoader;
+use Gedcomx\Rs\Client\Util\Embedding;
 use Gedcomx\Rs\Client\Util\HttpStatus;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Request;
@@ -993,7 +994,7 @@ abstract class GedcomxApplicationState
             if ($this->lastEmbeddedResponse->getStatusCode() == 200) {
                 $json = json_decode($this->lastEmbeddedResponse->getBody(), true);
                 $entityClass = get_class($this->entity);
-                $this->entity->embed(new $entityClass($json));
+                Embedding::embedGedcomx($this->entity, new $entityClass($json));
             }
             else if (floor($this->lastEmbeddedResponse->getStatusCode()/100) == 5 ) {
                 throw new GedcomxApplicationException(sprintf("Unable to load embedded resources: server says \"%s\" at %s.", $this->lastEmbeddedResponse.getClientResponseStatus().getReasonPhrase(), $this->lastEmbeddedRequest.getURI()), $this->lastEmbeddedResponse);
@@ -1002,9 +1003,8 @@ abstract class GedcomxApplicationState
                 //todo: log a warning? throw an error?
             }
         }
-
     }
-
+    
     /**
      * Load all external resources such as notes, media, and evidence. See
      * EmbeddedLinkLoader for a complete list.
