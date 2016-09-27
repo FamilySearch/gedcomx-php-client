@@ -1,9 +1,9 @@
 # GedcomX - PHP SDK  
 
-[![Packagist](https://img.shields.io/packagist/v/gedcomx/gedcomx-php.svg)](https://packagist.org/packages/gedcomx/gedcomx-php)
-[![Build Status](https://travis-ci.org/FamilySearch/gedcomx-php.svg?branch=master)](https://travis-ci.org/FamilySearch/gedcomx-php)
-[![Coverage Status](https://coveralls.io/repos/FamilySearch/gedcomx-php/badge.svg?branch=master&service=github)](https://coveralls.io/github/FamilySearch/gedcomx-php?branch=master)
-[![Dependency Status](https://www.versioneye.com/user/projects/5633c23236d0ab0016001f02/badge.svg?style=flat)](https://www.versioneye.com/user/projects/5633c23236d0ab0016001f02)
+[![Packagist](https://img.shields.io/packagist/v/gedcomx/gedcomx-php-client.svg)](https://packagist.org/packages/gedcomx/gedcomx-php-client)
+[![Build Status](https://travis-ci.org/FamilySearch/gedcomx-php-client.svg?branch=master)](https://travis-ci.org/FamilySearch/gedcomx-php-client)
+[![Coverage Status](https://coveralls.io/repos/FamilySearch/gedcomx-php-client/badge.svg?branch=master&service=github)](https://coveralls.io/github/FamilySearch/gedcomx-php-client?branch=master)
+[![Dependency Status](https://www.versioneye.com/user/projects/57ea983379806f0039835882/badge.svg?style=flat)](https://www.versioneye.com/user/projects/57ea983379806f0039835882)
 
 The gedcomx-php SDK is the PHP implementation of [GEDCOM X](http://www.gedcomx.org), including GEDCOM X extension projects. 
 
@@ -49,7 +49,7 @@ Do **one** of the following steps to activate Composer and install the gedcomx-p
 * Run the following command at a command prompt from the root of your project:
 
     ```
-    composer require gedcomx/gedcomx-php
+    composer require gedcomx/gedcomx-php-client
     ```
 
 * Add the following configuration to your composer.json file then run the `composer install` command at your command prompt.
@@ -57,7 +57,7 @@ Do **one** of the following steps to activate Composer and install the gedcomx-p
     ```json
     {
         "require": {
-        "gedcomx/gedcomx-php": "^1.1"
+        "gedcomx/gedcomx-php-client": "^1.1"
         }
     }
     ```
@@ -69,15 +69,15 @@ Do **one** of the following steps to activate Composer and install the gedcomx-p
 
 * **GEDCOM X Serialization**
 
-  XML and JSON serialization and deserialization of GEDCOM X. For more information, see the [examples](https://github.com/FamilySearch/gedcomx-php/wiki/GEDCOM-X-Serialization). 
+  XML and JSON serialization and deserialization of GEDCOM X. For more information, see the [examples](https://github.com/FamilySearch/gedcomx-php-client/wiki/GEDCOM-X-Serialization). 
 
 * **GEDCOM X RS Client**
   
-  Functionality to interact with a [GEDCOM X RS](https://github.com/FamilySearch/gedcomx-rs/blob/master/specifications/rs-specification.md) compliant web service. GEDCOM X RS is a RESTful specification that defines a set of [application states](https://github.com/FamilySearch/gedcomx-rs/blob/master/specifications/rs-specification.md#4-application-states) for a genealogical data application. This allows you to read the state of a Person, Relationship, Source Description, or other state. Take a look as some [examples](https://github.com/FamilySearch/gedcomx-php/wiki/Accessing-a-GEDCOM-X-RS-API) of establishing a RESTful state.
+  Functionality to interact with a [GEDCOM X RS](https://github.com/FamilySearch/gedcomx-rs/blob/master/specifications/rs-specification.md) compliant web service. GEDCOM X RS is a RESTful specification that defines a set of [application states](https://github.com/FamilySearch/gedcomx-rs/blob/master/specifications/rs-specification.md#4-application-states) for a genealogical data application. This allows you to read the state of a Person, Relationship, Source Description, or other state. Take a look as some [examples](https://github.com/FamilySearch/gedcomx-php-client/wiki/Accessing-a-GEDCOM-X-RS-API) of establishing a RESTful state.
 
 * **FamilySearch API Interface**
   
-  A robust mechanism for interacting with the [FamilySearch API](https://familysearch.org/developers/docs/api/resources). The [FamilySearchClient](http://familysearch.github.io/gedcomx-php/class-Gedcomx.Extensions.FamilySearch.Rs.Client.FamilySearchClient.html) class makes it easy to set the configuration to the appropriate API environment (Sandbox, Beta, Production), authenticate using OAuth2, and interact with the FamilySearch Family Tree and other services.
+  A robust mechanism for interacting with the [FamilySearch API](https://familysearch.org/developers/docs/api/resources). The [FamilySearchClient](http://familysearch.github.io/gedcomx-php-client/class-Gedcomx.Extensions.FamilySearch.Rs.Client.FamilySearchClient.html) class makes it easy to set the configuration to the appropriate API environment (Sandbox, Beta, Production), authenticate using OAuth2, and interact with the FamilySearch Family Tree and other services.
 
 
 ## Changelog

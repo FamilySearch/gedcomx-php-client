@@ -12,7 +12,7 @@ git config --global user.email "travis@travis-ci.org"
 git config --global user.name "Travis"
 
 # Switch to gh-pages
-git clone --branch gh-pages https://${GH_TOKEN}@github.com/FamilySearch/gedcomx-php.git ../gh-pages > /dev/null
+git clone --branch gh-pages https://${GH_TOKEN}@github.com/FamilySearch/gedcomx-php-client.git ../gh-pages > /dev/null
 cd ../gh-pages
 
 # Delete old docs and copy in new docs

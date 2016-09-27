@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="gedcomx-php" default="test">
+<project name="gedcomx-php-client" default="test">
 
     <property name="dir.output" value="${project.basedir}/build/artifacts" />
     <property name="phpcs.format" value="summary" />
