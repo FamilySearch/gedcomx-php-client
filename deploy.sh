@@ -11,7 +11,16 @@ TARGET_BRANCH="gh-pages"
 CONTENT_DIR="docs"
 
 function doCompile {
-  sh docs.sh
+    
+    # Get ApiGen.phar
+    wget http://www.apigen.org/apigen.phar
+    
+    # Get the boostrap theme
+    git clone https://github.com/jimmyz/ThemeBootstrap.git ../ThemeBootstrap
+    
+    # Generate docs
+    php apigen.phar generate -s src -s vendor/gedcomx/gedcomx-php/src -d $CONTENT_DIR --access-levels="public" --title="gedcomx-php-client" --template-config="../ThemeBootstrap/src/config.neon"
+
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
