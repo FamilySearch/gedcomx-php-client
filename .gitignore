@@ -1,13 +1,3 @@
-build
 *.phar
 *.zip
-phpunit.xml
-Config
-./Makefile
-.idea
-atlassian-ide-plugin.xml
-.DS_Store
-.swp
-.build
 vendor
-*.iml
