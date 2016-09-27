@@ -5,7 +5,7 @@ wget http://www.apigen.org/apigen.phar
 git clone https://github.com/jimmyz/ThemeBootstrap.git ../ThemeBootstrap
 
 # Generate docs
-php apigen.phar generate -s src -d ../docs --access-levels="public" --title="gedcomx-php" --template-config="../ThemeBootstrap/src/config.neon"
+php apigen.phar generate -s src -s vendor/gedcomx/gedcomx-php/src -d ../docs --access-levels="public" --title="gedcomx-php-client" --template-config="../ThemeBootstrap/src/config.neon"
 
 # Set identity
 git config --global user.email "travis@travis-ci.org"
