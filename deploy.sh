@@ -8,6 +8,7 @@ set -e # Exit with nonzero exit code if anything fails
 
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
+CONTENT_DIR="docs"
 
 function doCompile {
   sh docs.sh
@@ -33,13 +34,13 @@ git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 cd ..
 
 # Clean out existing contents
-rm -rf out/**/* || exit 0
+rm -rf $CONTENT_DIR/**/* || exit 0
 
 # Run our compile script
 doCompile
 
 # Now let's go have some fun with the cloned repo
-cd out
+cd $CONTENT_DIR
 git config user.name "Travis CI"
 
 # If there are no changes to the compiled out (e.g. this is a README update) then just bail.
