@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d92d842687fb861bc64a6f8c6a2889d7",
-    "content-hash": "d62a07e3f76165555806fb4f836d5648",
+    "hash": "959764a65c90d0b12ea0ad626ab6feaf",
+    "content-hash": "d3d1cc27ce332f744c677ea9b2fe8e49",
     "packages": [
         {
             "name": "gedcomx/gedcomx-php",
