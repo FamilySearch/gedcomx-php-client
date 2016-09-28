@@ -8,8 +8,6 @@ set -e # Exit with nonzero exit code if anything fails
 
 SOURCE_BRANCH="master"
 TARGET_BRANCH="gh-pages"
-DOCS_DIR="docs"
-PAGES_DIR="pages"
 
 function doCompile {
     
@@ -20,10 +18,10 @@ function doCompile {
     git clone https://github.com/jimmyz/ThemeBootstrap.git ../ThemeBootstrap
     
     # Generate docs
-    php apigen.phar generate -s src -s vendor/gedcomx/gedcomx-php/src -d $DOCS_DIR --access-levels="public" --title="gedcomx-php-client" --template-config="../ThemeBootstrap/src/config.neon"
+    php apigen.phar generate -s src -s vendor/gedcomx/gedcomx-php/src -d docs --access-levels="public" --title="gedcomx-php-client" --template-config="../ThemeBootstrap/src/config.neon"
 
     # Copy docs into pages dir
-    cp -R $DOCS_DIR/* $PAGES_DIR
+    cp -R docs/* out
 }
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
@@ -40,19 +38,19 @@ SHA=`git rev-parse --verify HEAD`
 
 # Clone the existing gh-pages for this repo into out/
 # Create a new empty branch if gh-pages doesn't exist yet (should only happen on first deply)
-git clone $REPO $PAGES_DIR
-cd $PAGES_DIR
+git clone $REPO out
+cd out
 git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
 cd ..
 
 # Clean out existing contents
-rm -rf $PAGES_DIR/**/* || exit 0
+rm -rf out/**/* || exit 0
 
 # Run our compile script
 doCompile
 
 # Now let's go have some fun with the cloned repo
-cd $PAGES_DIR
+cd out
 git config user.email "travis@travis-ci.org"
 git config user.name "Travis"
 
