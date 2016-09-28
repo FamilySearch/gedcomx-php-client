@@ -28,7 +28,7 @@
         "php-vcr/php-vcr": "1.2.*",
         "php-vcr/phpunit-testlistener-vcr": "^1.1",
         "monolog/monolog": "^1.15",
-        "satooshi/php-coveralls": "dev-travis-rebase"
+        "satooshi/php-coveralls": "dev-travis-fix"
     },
     "repositories": [
         {
