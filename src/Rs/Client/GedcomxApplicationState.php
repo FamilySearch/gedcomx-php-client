@@ -1183,7 +1183,7 @@ abstract class GedcomxApplicationState
         // Exceptions are thrown if http_errors is set to true on the client.
         catch(\GuzzleHttp\Exception\BadResponseException $e) {
             $response = null;
-            $reason = 'Bas response.';
+            $reason = 'Bad response.';
             if($e->hasResponse()){
                 $response = $e->getResponse();
                 $reason = $response->getReasonPhrase();
