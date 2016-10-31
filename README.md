@@ -8,9 +8,9 @@
 The gedcomx-php SDK is the PHP implementation of [GEDCOM X](http://www.gedcomx.org), including GEDCOM X extension projects. 
 
 See the wiki for the following:
-* A [tutorial](https://github.com/FamilySearch/gedcomx-php/wiki) to help you get started.
+* A [tutorial](https://github.com/FamilySearch/gedcomx-php-client/wiki) to help you get started.
 * A sample app [Github project](https://github.com/FamilySearch/gedcomx-php-sample-app) and [running version](http://gedcomx-php-sample-app.herokuapp.com) to demonstrate basic functionality and usage of the gedcomx-php SDK in action. 
-* The [gedcomx-php SDK Documentation](http://familysearch.github.io/gedcomx-php/index.html).
+* The [gedcomx-php SDK Documentation](http://familysearch.github.io/gedcomx-php-client/index.html).
 
 ## Installation
 
@@ -81,6 +81,9 @@ Do **one** of the following steps to activate Composer and install the gedcomx-p
 
 
 ## Changelog
+
+* v3.0.0
+  * Split out from [gedcomx-php](https://github.com/FamilySearch/gedcomx-php)
 
 * v2.3.0
   * Add the `generateClientSecret()` method to `GedcomxApplicationState`.
