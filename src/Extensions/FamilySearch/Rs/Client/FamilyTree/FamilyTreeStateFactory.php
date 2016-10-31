@@ -35,7 +35,7 @@
             }
 
             if ($uri == null) {
-                $uri = $this->production ? self::PRODUCTION_URI : self::SANDBOX_URI;
+                $uri = $this->production ? self::PRODUCTION_URI : self::INTEGRATION_URI;
             }
 
             /** @var Request $request */

@@ -20,17 +20,17 @@ class StateFactory
      */
     const PRODUCTION_URI = "https://familysearch.org/platform/collections/tree";
     /**
-     * The default sandbox environment URI for the family tree.
+     * The default integration environment URI for the family tree.
      */
-    const SANDBOX_URI = "https://sandbox.familysearch.org/platform/collections/tree";
+    const INTEGRATION_URI = "https://integration.familysearch.org/platform/collections/tree";
     /**
      * The default production environment URI for the discovery endpoint.
      */
     const PRODUCTION_DISCOVERY_URI = "https://familysearch.org/platform/collection";
     /**
-     * The default sandbox environment URI for the discovery endpoint.
+     * The default integration environment URI for the discovery endpoint.
      */
-    const SANDBOX_DISCOVERY_URI = "https://sandbox.familysearch.org/platform/collection";
+    const INTEGRATION_DISCOVERY_URI = "https://integration.familysearch.org/platform/collection";
 
     /**
      * @var boolean Are we in a production environment
@@ -38,7 +38,7 @@ class StateFactory
     protected $production;
 
     /**
-     * Constructs a new instance of this state factory, using the environment specified (defaults to sandbox).
+     * Constructs a new instance of this state factory, using the environment specified (defaults to integration).
      *
      * @param bool $production
      */
@@ -62,7 +62,7 @@ class StateFactory
             $client = $this->defaultClient();
         }
         if ($uri == null) {
-            $uri = $this->production ? self::PRODUCTION_URI : self::SANDBOX_URI;
+            $uri = $this->production ? self::PRODUCTION_URI : self::INTEGRATION_URI;
         }
         
         /** @var Request $request */
@@ -85,7 +85,7 @@ class StateFactory
             $client = $this->defaultClient();
         }
         if ($uri == null) {
-            $uri = $this->production ? self::PRODUCTION_DISCOVERY_URI : self::SANDBOX_DISCOVERY_URI;
+            $uri = $this->production ? self::PRODUCTION_DISCOVERY_URI : self::INTEGRATION_DISCOVERY_URI;
         }
 
         /** @var Request $request */
@@ -108,7 +108,7 @@ class StateFactory
             $client = $this->defaultClient();
         }
         if ($uri == null) {
-            $uri = $this->production ? self::PRODUCTION_DISCOVERY_URI : self::SANDBOX_DISCOVERY_URI;
+            $uri = $this->production ? self::PRODUCTION_DISCOVERY_URI : self::INTEGRATION_DISCOVERY_URI;
         }
 
         /** @var Request $request */

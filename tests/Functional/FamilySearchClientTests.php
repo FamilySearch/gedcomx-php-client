@@ -208,7 +208,7 @@ class FamilySearchClientTests extends ApiTestCase
         $persons = $client->familytree()->readPersons();
         
         $this->assertTrue($handler->hasInfoThatContains('/platform/tree/persons'));
-        $this->assertTrue($handler->hasErrorThatContains('405'));
+        $this->assertTrue($handler->hasErrorThatContains('400'));
     }
     
     /**

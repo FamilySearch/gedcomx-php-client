@@ -30,17 +30,17 @@
 		 */
 		const PLACES_URI = "https://familysearch.org/platform/collections/places";
 		/**
-		 * The default sandbox environment URI for the places collection.
+		 * The default integration environment URI for the places collection.
 		 */
-		const PLACES_SANDBOX_URI = "https://sandbox.familysearch.org/platform/collections/places";
+		const PLACES_INTEGRATION_URI = "https://integration.familysearch.org/platform/collections/places";
 		/**
 		 * The default production environment URI for the memories collection.
 		 */
 		const MEMORIES_URI = "https://familysearch.org/platform/collections/memories";
 		/**
-		 * The default sandbox environment URI for the memories collection.
+		 * The default integration environment URI for the memories collection.
 		 */
-		const MEMORIES_SANDBOX_URI = "https://sandbox.familysearch.org/platform/collections/memories";
+		const MEMORIES_INTEGRATION_URI = "https://integration.familysearch.org/platform/collections/memories";
 
 		/**
 		 * Creates a new FamilySearch collection state from the specified parameters. Since a response is provided as a parameter, a REST API request will not be invoked.
@@ -57,7 +57,7 @@
 				$client = $this->defaultClient();
 			}
 			if ($uri == null) {
-				$uri = $this->production ? self::PRODUCTION_URI : self::SANDBOX_URI;
+				$uri = $this->production ? self::PRODUCTION_URI : self::INTEGRATION_URI;
 			}
 
 			/** @var Request $request */
@@ -81,7 +81,7 @@
 			}
 
 			if ($uri == null) {
-				$uri = $this->production ? self::PLACES_URI : self::PLACES_SANDBOX_URI;
+				$uri = $this->production ? self::PLACES_URI : self::PLACES_INTEGRATION_URI;
 			}
 
 			/** @var Request $request */
@@ -106,7 +106,7 @@
 			}
 
 			if ($uri == null) {
-				$uri = $this->production ? self::MEMORIES_URI : self::MEMORIES_SANDBOX_URI;
+				$uri = $this->production ? self::MEMORIES_URI : self::MEMORIES_INTEGRATION_URI;
 			}
 
 			/** @var Request $request */

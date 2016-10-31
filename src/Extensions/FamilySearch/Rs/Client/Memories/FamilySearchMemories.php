@@ -20,9 +20,9 @@ class FamilySearchMemories extends FamilySearchCollectionState
      */
     const URI = "https://familysearch.org/platform/collections/memories";
     /**
-     * The default sandbox environment URI for this collection.
+     * The default integration environment URI for this collection.
      */
-    const SANDBOX_URI = "https://sandbox.familysearch.org/platform/collections/memories";
+    const INTEGRATION_URI = "https://integration.familysearch.org/platform/collections/memories";
 
     /**
      * Clones the current state instance.

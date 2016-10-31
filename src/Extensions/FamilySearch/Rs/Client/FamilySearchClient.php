@@ -92,7 +92,7 @@ class FamilySearchClient implements LoggerAwareInterface{
      * * `clientId` - Required for authentication.
      * * `redirectURI` - Required for authentication.
      * * `accessToken` - If the access token is set then the `clientId` and `redirectURI` are not needed.
-     * * `environment` - `production`, `beta`, or `sandbox`; defaults to `sandbox`.
+     * * `environment` - `production`, `beta`, or `integration`; defaults to `integration`.
      * * `userAgent` - A string which will be prepended to the default user agent string.
      * * `pendingModifications` - An array of pending modifications that should be enabled.
      * * `logger` - A `Psr\Log\LoggerInterface`. A logger can also be registered via the `setLogger()` method but passing it in as an option during instantiation ensures that the logger will see all client events.
@@ -110,7 +110,6 @@ class FamilySearchClient implements LoggerAwareInterface{
         }
         
         // Set the proper homeURI based on the environment.
-        // Default to sandbox.
         $environment = '';
         $baseURI = '';
         if(isset($options['environment'])){
@@ -124,7 +123,7 @@ class FamilySearchClient implements LoggerAwareInterface{
                 $baseURI = 'https://beta.familysearch.org';
                 break;
             default:
-                $baseURI = 'https://sandbox.familysearch.org';
+                $baseURI = 'https://integration.familysearch.org';
                 break;
         }
         $this->homeURI = $baseURI . '/platform/collection';
