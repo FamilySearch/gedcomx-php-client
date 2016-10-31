@@ -82,6 +82,9 @@ Do **one** of the following steps to activate Composer and install the gedcomx-p
 
 ## Changelog
 
+* v3.0.1
+  * Use `integration` instead of `sandbox`.
+
 * v3.0.0
   * Split out from [gedcomx-php](https://github.com/FamilySearch/gedcomx-php)
 
