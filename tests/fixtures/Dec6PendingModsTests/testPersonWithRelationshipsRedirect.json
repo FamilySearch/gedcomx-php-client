@@ -1,0 +1,292 @@
+[{
+    "request": {
+        "method": "GET",
+        "url": "https:\/\/integration.familysearch.org\/platform\/collection",
+        "headers": {
+            "Host": "integration.familysearch.org",
+            "Accept-Encoding": null,
+            "User-Agent": "gedcomx-php\/1.1.1 GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
+            "Accept": "application\/x-fs-v1+json",
+            "X-FS-Feature-Tag": "consolidate-redundant-resources"
+        }
+    },
+    "response": {
+        "status": {
+            "http_version": "1.1",
+            "code": "200",
+            "message": "OK"
+        },
+        "headers": {
+            "Cache-Control": "no-transform, max-age=604800",
+            "Content-Location": "\/app-meta",
+            "Content-Type": "application\/x-fs-v1+json",
+            "Date": "Mon, 14 Nov 2016 21:45:59 GMT",
+            "Server": "Apache-Coyote\/1.1",
+            "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
+            "X-PROCESSING-TIME": "1",
+            "transfer-encoding": "chunked",
+            "Connection": "Close"
+        },
+        "body": "{\n  \"description\" : \"#FS\",\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"FS\",\n    \"titles\" : [ {\n      \"value\" : \"FamilySearch.org\"\n    } ]\n  } ],\n  \"collections\" : [ {\n    \"title\" : \"FamilySearch.org\",\n    \"links\" : {\n      \"discussions\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/discussions\"\n      },\n      \"ordinances\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/ordinances\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/authorize\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/authorization\"\n      },\n      \"subcollections\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\"\n      },\n      \"current-user\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/users\/current\"\n      },\n      \"logout\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/logout\"\n      },\n      \"places\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/places\"\n      },\n      \"source-box\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/sources\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/token\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/token\"\n      },\n      \"memories\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/memories\"\n      },\n      \"vocab\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/vocab\"\n      },\n      \"family-tree\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/tree\"\n      },\n      \"registration\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/pages\/registration\/registration.html\",\n        \"title\" : \"User Registration\"\n      },\n      \"pending-modifications\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/pending-modifications\"\n      },\n      \"ordinance-reservations\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/reservations\"\n      }\n    }\n  } ]\n}"
+    }
+},{
+    "request": {
+        "method": "GET",
+        "url": "https:\/\/integration.familysearch.org\/platform\/collections\/tree",
+        "headers": {
+            "Host": "integration.familysearch.org",
+            "Accept-Encoding": null,
+            "User-Agent": "gedcomx-php\/1.1.1 GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
+            "Accept": "application\/x-fs-v1+json",
+            "X-FS-Feature-Tag": "consolidate-redundant-resources"
+        }
+    },
+    "response": {
+        "status": {
+            "http_version": "1.1",
+            "code": "200",
+            "message": "OK"
+        },
+        "headers": {
+            "Cache-Control": "no-transform, max-age=604800",
+            "Content-Location": "\/collections\/tree",
+            "Content-Type": "application\/x-fs-v1+json",
+            "Date": "Mon, 14 Nov 2016 21:45:59 GMT",
+            "Server": "Apache-Coyote\/1.1",
+            "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
+            "X-PROCESSING-TIME": "1",
+            "transfer-encoding": "chunked",
+            "Connection": "Close"
+        },
+        "body": "{\n  \"description\" : \"#SD-FSFT\",\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"SD-FSFT\",\n    \"about\" : \"#FSFT\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/integration.familysearch.org\/platform\/collection\"\n    },\n    \"resourceType\" : \"http:\/\/gedcomx.org\/Collection\",\n    \"titles\" : [ {\n      \"value\" : \"FamilySearch Family Tree\"\n    } ]\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"FSFT\",\n    \"title\" : \"FamilySearch Family Tree\",\n    \"links\" : {\n      \"ancestry-query\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/ancestry{?access_token,descendants,generations,marriageDetails,person,personDetails,spouse}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Ancestry\"\n      },\n      \"current-user-person\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/current-person\"\n      },\n      \"discussions\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/discussions\/discussions\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collection\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/authorize\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/authorization\"\n      },\n      \"source-references-query\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/source-references{?access_token,description,source}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Source References Query\"\n      },\n      \"matches\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/{pid}\/matches{?access_token,collection,confidence,context,count,includeNotAMatchDeclarations,start,status}\",\n        \"type\" : \"application\/atom+xml,application\/json,application\/x-gedcomx-atom+json,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml\",\n        \"allow\" : \"GET,POST\",\n        \"title\" : \"Person Matches\"\n      },\n      \"person-matches-query\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/matches{?access_token,candidateId,count,q}\",\n        \"type\" : \"application\/atom+xml,application\/json,application\/x-gedcomx-atom+json,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Person Matches Query\"\n      },\n      \"persons\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\"\n      },\n      \"relationships\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/relationships\"\n      },\n      \"current-user\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/users\/current\"\n      },\n      \"logout\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/logout\"\n      },\n      \"preferred-parent-relationship\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/users\/{uid}\/preferred-parent-relationships\/{pid}{?access_token}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml\",\n        \"allow\" : \"HEAD,GET,PUT,DELETE\",\n        \"title\" : \"Preferred Parent Relationship\"\n      },\n      \"person\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/{pid}{?access_token,relatives,sourceDescriptions}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml\",\n        \"allow\" : \"HEAD,GET,POST,DELETE\",\n        \"title\" : \"Person\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/sources\/descriptions\"\n      },\n      \"person-match-resolutions-query\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/match-resolutions\"\n      },\n      \"preferred-spouse-relationship\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/users\/{uid}\/preferred-spouse-relationships\/{pid}{?access_token}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml\",\n        \"allow\" : \"HEAD,GET,PUT,DELETE\",\n        \"title\" : \"Preferred Spouse Relationship\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/token\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/token\"\n      },\n      \"self\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/tree\"\n      },\n      \"person-with-relationships\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons-with-relationships{?access_token,person,persons}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET,POST,DELETE\",\n        \"title\" : \"Person With Relationships\"\n      },\n      \"descendancy-query\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/descendancy{?access_token,generations,marriageDetails,person,personDetails,spouse}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Descendancy\"\n      },\n      \"person-search\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/search{?access_token,context,count,q,start}\",\n        \"type\" : \"application\/atom+xml,application\/json,application\/x-gedcomx-atom+json,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Person Search\"\n      },\n      \"artifacts\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/memories\/memories\"\n      }\n    }\n  } ]\n}"
+    }
+},{
+    "request": {
+        "method": "POST",
+        "url": "https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/token",
+        "headers": {
+            "Host": "integration.familysearch.org",
+            "Accept-Encoding": null,
+            "User-Agent": "gedcomx-php\/1.1.1 GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
+            "Accept": "application\/json",
+            "X-FS-Feature-Tag": "consolidate-redundant-resources",
+            "Expect": null,
+            "Content-Type": "application\/x-www-form-urlencoded"
+        },
+        "body": "grant_type=password&username=sdktester&password=1234sdkpass&client_id=a02j00000016dU8AAI"
+    },
+    "response": {
+        "status": {
+            "http_version": "1.1",
+            "code": "200",
+            "message": "OK"
+        },
+        "headers": {
+            "Server": "Apache-Coyote\/1.1",
+            "Expires": "Tue, 03 Jul 2001 06:00:00 GMT",
+            "Last-Modified": "Mon Nov 14 21:47:04 GMT+00:00 2016",
+            "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0",
+            "Pragma": "no-cache",
+            "Content-Type": "application\/json;charset=ISO-8859-1",
+            "Content-Language": "en-US",
+            "Content-Length": "185",
+            "Date": "Mon, 14 Nov 2016 21:47:04 GMT",
+            "Connection": "close"
+        },
+        "body": "{\"token\":\"USYS167506031975AA40DFA0472A4534224C_idses-int01.a.fsglobal.net\",\"token_type\":\"family_search\",\"access_token\":\"USYS167506031975AA40DFA0472A4534224C_idses-int01.a.fsglobal.net\"}"
+    }
+},{
+    "request": {
+        "method": "POST",
+        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/persons",
+        "headers": {
+            "Host": "integration.familysearch.org",
+            "Accept-Encoding": null,
+            "User-Agent": "gedcomx-php\/1.1.1 GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
+            "Accept": "application\/x-gedcomx-v1+json",
+            "X-FS-Feature-Tag": "consolidate-redundant-resources",
+            "Expect": null,
+            "Content-Type": "application\/x-gedcomx-v1+json",
+            "Authorization": "Bearer USYS167506031975AA40DFA0472A4534224C_idses-int01.a.fsglobal.net"
+        },
+        "body": "{\"persons\":[{\"living\":false,\"gender\":{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Female\"},\"names\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/BirthName\",\"preferred\":true,\"nameForms\":[{\"lang\":\"en\",\"fullText\":\"Guadalupe Ankunding\",\"parts\":[{\"value\":\"Guadalupe\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Given\"},{\"value\":\"Ankunding\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Surname\"}]}]}],\"facts\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Birth\",\"date\":{\"original\":\"July 20, 1913\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"Hermistonfurt, California, United States\"}},{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Death\",\"date\":{\"original\":\"July 20, 1938\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"East Dejah, Texas, United States\"}}],\"display\":{\"birthDate\":\"20 Jul 1913\",\"birthPlace\":\"Hermistonfurt, California, United States\",\"gender\":\"http:\\\/\\\/gedcomx.org\\\/Female\",\"lifespan\":\"20 Jul 1913 - 20 Jul 1938\",\"name\":\"Guadalupe Ankunding\"}}]}"
+    },
+    "response": {
+        "status": {
+            "http_version": "1.1",
+            "code": "201",
+            "message": "Created"
+        },
+        "headers": {
+            "Cache-Control": "no-cache, no-store, no-transform, must-revalidate, max-age=0",
+            "Content-Type": "application\/x-gedcomx-v1+json",
+            "Date": "Mon, 14 Nov 2016 21:46:00 GMT",
+            "Link": "<https:\/\/integration.familysearch.org\/platform\/tree\/ancestry?person=L58V-JNV>; rel=\"ancestry\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/child-relationships>; rel=\"child-relationships\", <https:\/\/integration.familysearch.org\/platform\/tree\/descendancy?person=L58V-JNV>; rel=\"descendancy\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/discussion-references>; rel=\"discussion-references\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/matches>; rel=\"matches\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/notes>; rel=\"notes\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/parent-relationships>; rel=\"parent-relationships\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons-with-relationships?person=L58V-JNV>; rel=\"person-with-relationships\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons>; rel=\"persons\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/source-references>; rel=\"source-references\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/spouse-relationships>; rel=\"spouse-relationships\"",
+            "Location": "https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV",
+            "Server": "Apache-Coyote\/1.1",
+            "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
+            "X-ENTITY-ID": "L58V-JNV",
+            "X-PROCESSING-TIME": "335",
+            "X-THROTTLE-MILLIS-LEFT": "1795683",
+            "X-THROTTLE-MILLIS-USED": "4317",
+            "X-THROTTLE-WINDOW-SIZE": "1800000",
+            "Content-Length": "0",
+            "Connection": "Close"
+        }
+    }
+},{
+    "request": {
+        "method": "GET",
+        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV",
+        "headers": {
+            "Host": "integration.familysearch.org",
+            "Accept-Encoding": null,
+            "User-Agent": "gedcomx-php\/1.1.1 GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
+            "Accept": "application\/x-gedcomx-v1+json",
+            "X-FS-Feature-Tag": "consolidate-redundant-resources",
+            "Expect": null,
+            "Content-Type": "application\/x-gedcomx-v1+json",
+            "Authorization": "Bearer USYS167506031975AA40DFA0472A4534224C_idses-int01.a.fsglobal.net"
+        },
+        "body": "{\"persons\":[{\"living\":false,\"gender\":{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Female\"},\"names\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/BirthName\",\"preferred\":true,\"nameForms\":[{\"lang\":\"en\",\"fullText\":\"Guadalupe Ankunding\",\"parts\":[{\"value\":\"Guadalupe\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Given\"},{\"value\":\"Ankunding\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Surname\"}]}]}],\"facts\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Birth\",\"date\":{\"original\":\"July 20, 1913\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"Hermistonfurt, California, United States\"}},{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Death\",\"date\":{\"original\":\"July 20, 1938\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"East Dejah, Texas, United States\"}}],\"display\":{\"birthDate\":\"20 Jul 1913\",\"birthPlace\":\"Hermistonfurt, California, United States\",\"gender\":\"http:\\\/\\\/gedcomx.org\\\/Female\",\"lifespan\":\"20 Jul 1913 - 20 Jul 1938\",\"name\":\"Guadalupe Ankunding\"}}]}"
+    },
+    "response": {
+        "status": {
+            "http_version": "1.1",
+            "code": "200",
+            "message": "OK"
+        },
+        "headers": {
+            "Allow": "OPTIONS, HEAD, GET, POST, DELETE",
+            "Cache-Control": "no-transform, must-revalidate, max-age=0",
+            "Content-Location": "\/tree\/persons\/L58V-JNV",
+            "Content-Type": "application\/x-gedcomx-v1+json",
+            "Date": "Mon, 14 Nov 2016 21:46:01 GMT",
+            "ETag": "\"136984527605640000\"",
+            "Last-Modified": "Mon, 14 Nov 2016 21:46:00 GMT",
+            "Server": "Apache-Coyote\/1.1",
+            "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
+            "X-PROCESSING-TIME": "150",
+            "X-THROTTLE-MILLIS-LEFT": "1795545",
+            "X-THROTTLE-MILLIS-USED": "4455",
+            "X-THROTTLE-WINDOW-SIZE": "1800000",
+            "transfer-encoding": "chunked",
+            "Connection": "Close"
+        },
+        "body": "{\n  \"description\" : \"#SD-L58V-JNV\",\n  \"persons\" : [ {\n    \"id\" : \"L58V-JNV\",\n    \"sortKey\" : \"0000000000\",\n    \"living\" : false,\n    \"gender\" : {\n      \"id\" : \"cc141098-63f5-4df2-9fb7-ce78151f1ae8\",\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1479159960564\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/Female\",\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/conclusions\/cc141098-63f5-4df2-9fb7-ce78151f1ae8\"\n        }\n      }\n    },\n    \"links\" : {\n      \"spouses\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/spouses\"\n      },\n      \"change-history\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/changes\"\n      },\n      \"ancestry\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/ancestry?person=L58V-JNV\"\n      },\n      \"notes\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/notes\"\n      },\n      \"non-matches\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/not-a-match\"\n      },\n      \"portraits\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/portraits\"\n      },\n      \"ordinances\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/ordinances\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/tree\"\n      },\n      \"families\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/families\"\n      },\n      \"portrait\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/portrait\"\n      },\n      \"matches\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/matches\"\n      },\n      \"children\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/children\"\n      },\n      \"descendancy\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/descendancy?person=L58V-JNV\"\n      },\n      \"person\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/sources\"\n      },\n      \"merge\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/{pid}\/merges\/{dpid}{?access_token,filter}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml\",\n        \"allow\" : \"OPTIONS,GET,POST\",\n        \"title\" : \"Person Merge\"\n      },\n      \"ordinance-reservations\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/reservations\"\n      },\n      \"artifacts\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/memories\"\n      },\n      \"parents\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/parents\"\n      }\n    },\n    \"identifiers\" : {\n      \"http:\/\/gedcomx.org\/Persistent\" : [ \"https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58V-JNV\" ]\n    },\n    \"names\" : [ {\n      \"id\" : \"134cd064-aa91-4be4-b11f-e8309f206a9c\",\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1479159960564\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/BirthName\",\n      \"preferred\" : true,\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/conclusions\/134cd064-aa91-4be4-b11f-e8309f206a9c\"\n        }\n      },\n      \"nameForms\" : [ {\n        \"fullText\" : \"Guadalupe Ankunding\",\n        \"parts\" : [ {\n          \"type\" : \"http:\/\/gedcomx.org\/Given\",\n          \"value\" : \"Guadalupe\"\n        }, {\n          \"type\" : \"http:\/\/gedcomx.org\/Surname\",\n          \"value\" : \"Ankunding\"\n        } ],\n        \"nameFormInfo\" : [ {\n          \"order\" : \"http:\/\/familysearch.org\/v1\/Eurotypic\"\n        } ]\n      } ]\n    } ],\n    \"facts\" : [ {\n      \"id\" : \"a97025ea-e8bb-48c7-b372-a35587f90f67\",\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1479159960564\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/Birth\",\n      \"date\" : {\n        \"original\" : \"July 20, 1913\",\n        \"formal\" : \"+1913-07-20\",\n        \"normalized\" : [ {\n          \"lang\" : \"en-US\",\n          \"value\" : \"20 July 1913\"\n        }, {\n          \"value\" : \"20 July 1913\"\n        } ]\n      },\n      \"place\" : {\n        \"original\" : \"Hermistonfurt, California, United States\"\n      },\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/conclusions\/a97025ea-e8bb-48c7-b372-a35587f90f67\"\n        }\n      }\n    }, {\n      \"id\" : \"b27464f0-efe9-4719-865f-9bafff82334f\",\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1479159960564\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/Death\",\n      \"date\" : {\n        \"original\" : \"July 20, 1938\",\n        \"formal\" : \"+1938-07-20\",\n        \"normalized\" : [ {\n          \"lang\" : \"en-US\",\n          \"value\" : \"20 July 1938\"\n        }, {\n          \"value\" : \"20 July 1938\"\n        } ]\n      },\n      \"place\" : {\n        \"original\" : \"East Dejah, Texas, United States\"\n      },\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/conclusions\/b27464f0-efe9-4719-865f-9bafff82334f\"\n        }\n      }\n    } ],\n    \"display\" : {\n      \"name\" : \"Guadalupe Ankunding\",\n      \"gender\" : \"Female\",\n      \"lifespan\" : \"1913-1938\",\n      \"birthDate\" : \"20 July 1913\",\n      \"birthPlace\" : \"Hermistonfurt, California, United States\",\n      \"deathDate\" : \"20 July 1938\",\n      \"deathPlace\" : \"East Dejah, Texas, United States\",\n      \"ascendancyNumber\" : \"1\",\n      \"descendancyNumber\" : \"1\"\n    }\n  } ],\n  \"relationships\" : [ ],\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"SD-L58V-JNV\",\n    \"about\" : \"#L58V-JNV\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/tree\"\n    },\n    \"resourceType\" : \"http:\/\/gedcomx.org\/Person\",\n    \"modified\" : 1479159960000,\n    \"version\" : \"136984527605640000\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/sources\/descriptions\/SD-L58V-JNV\"\n      }\n    },\n    \"citations\" : [ {\n      \"lang\" : \"en\",\n      \"value\" : \"\\\"Family Tree,\\\" database, <i>FamilySearch<\/i> (http:\/\/familysearch.org : modified 14 November 2016, 21:46), entry for Guadalupe Ankunding(PID https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58V-JNV); contributed by various users.\"\n    } ],\n    \"titles\" : [ {\n      \"value\" : \"Guadalupe Ankunding\"\n    } ],\n    \"identifiers\" : {\n      \"http:\/\/gedcomx.org\/Persistent\" : [ \"https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58V-JNV\" ]\n    }\n  } ]\n}"
+    }
+},{
+    "request": {
+        "method": "GET",
+        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/persons-with-relationships?person=L58V-JNV",
+        "headers": {
+            "Host": "integration.familysearch.org",
+            "Accept-Encoding": null,
+            "User-Agent": "gedcomx-php\/1.1.1 GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
+            "Accept": "application\/x-fs-v1+json",
+            "X-FS-Feature-Tag": "consolidate-redundant-resources",
+            "Expect": null,
+            "Content-Type": "application\/x-fs-v1+json",
+            "Authorization": "Bearer USYS167506031975AA40DFA0472A4534224C_idses-int01.a.fsglobal.net"
+        },
+        "body": "{\"persons\":[{\"living\":false,\"gender\":{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Female\"},\"names\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/BirthName\",\"preferred\":true,\"nameForms\":[{\"lang\":\"en\",\"fullText\":\"Guadalupe Ankunding\",\"parts\":[{\"value\":\"Guadalupe\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Given\"},{\"value\":\"Ankunding\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Surname\"}]}]}],\"facts\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Birth\",\"date\":{\"original\":\"July 20, 1913\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"Hermistonfurt, California, United States\"}},{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Death\",\"date\":{\"original\":\"July 20, 1938\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"East Dejah, Texas, United States\"}}],\"display\":{\"birthDate\":\"20 Jul 1913\",\"birthPlace\":\"Hermistonfurt, California, United States\",\"gender\":\"http:\\\/\\\/gedcomx.org\\\/Female\",\"lifespan\":\"20 Jul 1913 - 20 Jul 1938\",\"name\":\"Guadalupe Ankunding\"}}]}"
+    },
+    "response": {
+        "status": {
+            "http_version": "1.1",
+            "code": "303",
+            "message": "See Other"
+        },
+        "headers": {
+            "Cache-Control": "no-transform, must-revalidate, max-age=0",
+            "Content-Type": "application\/x-fs-v1+json",
+            "Date": "Mon, 14 Nov 2016 21:46:01 GMT",
+            "Location": "https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV",
+            "Server": "Apache-Coyote\/1.1",
+            "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
+            "X-PROCESSING-TIME": "189",
+            "X-THROTTLE-MILLIS-LEFT": "1795357",
+            "X-THROTTLE-MILLIS-USED": "4643",
+            "X-THROTTLE-WINDOW-SIZE": "1800000",
+            "Content-Length": "0",
+            "Connection": "Close"
+        }
+    }
+},{
+    "request": {
+        "method": "GET",
+        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV",
+        "headers": {
+            "Host": "integration.familysearch.org",
+            "Accept-Encoding": null,
+            "User-Agent": "gedcomx-php\/1.1.1 GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
+            "Accept": "application\/x-fs-v1+json",
+            "X-FS-Feature-Tag": "consolidate-redundant-resources",
+            "Expect": null,
+            "Content-Type": "application\/x-fs-v1+json",
+            "Authorization": "Bearer USYS167506031975AA40DFA0472A4534224C_idses-int01.a.fsglobal.net"
+        },
+        "body": "{\"persons\":[{\"living\":false,\"gender\":{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Female\"},\"names\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/BirthName\",\"preferred\":true,\"nameForms\":[{\"lang\":\"en\",\"fullText\":\"Guadalupe Ankunding\",\"parts\":[{\"value\":\"Guadalupe\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Given\"},{\"value\":\"Ankunding\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Surname\"}]}]}],\"facts\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Birth\",\"date\":{\"original\":\"July 20, 1913\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"Hermistonfurt, California, United States\"}},{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Death\",\"date\":{\"original\":\"July 20, 1938\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"East Dejah, Texas, United States\"}}],\"display\":{\"birthDate\":\"20 Jul 1913\",\"birthPlace\":\"Hermistonfurt, California, United States\",\"gender\":\"http:\\\/\\\/gedcomx.org\\\/Female\",\"lifespan\":\"20 Jul 1913 - 20 Jul 1938\",\"name\":\"Guadalupe Ankunding\"}}]}"
+    },
+    "response": {
+        "status": {
+            "http_version": "1.1",
+            "code": "200",
+            "message": "OK"
+        },
+        "headers": {
+            "Allow": "OPTIONS, HEAD, GET, POST, DELETE",
+            "Cache-Control": "no-transform, must-revalidate, max-age=0",
+            "Content-Location": "\/tree\/persons\/L58V-JNV",
+            "Content-Type": "application\/x-fs-v1+json",
+            "Date": "Mon, 14 Nov 2016 21:46:02 GMT",
+            "ETag": "\"136984527605640000\"",
+            "Last-Modified": "Mon, 14 Nov 2016 21:46:00 GMT",
+            "Server": "Apache-Coyote\/1.1",
+            "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
+            "X-PROCESSING-TIME": "169",
+            "X-THROTTLE-MILLIS-LEFT": "1795195",
+            "X-THROTTLE-MILLIS-USED": "4805",
+            "X-THROTTLE-WINDOW-SIZE": "1800000",
+            "transfer-encoding": "chunked",
+            "Connection": "Close"
+        },
+        "body": "{\n  \"description\" : \"#SD-L58V-JNV\",\n  \"persons\" : [ {\n    \"id\" : \"L58V-JNV\",\n    \"sortKey\" : \"0000000000\",\n    \"living\" : false,\n    \"gender\" : {\n      \"id\" : \"cc141098-63f5-4df2-9fb7-ce78151f1ae8\",\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1479159960564\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/Female\",\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/conclusions\/cc141098-63f5-4df2-9fb7-ce78151f1ae8\"\n        }\n      }\n    },\n    \"links\" : {\n      \"spouses\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/spouses\"\n      },\n      \"change-history\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/changes\"\n      },\n      \"ancestry\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/ancestry?person=L58V-JNV\"\n      },\n      \"notes\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/notes\"\n      },\n      \"non-matches\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/not-a-match\"\n      },\n      \"portraits\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/portraits\"\n      },\n      \"ordinances\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/ordinances\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/tree\"\n      },\n      \"families\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/families\"\n      },\n      \"portrait\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/portrait\"\n      },\n      \"matches\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/matches\"\n      },\n      \"children\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/children\"\n      },\n      \"descendancy\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/descendancy?person=L58V-JNV\"\n      },\n      \"person\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/sources\"\n      },\n      \"merge\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/{pid}\/merges\/{dpid}{?access_token,filter}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml\",\n        \"allow\" : \"OPTIONS,GET,POST\",\n        \"title\" : \"Person Merge\"\n      },\n      \"ordinance-reservations\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/reservations\"\n      },\n      \"artifacts\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/memories\"\n      },\n      \"parents\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/parents\"\n      }\n    },\n    \"identifiers\" : {\n      \"http:\/\/gedcomx.org\/Persistent\" : [ \"https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58V-JNV\" ]\n    },\n    \"names\" : [ {\n      \"id\" : \"134cd064-aa91-4be4-b11f-e8309f206a9c\",\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1479159960564\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/BirthName\",\n      \"preferred\" : true,\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/conclusions\/134cd064-aa91-4be4-b11f-e8309f206a9c\"\n        }\n      },\n      \"nameForms\" : [ {\n        \"fullText\" : \"Guadalupe Ankunding\",\n        \"parts\" : [ {\n          \"type\" : \"http:\/\/gedcomx.org\/Given\",\n          \"value\" : \"Guadalupe\"\n        }, {\n          \"type\" : \"http:\/\/gedcomx.org\/Surname\",\n          \"value\" : \"Ankunding\"\n        } ],\n        \"nameFormInfo\" : [ {\n          \"order\" : \"http:\/\/familysearch.org\/v1\/Eurotypic\"\n        } ]\n      } ]\n    } ],\n    \"facts\" : [ {\n      \"id\" : \"a97025ea-e8bb-48c7-b372-a35587f90f67\",\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1479159960564\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/Birth\",\n      \"date\" : {\n        \"original\" : \"July 20, 1913\",\n        \"formal\" : \"+1913-07-20\",\n        \"normalized\" : [ {\n          \"lang\" : \"en-US\",\n          \"value\" : \"20 July 1913\"\n        }, {\n          \"value\" : \"20 July 1913\"\n        } ]\n      },\n      \"place\" : {\n        \"original\" : \"Hermistonfurt, California, United States\"\n      },\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/conclusions\/a97025ea-e8bb-48c7-b372-a35587f90f67\"\n        }\n      }\n    }, {\n      \"id\" : \"b27464f0-efe9-4719-865f-9bafff82334f\",\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1479159960564\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/Death\",\n      \"date\" : {\n        \"original\" : \"July 20, 1938\",\n        \"formal\" : \"+1938-07-20\",\n        \"normalized\" : [ {\n          \"lang\" : \"en-US\",\n          \"value\" : \"20 July 1938\"\n        }, {\n          \"value\" : \"20 July 1938\"\n        } ]\n      },\n      \"place\" : {\n        \"original\" : \"East Dejah, Texas, United States\"\n      },\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV\/conclusions\/b27464f0-efe9-4719-865f-9bafff82334f\"\n        }\n      }\n    } ],\n    \"display\" : {\n      \"name\" : \"Guadalupe Ankunding\",\n      \"gender\" : \"Female\",\n      \"lifespan\" : \"1913-1938\",\n      \"birthDate\" : \"20 July 1913\",\n      \"birthPlace\" : \"Hermistonfurt, California, United States\",\n      \"deathDate\" : \"20 July 1938\",\n      \"deathPlace\" : \"East Dejah, Texas, United States\",\n      \"ascendancyNumber\" : \"1\",\n      \"descendancyNumber\" : \"1\"\n    }\n  } ],\n  \"relationships\" : [ ],\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"SD-L58V-JNV\",\n    \"about\" : \"#L58V-JNV\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/tree\"\n    },\n    \"resourceType\" : \"http:\/\/gedcomx.org\/Person\",\n    \"modified\" : 1479159960000,\n    \"version\" : \"136984527605640000\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/sources\/descriptions\/SD-L58V-JNV\"\n      }\n    },\n    \"citations\" : [ {\n      \"lang\" : \"en\",\n      \"value\" : \"\\\"Family Tree,\\\" database, <i>FamilySearch<\/i> (http:\/\/familysearch.org : modified 14 November 2016, 21:46), entry for Guadalupe Ankunding(PID https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58V-JNV); contributed by various users.\"\n    } ],\n    \"titles\" : [ {\n      \"value\" : \"Guadalupe Ankunding\"\n    } ],\n    \"identifiers\" : {\n      \"http:\/\/gedcomx.org\/Persistent\" : [ \"https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58V-JNV\" ]\n    }\n  } ]\n}"
+    }
+},{
+    "request": {
+        "method": "DELETE",
+        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58V-JNV",
+        "headers": {
+            "Host": "integration.familysearch.org",
+            "Accept-Encoding": null,
+            "User-Agent": "gedcomx-php\/1.1.1 GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
+            "Accept": "application\/x-gedcomx-v1+json",
+            "X-FS-Feature-Tag": "consolidate-redundant-resources",
+            "Expect": null,
+            "Content-Type": "application\/x-fs-v1+json",
+            "Authorization": "Bearer USYS167506031975AA40DFA0472A4534224C_idses-int01.a.fsglobal.net"
+        },
+        "body": "{\"persons\":[{\"living\":false,\"gender\":{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Female\"},\"names\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/BirthName\",\"preferred\":true,\"nameForms\":[{\"lang\":\"en\",\"fullText\":\"Guadalupe Ankunding\",\"parts\":[{\"value\":\"Guadalupe\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Given\"},{\"value\":\"Ankunding\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Surname\"}]}]}],\"facts\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Birth\",\"date\":{\"original\":\"July 20, 1913\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"Hermistonfurt, California, United States\"}},{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Death\",\"date\":{\"original\":\"July 20, 1938\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"East Dejah, Texas, United States\"}}],\"display\":{\"birthDate\":\"20 Jul 1913\",\"birthPlace\":\"Hermistonfurt, California, United States\",\"gender\":\"http:\\\/\\\/gedcomx.org\\\/Female\",\"lifespan\":\"20 Jul 1913 - 20 Jul 1938\",\"name\":\"Guadalupe Ankunding\"}}]}"
+    },
+    "response": {
+        "status": {
+            "http_version": "1.1",
+            "code": "204",
+            "message": "No Content"
+        },
+        "headers": {
+            "Cache-Control": "no-transform, must-revalidate, max-age=0",
+            "Content-Location": "\/tree\/persons\/L58V-JNV",
+            "Content-Type": "application\/x-gedcomx-v1+json",
+            "Date": "Mon, 14 Nov 2016 21:46:02 GMT",
+            "Server": "Apache-Coyote\/1.1",
+            "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
+            "X-PROCESSING-TIME": "194",
+            "X-THROTTLE-MILLIS-LEFT": "1795004",
+            "X-THROTTLE-MILLIS-USED": "4996",
+            "X-THROTTLE-WINDOW-SIZE": "1800000",
+            "Connection": "Close"
+        }
+    }
+}]
