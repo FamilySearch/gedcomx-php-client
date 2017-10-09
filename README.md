@@ -82,6 +82,9 @@ Do **one** of the following steps to activate Composer and install the gedcomx-p
 
 ## Changelog
 
+* v3.0.2
+  * Use the new `api` subdomain in production.
+
 * v3.0.1
   * Use `integration` instead of `sandbox`.
 
