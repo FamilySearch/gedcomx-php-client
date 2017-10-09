@@ -460,19 +460,19 @@
 </span><span id="18" class="l">    <span class="php-comment">/**
 </span></span><span id="19" class="l"><span class="php-comment">     * The default production environment URI for the family tree.
 </span></span><span id="20" class="l"><span class="php-comment">     */</span>
-</span><span id="21" class="l">    <span class="php-keyword1">const</span> PRODUCTION_URI = <span class="php-quote">&quot;https://familysearch.org/platform/collections/tree&quot;</span>;
+</span><span id="21" class="l">    <span class="php-keyword1">const</span> PRODUCTION_URI = <span class="php-quote">&quot;https://api.familysearch.org/platform/collections/tree&quot;</span>;
 </span><span id="22" class="l">    <span class="php-comment">/**
-</span></span><span id="23" class="l"><span class="php-comment">     * The default sandbox environment URI for the family tree.
+</span></span><span id="23" class="l"><span class="php-comment">     * The default integration environment URI for the family tree.
 </span></span><span id="24" class="l"><span class="php-comment">     */</span>
-</span><span id="25" class="l">    <span class="php-keyword1">const</span> SANDBOX_URI = <span class="php-quote">&quot;https://sandbox.familysearch.org/platform/collections/tree&quot;</span>;
+</span><span id="25" class="l">    <span class="php-keyword1">const</span> INTEGRATION_URI = <span class="php-quote">&quot;https://integration.familysearch.org/platform/collections/tree&quot;</span>;
 </span><span id="26" class="l">    <span class="php-comment">/**
 </span></span><span id="27" class="l"><span class="php-comment">     * The default production environment URI for the discovery endpoint.
 </span></span><span id="28" class="l"><span class="php-comment">     */</span>
-</span><span id="29" class="l">    <span class="php-keyword1">const</span> PRODUCTION_DISCOVERY_URI = <span class="php-quote">&quot;https://familysearch.org/platform/collection&quot;</span>;
+</span><span id="29" class="l">    <span class="php-keyword1">const</span> PRODUCTION_DISCOVERY_URI = <span class="php-quote">&quot;https://api.familysearch.org/platform/collection&quot;</span>;
 </span><span id="30" class="l">    <span class="php-comment">/**
-</span></span><span id="31" class="l"><span class="php-comment">     * The default sandbox environment URI for the discovery endpoint.
+</span></span><span id="31" class="l"><span class="php-comment">     * The default integration environment URI for the discovery endpoint.
 </span></span><span id="32" class="l"><span class="php-comment">     */</span>
-</span><span id="33" class="l">    <span class="php-keyword1">const</span> SANDBOX_DISCOVERY_URI = <span class="php-quote">&quot;https://sandbox.familysearch.org/platform/collection&quot;</span>;
+</span><span id="33" class="l">    <span class="php-keyword1">const</span> INTEGRATION_DISCOVERY_URI = <span class="php-quote">&quot;https://integration.familysearch.org/platform/collection&quot;</span>;
 </span><span id="34" class="l">
 </span><span id="35" class="l">    <span class="php-comment">/**
 </span></span><span id="36" class="l"><span class="php-comment">     * @var boolean Are we in a production environment
@@ -480,7 +480,7 @@
 </span><span id="38" class="l">    <span class="php-keyword1">protected</span> <span class="php-var">$production</span>;
 </span><span id="39" class="l">
 </span><span id="40" class="l">    <span class="php-comment">/**
-</span></span><span id="41" class="l"><span class="php-comment">     * Constructs a new instance of this state factory, using the environment specified (defaults to sandbox).
+</span></span><span id="41" class="l"><span class="php-comment">     * Constructs a new instance of this state factory, using the environment specified (defaults to integration).
 </span></span><span id="42" class="l"><span class="php-comment">     *
 </span></span><span id="43" class="l"><span class="php-comment">     * @param bool $production
 </span></span><span id="44" class="l"><span class="php-comment">     */</span>
@@ -504,7 +504,7 @@
 </span><span id="62" class="l">            <span class="php-var">$client</span> = <span class="php-var">$this</span>-&gt;defaultClient();
 </span><span id="63" class="l">        }
 </span><span id="64" class="l">        <span class="php-keyword1">if</span> (<span class="php-var">$uri</span> == <span class="php-keyword1">null</span>) {
-</span><span id="65" class="l">            <span class="php-var">$uri</span> = <span class="php-var">$this</span>-&gt;production ? self::PRODUCTION_URI : self::SANDBOX_URI;
+</span><span id="65" class="l">            <span class="php-var">$uri</span> = <span class="php-var">$this</span>-&gt;production ? self::PRODUCTION_URI : self::INTEGRATION_URI;
 </span><span id="66" class="l">        }
 </span><span id="67" class="l">        
 </span><span id="68" class="l">        <span class="php-comment">/** @var Request $request */</span>
@@ -527,7 +527,7 @@
 </span><span id="85" class="l">            <span class="php-var">$client</span> = <span class="php-var">$this</span>-&gt;defaultClient();
 </span><span id="86" class="l">        }
 </span><span id="87" class="l">        <span class="php-keyword1">if</span> (<span class="php-var">$uri</span> == <span class="php-keyword1">null</span>) {
-</span><span id="88" class="l">            <span class="php-var">$uri</span> = <span class="php-var">$this</span>-&gt;production ? self::PRODUCTION_DISCOVERY_URI : self::SANDBOX_DISCOVERY_URI;
+</span><span id="88" class="l">            <span class="php-var">$uri</span> = <span class="php-var">$this</span>-&gt;production ? self::PRODUCTION_DISCOVERY_URI : self::INTEGRATION_DISCOVERY_URI;
 </span><span id="89" class="l">        }
 </span><span id="90" class="l">
 </span><span id="91" class="l">        <span class="php-comment">/** @var Request $request */</span>
@@ -550,7 +550,7 @@
 </span><span id="108" class="l">            <span class="php-var">$client</span> = <span class="php-var">$this</span>-&gt;defaultClient();
 </span><span id="109" class="l">        }
 </span><span id="110" class="l">        <span class="php-keyword1">if</span> (<span class="php-var">$uri</span> == <span class="php-keyword1">null</span>) {
-</span><span id="111" class="l">            <span class="php-var">$uri</span> = <span class="php-var">$this</span>-&gt;production ? self::PRODUCTION_DISCOVERY_URI : self::SANDBOX_DISCOVERY_URI;
+</span><span id="111" class="l">            <span class="php-var">$uri</span> = <span class="php-var">$this</span>-&gt;production ? self::PRODUCTION_DISCOVERY_URI : self::INTEGRATION_DISCOVERY_URI;
 </span><span id="112" class="l">        }
 </span><span id="113" class="l">
 </span><span id="114" class="l">        <span class="php-comment">/** @var Request $request */</span>

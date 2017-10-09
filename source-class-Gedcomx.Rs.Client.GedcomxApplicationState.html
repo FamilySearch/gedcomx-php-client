@@ -1625,7 +1625,7 @@
 </span><span id="1183" class="l">        <span class="php-comment">// Exceptions are thrown if http_errors is set to true on the client.</span>
 </span><span id="1184" class="l">        <span class="php-keyword1">catch</span>(\GuzzleHttp\Exception\BadResponseException <span class="php-var">$e</span>) {
 </span><span id="1185" class="l">            <span class="php-var">$response</span> = <span class="php-keyword1">null</span>;
-</span><span id="1186" class="l">            <span class="php-var">$reason</span> = <span class="php-quote">'Bas response.'</span>;
+</span><span id="1186" class="l">            <span class="php-var">$reason</span> = <span class="php-quote">'Bad response.'</span>;
 </span><span id="1187" class="l">            <span class="php-keyword1">if</span>(<span class="php-var">$e</span>-&gt;hasResponse()){
 </span><span id="1188" class="l">                <span class="php-var">$response</span> = <span class="php-var">$e</span>-&gt;getResponse();
 </span><span id="1189" class="l">                <span class="php-var">$reason</span> = <span class="php-var">$response</span>-&gt;getReasonPhrase();
