@@ -117,7 +117,7 @@ class FamilySearchClient implements LoggerAwareInterface{
         }
         switch($environment){
             case 'production':
-                $baseURI = 'https://familysearch.org';
+                $baseURI = 'https://api.familysearch.org';
                 break;
             case 'beta':
                 $baseURI = 'https://beta.familysearch.org';

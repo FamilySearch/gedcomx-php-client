@@ -18,7 +18,7 @@ class StateFactory
     /**
      * The default production environment URI for the family tree.
      */
-    const PRODUCTION_URI = "https://familysearch.org/platform/collections/tree";
+    const PRODUCTION_URI = "https://api.familysearch.org/platform/collections/tree";
     /**
      * The default integration environment URI for the family tree.
      */
@@ -26,7 +26,7 @@ class StateFactory
     /**
      * The default production environment URI for the discovery endpoint.
      */
-    const PRODUCTION_DISCOVERY_URI = "https://familysearch.org/platform/collection";
+    const PRODUCTION_DISCOVERY_URI = "https://api.familysearch.org/platform/collection";
     /**
      * The default integration environment URI for the discovery endpoint.
      */

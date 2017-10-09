@@ -18,7 +18,7 @@ class FamilySearchMemories extends FamilySearchCollectionState
     /**
      * The default production environment URI for this collection.
      */
-    const URI = "https://familysearch.org/platform/collections/memories";
+    const URI = "https://api.familysearch.org/platform/collections/memories";
     /**
      * The default integration environment URI for this collection.
      */

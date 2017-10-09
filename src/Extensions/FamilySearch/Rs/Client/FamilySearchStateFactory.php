@@ -28,7 +28,7 @@
 		/**
 		 * The default production environment URI for the places collection.
 		 */
-		const PLACES_URI = "https://familysearch.org/platform/collections/places";
+		const PLACES_URI = "https://api.familysearch.org/platform/collections/places";
 		/**
 		 * The default integration environment URI for the places collection.
 		 */
@@ -36,7 +36,7 @@
 		/**
 		 * The default production environment URI for the memories collection.
 		 */
-		const MEMORIES_URI = "https://familysearch.org/platform/collections/memories";
+		const MEMORIES_URI = "https://api.familysearch.org/platform/collections/memories";
 		/**
 		 * The default integration environment URI for the memories collection.
 		 */
