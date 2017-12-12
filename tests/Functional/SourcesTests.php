@@ -395,7 +395,6 @@ class SourcesTests extends ApiTestCase
     /**
      * @vcr SourcesTests/testReadChildAndParentsRelationshipSources.json
      * @link https://familysearch.org/developers/docs/api/tree/Read_Child-and-Parents_Relationship_Sources_usecase
-     * @see SourcesTests::testReadChildAndParentsRelationshipSources
      */
     public function testReadChildAndParentsRelationshipSources()
     {
@@ -433,8 +432,7 @@ class SourcesTests extends ApiTestCase
         $sds = $sds->get();
         $this->assertEquals(HttpStatus::OK, $sds->getStatus());
         $relation->addSourceReferenceState($sds);
-        $this->assertNotNull($father->getLink(Rel::CHILD_RELATIONSHIPS));
-        $relationships = $father->loadChildRelationships()->getChildAndParentsRelationships();
+        $relationships = $father->get()->getChildAndParentsRelationships();
         $this->assertNotEmpty($relationships);
         $relationship = array_shift($relationships);
         $link1 = $relationship->getLink(Rel::RELATIONSHIP);
@@ -517,7 +515,7 @@ class SourcesTests extends ApiTestCase
         $this->assertEquals(HttpStatus::CREATED, $sds->getStatus());
 
         $relation->addSourceDescriptionState($sds);
-        $relationships = $husband->loadSpouseRelationships();
+        $relationships = $husband->get();
         $this->assertEquals(HttpStatus::OK, $relationships->getStatus());
         $relations = $relationships->getRelationships();
         $this->assertNotEmpty($relations);

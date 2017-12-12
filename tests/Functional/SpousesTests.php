@@ -146,7 +146,7 @@ class SpousesTests extends ApiTestCase
              "links" => array(
                  array(
                      "rel" => 'relationship',
-                     'href' => "https://sandbox.familysearch.org/platform/tree/couple-relationships/XXX-XXXX"
+                     'href' => "https://api-integ.familysearch.org/platform/tree/couple-relationships/XXX-XXXX"
                  )
              )
          ));
@@ -455,7 +455,7 @@ class SpousesTests extends ApiTestCase
                                              "links" => array(
                                                  array(
                                                      "rel" => 'relationship',
-                                                     'href' => "https://sandbox.familysearch.org/platform/tree/couple-relationships/" . $family->getRelationship()->getId()
+                                                     'href' => "https://api-integ.familysearch.org/platform/tree/couple-relationships/" . $family->getRelationship()->getId()
                                                  )
                                              )
                                          ));

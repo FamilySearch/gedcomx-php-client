@@ -63,6 +63,7 @@ Do **one** of the following steps to activate Composer and install the gedcomx-p
     ```
 
 ## Features
+
 * **GEDCOM X Conceptual Model**
 
   Implementaton of the [GEDCOM X Conceptual Model](https://github.com/FamilySearch/gedcomx/blob/master/specifications/conceptual-model-specification.md) in a rich set of PHP Classes with getter and setter methods. Take a look at a [visual graph](https://github.com/FamilySearch/gedcomx/blob/master/specifications/support/conceptual-model-graph.pdf) of the GEDCOM X Conceptual Model.
@@ -79,8 +80,10 @@ Do **one** of the following steps to activate Composer and install the gedcomx-p
   
   A robust mechanism for interacting with the [FamilySearch API](https://familysearch.org/developers/docs/api/resources). The [FamilySearchClient](http://familysearch.github.io/gedcomx-php-client/class-Gedcomx.Extensions.FamilySearch.Rs.Client.FamilySearchClient.html) class makes it easy to set the configuration to the appropriate API environment (Sandbox, Beta, Production), authenticate using OAuth2, and interact with the FamilySearch Family Tree and other services.
 
-
 ## Changelog
+
+* v3.0.3
+  * Use `api-integ` subdomain instead of `integration`.
 
 * v3.0.2
   * Use the new `api` subdomain in production.

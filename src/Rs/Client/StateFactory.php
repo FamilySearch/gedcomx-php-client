@@ -22,7 +22,7 @@ class StateFactory
     /**
      * The default integration environment URI for the family tree.
      */
-    const INTEGRATION_URI = "https://integration.familysearch.org/platform/collections/tree";
+    const INTEGRATION_URI = "https://api-integ.familysearch.org/platform/collections/tree";
     /**
      * The default production environment URI for the discovery endpoint.
      */
@@ -30,7 +30,7 @@ class StateFactory
     /**
      * The default integration environment URI for the discovery endpoint.
      */
-    const INTEGRATION_DISCOVERY_URI = "https://integration.familysearch.org/platform/collection";
+    const INTEGRATION_DISCOVERY_URI = "https://api-integ.familysearch.org/platform/collection";
 
     /**
      * @var boolean Are we in a production environment

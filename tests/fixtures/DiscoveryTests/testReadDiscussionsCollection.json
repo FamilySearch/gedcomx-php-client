@@ -1,9 +1,9 @@
 [{
     "request": {
         "method": "GET",
-        "url": "https:\/\/integration.familysearch.org\/platform\/collection",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/collection",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json"
@@ -19,21 +19,21 @@
             "Cache-Control": "no-transform, max-age=604800",
             "Content-Location": "\/app-meta",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:22:23 GMT",
+            "Date": "Tue, 12 Dec 2017 16:16:11 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "1",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "0",
+            "Content-Length": "2074",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"FS\",\n    \"titles\" : [ {\n      \"value\" : \"FamilySearch.org\"\n    } ]\n  } ],\n  \"collections\" : [ {\n    \"links\" : {\n      \"family-tree\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/tree\"\n      },\n      \"source-box\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/sources\"\n      },\n      \"subcollections\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\"\n      },\n      \"places\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/places\"\n      },\n      \"pending-modifications\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/pending-modifications\"\n      },\n      \"registration\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/pages\/registration\/registration.html\",\n        \"title\" : \"User Registration\"\n      },\n      \"ordinance-reservations\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/reservations\"\n      },\n      \"discussions\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/discussions\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/token\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/token\"\n      },\n      \"logout\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/logout\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/authorize\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/authorization\"\n      },\n      \"ordinances\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/ordinances\"\n      },\n      \"current-user\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/users\/current\"\n      },\n      \"memories\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/memories\"\n      },\n      \"vocab\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/vocab\"\n      }\n    },\n    \"title\" : \"FamilySearch.org\"\n  } ],\n  \"description\" : \"#FS\"\n}"
+        "body": "{\n  \"description\" : \"#FS\",\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"FS\",\n    \"titles\" : [ {\n      \"value\" : \"FamilySearch.org\"\n    } ]\n  } ],\n  \"collections\" : [ {\n    \"title\" : \"FamilySearch.org\",\n    \"links\" : {\n      \"discussions\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/discussions\"\n      },\n      \"ordinances\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/ordinances\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/authorize\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/authorization\"\n      },\n      \"subcollections\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\"\n      },\n      \"current-user\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/current\"\n      },\n      \"logout\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/logout\"\n      },\n      \"places\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/places\"\n      },\n      \"source-box\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/sources\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/token\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/token\"\n      },\n      \"memories\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/memories\"\n      },\n      \"vocab\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/vocab\"\n      },\n      \"family-tree\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/tree\"\n      },\n      \"registration\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/pages\/registration\/registration.html\",\n        \"title\" : \"User Registration\"\n      },\n      \"pending-modifications\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/pending-modifications\"\n      },\n      \"ordinance-reservations\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/reservations\"\n      }\n    }\n  } ]\n}"
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/integration.familysearch.org\/platform\/collections",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/collections",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
@@ -50,21 +50,21 @@
             "Cache-Control": "no-transform, max-age=604800",
             "Content-Location": "\/app-meta",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:22:23 GMT",
+            "Date": "Tue, 12 Dec 2017 16:16:11 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "1",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "0",
+            "Content-Length": "2243",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"collections\" : [ {\n    \"id\" : \"FSFT\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/tree\"\n      }\n    },\n    \"title\" : \"FamilySearch Family Tree\"\n  }, {\n    \"id\" : \"FSHRA\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/records\"\n      }\n    },\n    \"title\" : \"FamilySearch Historical Records Archive\"\n  }, {\n    \"id\" : \"FSUDS\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/sources\"\n      }\n    },\n    \"title\" : \"FamilySearch User-Defined Sources\"\n  }, {\n    \"id\" : \"FSMEM\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/memories\"\n      }\n    },\n    \"title\" : \"FamilySearch Memories\"\n  }, {\n    \"id\" : \"FSDF\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/discussions\"\n      }\n    },\n    \"title\" : \"FamilySearch Discussions\"\n  }, {\n    \"id\" : \"FSPA\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/places\"\n      }\n    },\n    \"title\" : \"FamilySearch Place Authority\"\n  }, {\n    \"id\" : \"FSDA\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/dates\"\n      }\n    },\n    \"title\" : \"FamilySearch Date Authority\"\n  }, {\n    \"id\" : \"FSCV\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/vocab\"\n      }\n    },\n    \"title\" : \"FamilySearch Controlled Vocabulary\"\n  }, {\n    \"id\" : \"LDSO\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/ordinances\"\n      }\n    },\n    \"title\" : \"LDS Ordinances\"\n  }, {\n    \"id\" : \"FSRES\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/reservations\"\n      }\n    },\n    \"title\" : \"FamilySearch Reservations\"\n  }, {\n    \"id\" : \"FSG\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/genealogies\"\n      }\n    },\n    \"title\" : \"FamilySearch Genealogies\"\n  } ]\n}"
+        "body": "{\n  \"collections\" : [ {\n    \"id\" : \"FSFT\",\n    \"title\" : \"FamilySearch Family Tree\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/tree\"\n      }\n    }\n  }, {\n    \"id\" : \"FSHRA\",\n    \"title\" : \"FamilySearch Historical Records Archive\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/records\"\n      }\n    }\n  }, {\n    \"id\" : \"FSUDS\",\n    \"title\" : \"FamilySearch User-Defined Sources\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/sources\"\n      }\n    }\n  }, {\n    \"id\" : \"FSMEM\",\n    \"title\" : \"FamilySearch Memories\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/memories\"\n      }\n    }\n  }, {\n    \"id\" : \"FSDF\",\n    \"title\" : \"FamilySearch Discussions\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/discussions\"\n      }\n    }\n  }, {\n    \"id\" : \"FSPA\",\n    \"title\" : \"FamilySearch Place Authority\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/places\"\n      }\n    }\n  }, {\n    \"id\" : \"FSDA\",\n    \"title\" : \"FamilySearch Date Authority\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/dates\"\n      }\n    }\n  }, {\n    \"id\" : \"FSCV\",\n    \"title\" : \"FamilySearch Controlled Vocabulary\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/vocab\"\n      }\n    }\n  }, {\n    \"id\" : \"LDSO\",\n    \"title\" : \"LDS Ordinances\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/ordinances\"\n      }\n    }\n  }, {\n    \"id\" : \"FSRES\",\n    \"title\" : \"FamilySearch Reservations\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/reservations\"\n      }\n    }\n  }, {\n    \"id\" : \"FSG\",\n    \"title\" : \"FamilySearch Genealogies\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/genealogies\"\n      }\n    }\n  } ]\n}"
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/integration.familysearch.org\/platform\/collections\/discussions",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/collections\/discussions",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json"
@@ -80,13 +80,13 @@
             "Cache-Control": "no-transform, max-age=604800",
             "Content-Location": "\/collections\/discussions",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:22:23 GMT",
+            "Date": "Tue, 12 Dec 2017 16:16:11 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
             "X-PROCESSING-TIME": "0",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "Content-Length": "1190",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"SD-FSDF\",\n    \"about\" : \"#FSDF\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/integration.familysearch.org\/platform\/collection\"\n    },\n    \"titles\" : [ {\n      \"value\" : \"FamilySearch Discussions\"\n    } ],\n    \"resourceType\" : \"http:\/\/gedcomx.org\/Collection\"\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"FSDF\",\n    \"links\" : {\n      \"logout\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/logout\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/token\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/token\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/authorize\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/authorization\"\n      },\n      \"self\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/discussions\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\"\n      },\n      \"discussions\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/discussions\/discussions\"\n      }\n    },\n    \"title\" : \"FamilySearch Discussions\"\n  } ],\n  \"description\" : \"#SD-FSDF\"\n}"
+        "body": "{\n  \"description\" : \"#SD-FSDF\",\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"SD-FSDF\",\n    \"about\" : \"#FSDF\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/collection\"\n    },\n    \"resourceType\" : \"http:\/\/gedcomx.org\/Collection\",\n    \"titles\" : [ {\n      \"value\" : \"FamilySearch Discussions\"\n    } ]\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"FSDF\",\n    \"title\" : \"FamilySearch Discussions\",\n    \"links\" : {\n      \"logout\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/logout\"\n      },\n      \"discussions\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/discussions\/discussions\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/token\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/token\"\n      },\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/discussions\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/authorize\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/authorization\"\n      }\n    }\n  } ]\n}"
     }
 }]

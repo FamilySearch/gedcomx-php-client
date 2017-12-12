@@ -1,9 +1,9 @@
 [{
     "request": {
         "method": "GET",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/collections\/sources",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/collections\/sources",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-fs-v1+json"
@@ -19,14 +19,14 @@
             "Cache-Control": "no-transform, max-age=604800",
             "Content-Location": "\/collections\/sources",
             "Content-Type": "application\/x-fs-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:09 GMT",
+            "Date": "Tue, 12 Dec 2017 18:51:50 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "0",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "1",
+            "Content-Length": "1331",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"SD-FSUDS\",\n    \"about\" : \"#FSUDS\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/sandbox.familysearch.org\/platform\/collection\"\n    },\n    \"titles\" : [ {\n      \"value\" : \"FamilySearch User-Defined Sources\"\n    } ],\n    \"resourceType\" : \"http:\/\/gedcomx.org\/Collection\"\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"FSUDS\",\n    \"links\" : {\n      \"logout\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/logout\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/token\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/token\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/authorize\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/authorization\"\n      },\n      \"subcollections\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\"\n      },\n      \"self\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/collections\/sources\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/collection\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\"\n      }\n    },\n    \"title\" : \"FamilySearch User-Defined Sources\"\n  } ],\n  \"description\" : \"#SD-FSUDS\"\n}"
+        "body": "{\n  \"description\" : \"#SD-FSUDS\",\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"SD-FSUDS\",\n    \"about\" : \"#FSUDS\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/collection\"\n    },\n    \"resourceType\" : \"http:\/\/gedcomx.org\/Collection\",\n    \"titles\" : [ {\n      \"value\" : \"FamilySearch User-Defined Sources\"\n    } ]\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"FSUDS\",\n    \"title\" : \"FamilySearch User-Defined Sources\",\n    \"links\" : {\n      \"subcollections\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\"\n      },\n      \"logout\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/logout\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/token\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/token\"\n      },\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/sources\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collection\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/authorize\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/authorization\"\n      }\n    }\n  } ]\n}"
     }
 },{
     "request": {
@@ -51,29 +51,29 @@
         "headers": {
             "Server": "Apache-Coyote\/1.1",
             "Expires": "Tue, 03 Jul 2001 06:00:00 GMT",
-            "Last-Modified": "Mon Oct 31 17:31:05 GMT+00:00 2016",
+            "Last-Modified": "Tue Dec 12 18:51:51 GMT 2017",
             "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0",
             "Pragma": "no-cache",
             "Content-Type": "application\/json;charset=ISO-8859-1",
             "Content-Language": "en-US",
             "Content-Length": "185",
-            "Date": "Mon, 31 Oct 2016 17:31:04 GMT",
+            "Date": "Tue, 12 Dec 2017 18:51:51 GMT",
             "Connection": "close"
         },
-        "body": "{\"token\":\"USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net\",\"token_type\":\"family_search\",\"access_token\":\"USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net\"}"
+        "body": "{\"access_token\":\"USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net\",\"token_type\":\"family_search\",\"token\":\"USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net\"}"
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/collections",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/collections",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
         "body": "grant_type=password&username=sdktester&password=1234sdkpass&client_id=a02j00000016dU8AAI"
     },
@@ -86,27 +86,27 @@
         "headers": {
             "Cache-Control": "no-cache, no-store, no-transform, must-revalidate, max-age=0",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:10 GMT",
-            "Location": "https:\/\/sandbox.familysearch.org\/platform\/sources\/cis.user.MMMM-DT62\/collections",
+            "Date": "Tue, 12 Dec 2017 18:51:51 GMT",
+            "Location": "https:\/\/api-integ.familysearch.org\/platform\/sources\/cis.user.MMMM-DT62\/collections",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "150",
+            "X-PROCESSING-TIME": "166",
             "Content-Length": "0",
-            "Connection": "Close"
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/cis.user.MMMM-DT62\/collections",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/cis.user.MMMM-DT62\/collections",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
         "body": "grant_type=password&username=sdktester&password=1234sdkpass&client_id=a02j00000016dU8AAI"
     },
@@ -120,27 +120,27 @@
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
             "Content-Location": "\/sources\/cis.user.MMMM-DT62\/collections",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:11 GMT",
+            "Date": "Tue, 12 Dec 2017 18:51:52 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "176",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "203",
+            "Content-Length": "976",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"links\" : {\n    \"collection\" : {\n      \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\"\n    }\n  },\n  \"sourceDescriptions\" : [ {\n    \"titles\" : [ {\n      \"value\" : \"\"\n    } ],\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      }\n    }\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"MMMM-MRY\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\/descriptions\"\n      }\n    },\n    \"title\" : \"\",\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      }\n    }\n  } ]\n}"
+        "body": "{\n  \"links\" : {\n    \"collection\" : {\n      \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\"\n    }\n  },\n  \"sourceDescriptions\" : [ {\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"\"\n    } ]\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"MMMM-MRY\",\n    \"title\" : \"\",\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      }\n    },\n    \"links\" : {\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\/descriptions\"\n      },\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n      }\n    }\n  } ]\n}"
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
         "body": "grant_type=password&username=sdktester&password=1234sdkpass&client_id=a02j00000016dU8AAI"
     },
@@ -154,28 +154,28 @@
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
             "Content-Location": "\/sources\/collections\/MMMM-MRY",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:10 GMT",
+            "Date": "Tue, 12 Dec 2017 18:51:52 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
             "X-ENTITY-ID": "MMMM-MRY",
-            "X-PROCESSING-TIME": "229",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "186",
+            "Content-Length": "980",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"sourceDescriptions\" : [ {\n    \"titles\" : [ {\n      \"value\" : \"\"\n    } ],\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      }\n    }\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"MMMM-MRY\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\/descriptions\"\n      }\n    },\n    \"title\" : \"\",\n    \"size\" : 2,\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      }\n    }\n  } ]\n}"
+        "body": "{\n  \"sourceDescriptions\" : [ {\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"\"\n    } ]\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"MMMM-MRY\",\n    \"title\" : \"\",\n    \"size\" : 8,\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      }\n    },\n    \"links\" : {\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\/descriptions\"\n      },\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\"\n      }\n    }\n  } ]\n}"
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\/descriptions",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\/descriptions",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
         "body": "grant_type=password&username=sdktester&password=1234sdkpass&client_id=a02j00000016dU8AAI"
     },
@@ -189,27 +189,27 @@
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
             "Content-Location": "\/sources\/collections\/MMMM-MRY\/descriptions",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:12 GMT",
+            "Date": "Tue, 12 Dec 2017 18:51:52 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "229",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "202",
+            "Content-Length": "9515",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"links\" : {\n    \"self\" : {\n      \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\/descriptions\"\n    },\n    \"collection\" : {\n      \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    }\n  },\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"MMMM-7RL\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RL\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/tree\/source-references?description=MMMM-7RL\"\n      }\n    },\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/sandbox.familysearch.org\/platform\/memories\/memories\/L5ZG-XK8\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"titles\" : [ {\n      \"value\" : \"L5ZG-XK8\"\n    } ],\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477934993357,\n      \"created\" : 1477934993357\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L5ZG-XK8\" ]\n    }\n  }, {\n    \"id\" : \"MMMM-3KC\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-3KC\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/tree\/source-references?description=MMMM-3KC\"\n      }\n    },\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/sandbox.familysearch.org\/platform\/memories\/memories\/L58D-MHN\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"titles\" : [ {\n      \"value\" : \"L58D-MHN\"\n    } ],\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477016244460,\n      \"created\" : 1477016244460\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L58D-MHN\" ]\n    }\n  } ]\n}"
+        "body": "{\n  \"links\" : {\n    \"self\" : {\n      \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\/descriptions\"\n    },\n    \"collection\" : {\n      \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    }\n  },\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"MMMS-X5N\",\n    \"lang\" : \"en\",\n    \"about\" : \"https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58V-JN6\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1513104558236,\n      \"created\" : 1513104558236\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5N\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMS-X5N\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"ark:\/61903\/4:1:L58V-JN6\"\n    } ]\n  }, {\n    \"id\" : \"MMMS-X5F\",\n    \"lang\" : \"en\",\n    \"about\" : \"https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58V-JN6\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1513104520433,\n      \"created\" : 1513104520433\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5F\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMS-X5F\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"ark:\/61903\/4:1:L58V-JN6\"\n    } ]\n  }, {\n    \"id\" : \"MMMS-X5X\",\n    \"lang\" : \"en\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L58V-JN6\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1513103407153,\n      \"created\" : 1513103407153\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5X\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMS-X5X\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L58V-JN6\"\n    } ]\n  }, {\n    \"id\" : \"MMMM-H7B\",\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/memories\/memories\/L58V-MVC\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1478786339388,\n      \"created\" : 1478786339388\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-H7B\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-H7B\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"L58V-MVC\"\n    } ],\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L58V-MVC\" ]\n    }\n  }, {\n    \"id\" : \"MMMM-WXX\",\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/memories\/memories\/L58X-8ZB\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477946536240,\n      \"created\" : 1477946536240\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-WXX\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-WXX\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"L58X-8ZB\"\n    } ],\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L58X-8ZB\" ]\n    }\n  }, {\n    \"id\" : \"MMMM-7RY\",\n    \"lang\" : \"*\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477935046384,\n      \"created\" : 1477935046384\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RY\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-7RY\"\n      }\n    },\n    \"citations\" : [ {\n      \"value\" : \"ISBN: 9780681403222\"\n    } ],\n    \"titles\" : [ {\n      \"value\" : \"Est debitis ea distinctio sunt tempora quos.\"\n    } ],\n    \"notes\" : [ {\n      \"text\" : \"Officiis quaerat nulla unde in perferendis odit est amet et.\"\n    } ]\n  }, {\n    \"id\" : \"MMMM-7RL\",\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/memories\/memories\/L5ZG-XK8\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477934993357,\n      \"created\" : 1477934993357\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RL\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-7RL\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"L5ZG-XK8\"\n    } ],\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L5ZG-XK8\" ]\n    }\n  }, {\n    \"id\" : \"MMMM-3KC\",\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/memories\/memories\/L58D-MHN\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477016244460,\n      \"created\" : 1477016244460\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-3KC\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-3KC\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"L58D-MHN\"\n    } ],\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L58D-MHN\" ]\n    }\n  } ]\n}"
     }
 },{
     "request": {
         "method": "POST",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/collections",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/collections",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
         "body": "{\"collections\":[{\"title\":\"6aaa306df19cd7687811591aab9b906902d9cd57\"}]}"
     },
@@ -222,28 +222,28 @@
         "headers": {
             "Cache-Control": "no-cache, no-store, no-transform, must-revalidate, max-age=0",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:12 GMT",
-            "Location": "https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-9HC",
+            "Date": "Tue, 12 Dec 2017 18:51:52 GMT",
+            "Location": "https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-H4X",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-ENTITY-ID": "MMMM-9HC",
-            "X-PROCESSING-TIME": "213",
+            "X-ENTITY-ID": "MMMM-H4X",
+            "X-PROCESSING-TIME": "165",
             "Content-Length": "0",
-            "Connection": "Close"
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-9HC",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-H4X",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
         "body": "{\"collections\":[{\"title\":\"6aaa306df19cd7687811591aab9b906902d9cd57\"}]}"
     },
@@ -255,30 +255,30 @@
         },
         "headers": {
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/sources\/collections\/MMMM-9HC",
+            "Content-Location": "\/sources\/collections\/MMMM-H4X",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:13 GMT",
+            "Date": "Tue, 12 Dec 2017 18:51:53 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-ENTITY-ID": "MMMM-9HC",
-            "X-PROCESSING-TIME": "224",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "X-ENTITY-ID": "MMMM-H4X",
+            "X-PROCESSING-TIME": "188",
+            "Content-Length": "1060",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"sourceDescriptions\" : [ {\n    \"titles\" : [ {\n      \"value\" : \"6aaa306df19cd7687811591aab9b906902d9cd57\"\n    } ],\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      }\n    }\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"MMMM-9HC\",\n    \"links\" : {\n      \"self\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-9HC\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-9HC\/descriptions\"\n      }\n    },\n    \"title\" : \"6aaa306df19cd7687811591aab9b906902d9cd57\",\n    \"size\" : 0,\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      }\n    }\n  } ]\n}"
+        "body": "{\n  \"sourceDescriptions\" : [ {\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"6aaa306df19cd7687811591aab9b906902d9cd57\"\n    } ]\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"MMMM-H4X\",\n    \"title\" : \"6aaa306df19cd7687811591aab9b906902d9cd57\",\n    \"size\" : 0,\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      }\n    },\n    \"links\" : {\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-H4X\/descriptions\"\n      },\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-H4X\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\"\n      }\n    }\n  } ]\n}"
     }
 },{
     "request": {
         "method": "POST",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
         "body": "{\"sourceDescriptions\":[{\"notes\":[{\"text\":\"In perferendis odit est amet et cupiditate nulla sint nulla deserunt ea facilis.\"}],\"attribution\":{\"contributor\":{\"resourceId\":\"MM6M-8QJ\",\"resource\":\"https:\\\/\\\/familysearch.org\\\/platform\\\/users\\\/agents\\\/MM6M-8QJ\"},\"changeMessage\":\"Corrupti pariatur commodi deserunt in aut deserunt cum perspiciatis commodi ipsa id est odit voluptatem.\"},\"citations\":[{\"value\":\"ISBN: 9780681403222\"}],\"titles\":[{\"value\":\"Debitis ea distinctio sunt tempora quos numquam officiis quaerat nulla.\"}],\"description\":[{\"value\":\"Voluptas quis sequi itaque autem sed ipsam aperiam. Quasi maxime repellat voluptas illo.\"}]}]}"
     },
@@ -291,28 +291,28 @@
         "headers": {
             "Cache-Control": "no-cache, no-store, no-transform, must-revalidate, max-age=0",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:13 GMT",
-            "Location": "https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RP",
+            "Date": "Tue, 12 Dec 2017 18:51:53 GMT",
+            "Location": "https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5V",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-ENTITY-ID": "MMMM-7RP",
-            "X-PROCESSING-TIME": "514",
+            "X-ENTITY-ID": "MMMS-X5V",
+            "X-PROCESSING-TIME": "221",
             "Content-Length": "0",
-            "Connection": "Close"
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RP",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5V",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
         "body": "{\"sourceDescriptions\":[{\"notes\":[{\"text\":\"In perferendis odit est amet et cupiditate nulla sint nulla deserunt ea facilis.\"}],\"attribution\":{\"contributor\":{\"resourceId\":\"MM6M-8QJ\",\"resource\":\"https:\\\/\\\/familysearch.org\\\/platform\\\/users\\\/agents\\\/MM6M-8QJ\"},\"changeMessage\":\"Corrupti pariatur commodi deserunt in aut deserunt cum perspiciatis commodi ipsa id est odit voluptatem.\"},\"citations\":[{\"value\":\"ISBN: 9780681403222\"}],\"titles\":[{\"value\":\"Debitis ea distinctio sunt tempora quos numquam officiis quaerat nulla.\"}],\"description\":[{\"value\":\"Voluptas quis sequi itaque autem sed ipsam aperiam. Quasi maxime repellat voluptas illo.\"}]}]}"
     },
@@ -324,31 +324,31 @@
         },
         "headers": {
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/sources\/descriptions\/MMMM-7RP",
+            "Content-Location": "\/sources\/descriptions\/MMMS-X5V",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:14 GMT",
+            "Date": "Tue, 12 Dec 2017 18:51:53 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "218",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "186",
+            "Content-Length": "1310",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"MMMM-7RP\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RP\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/tree\/source-references?description=MMMM-7RP\"\n      }\n    },\n    \"lang\" : \"*\",\n    \"citations\" : [ {\n      \"value\" : \"ISBN: 9780681403222\"\n    } ],\n    \"titles\" : [ {\n      \"value\" : \"Debitis ea distinctio sunt tempora quos numquam officiis quaerat nulla.\"\n    } ],\n    \"notes\" : [ {\n      \"text\" : \"In perferendis odit est amet et cupiditate nulla sint nulla deserunt ea facilis.\"\n    } ],\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477935013822,\n      \"created\" : 1477935013822\n    },\n    \"resourceType\" : \"DEFAULT\"\n  } ]\n}"
+        "body": "{\n  \"links\" : {\n    \"alternate\" : [ {\n      \"href\" : \"https:\/\/api-integ.familysearch.org\/links-pages\/sourceVE%3FsourceId=MMMS-X5V\"\n    } ]\n  },\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"MMMS-X5V\",\n    \"lang\" : \"en\",\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1513104713977,\n      \"created\" : 1513104713977\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5V\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMS-X5V\"\n      }\n    },\n    \"citations\" : [ {\n      \"value\" : \"ISBN: 9780681403222\"\n    } ],\n    \"titles\" : [ {\n      \"value\" : \"Debitis ea distinctio sunt tempora quos numquam officiis quaerat nulla.\"\n    } ],\n    \"notes\" : [ {\n      \"text\" : \"In perferendis odit est amet et cupiditate nulla sint nulla deserunt ea facilis.\"\n    } ]\n  } ]\n}"
     }
 },{
     "request": {
         "method": "POST",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-9HC\/descriptions",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-H4X\/descriptions",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-fs-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-fs-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"sourceDescriptions\":[{\"id\":\"MMMM-7RP\"}]}"
+        "body": "{\"sourceDescriptions\":[{\"id\":\"MMMS-X5V\"}]}"
     },
     "response": {
         "status": {
@@ -358,30 +358,30 @@
         },
         "headers": {
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/sources\/collections\/MMMM-9HC\/descriptions",
+            "Content-Location": "\/sources\/collections\/MMMM-H4X\/descriptions",
             "Content-Type": "application\/x-fs-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:14 GMT",
-            "Link": "<https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-9HC>; rel=\"collection\", <https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-9HC\/descriptions>; rel=\"self\"",
+            "Date": "Tue, 12 Dec 2017 18:51:53 GMT",
+            "Link": "<https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-H4X>; rel=\"collection\", <https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-H4X\/descriptions>; rel=\"self\"",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "223",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "190",
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"sourceDescriptions\":[{\"id\":\"MMMM-7RP\"}]}"
+        "body": "{\"sourceDescriptions\":[{\"id\":\"MMMS-X5V\"}]}"
     },
     "response": {
         "status": {
@@ -392,29 +392,29 @@
         "headers": {
             "Cache-Control": "no-cache, no-store, no-transform, must-revalidate, max-age=0",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:15 GMT",
-            "Location": "https:\/\/sandbox.familysearch.org\/platform\/sources\/cis.user.MMMM-DT62\/collections\/descriptions",
+            "Date": "Tue, 12 Dec 2017 18:51:55 GMT",
+            "Location": "https:\/\/api-integ.familysearch.org\/platform\/sources\/cis.user.MMMM-DT62\/collections\/descriptions",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "170",
+            "X-PROCESSING-TIME": "167",
             "Content-Length": "0",
-            "Connection": "Close"
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/cis.user.MMMM-DT62\/collections\/descriptions",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/cis.user.MMMM-DT62\/collections\/descriptions",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"sourceDescriptions\":[{\"id\":\"MMMM-7RP\"}]}"
+        "body": "{\"sourceDescriptions\":[{\"id\":\"MMMS-X5V\"}]}"
     },
     "response": {
         "status": {
@@ -426,29 +426,29 @@
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
             "Content-Location": "\/sources\/cis.user.MMMM-DT62\/collections\/descriptions",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:16 GMT",
+            "Date": "Tue, 12 Dec 2017 18:51:55 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "232",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "222",
+            "Content-Length": "10670",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"links\" : {\n    \"self\" : {\n      \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/cis.user.MMMM-DT62\/collections\/descriptions\"\n    }\n  },\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"MMMM-7RP\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RP\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/tree\/source-references?description=MMMM-7RP\"\n      }\n    },\n    \"lang\" : \"*\",\n    \"citations\" : [ {\n      \"value\" : \"ISBN: 9780681403222\"\n    } ],\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-9HC\"\n    },\n    \"titles\" : [ {\n      \"value\" : \"Debitis ea distinctio sunt tempora quos numquam officiis quaerat nulla.\"\n    } ],\n    \"notes\" : [ {\n      \"text\" : \"In perferendis odit est amet et cupiditate nulla sint nulla deserunt ea facilis.\"\n    } ],\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477935013822,\n      \"created\" : 1477935013822\n    },\n    \"resourceType\" : \"DEFAULT\"\n  }, {\n    \"id\" : \"MMMM-7RL\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RL\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/tree\/source-references?description=MMMM-7RL\"\n      }\n    },\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/sandbox.familysearch.org\/platform\/memories\/memories\/L5ZG-XK8\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"titles\" : [ {\n      \"value\" : \"L5ZG-XK8\"\n    } ],\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477934993357,\n      \"created\" : 1477934993357\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L5ZG-XK8\" ]\n    }\n  }, {\n    \"id\" : \"MMMM-3KC\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-3KC\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/tree\/source-references?description=MMMM-3KC\"\n      }\n    },\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/sandbox.familysearch.org\/platform\/memories\/memories\/L58D-MHN\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"titles\" : [ {\n      \"value\" : \"L58D-MHN\"\n    } ],\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477016244460,\n      \"created\" : 1477016244460\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L58D-MHN\" ]\n    }\n  } ]\n}"
+        "body": "{\n  \"links\" : {\n    \"self\" : {\n      \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/cis.user.MMMM-DT62\/collections\/descriptions\"\n    }\n  },\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"MMMS-X5V\",\n    \"lang\" : \"en\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-H4X\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1513104713977,\n      \"created\" : 1513104713977\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5V\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMS-X5V\"\n      }\n    },\n    \"citations\" : [ {\n      \"value\" : \"ISBN: 9780681403222\"\n    } ],\n    \"titles\" : [ {\n      \"value\" : \"Debitis ea distinctio sunt tempora quos numquam officiis quaerat nulla.\"\n    } ],\n    \"notes\" : [ {\n      \"text\" : \"In perferendis odit est amet et cupiditate nulla sint nulla deserunt ea facilis.\"\n    } ]\n  }, {\n    \"id\" : \"MMMS-X5N\",\n    \"lang\" : \"en\",\n    \"about\" : \"https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58V-JN6\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1513104558236,\n      \"created\" : 1513104558236\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5N\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMS-X5N\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"ark:\/61903\/4:1:L58V-JN6\"\n    } ]\n  }, {\n    \"id\" : \"MMMS-X5F\",\n    \"lang\" : \"en\",\n    \"about\" : \"https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58V-JN6\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1513104520433,\n      \"created\" : 1513104520433\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5F\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMS-X5F\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"ark:\/61903\/4:1:L58V-JN6\"\n    } ]\n  }, {\n    \"id\" : \"MMMS-X5X\",\n    \"lang\" : \"en\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L58V-JN6\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1513103407153,\n      \"created\" : 1513103407153\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5X\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMS-X5X\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L58V-JN6\"\n    } ]\n  }, {\n    \"id\" : \"MMMM-H7B\",\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/memories\/memories\/L58V-MVC\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1478786339388,\n      \"created\" : 1478786339388\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-H7B\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-H7B\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"L58V-MVC\"\n    } ],\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L58V-MVC\" ]\n    }\n  }, {\n    \"id\" : \"MMMM-WXX\",\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/memories\/memories\/L58X-8ZB\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477946536240,\n      \"created\" : 1477946536240\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-WXX\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-WXX\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"L58X-8ZB\"\n    } ],\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L58X-8ZB\" ]\n    }\n  }, {\n    \"id\" : \"MMMM-7RY\",\n    \"lang\" : \"*\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477935046384,\n      \"created\" : 1477935046384\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RY\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-7RY\"\n      }\n    },\n    \"citations\" : [ {\n      \"value\" : \"ISBN: 9780681403222\"\n    } ],\n    \"titles\" : [ {\n      \"value\" : \"Est debitis ea distinctio sunt tempora quos.\"\n    } ],\n    \"notes\" : [ {\n      \"text\" : \"Officiis quaerat nulla unde in perferendis odit est amet et.\"\n    } ]\n  }, {\n    \"id\" : \"MMMM-7RL\",\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/memories\/memories\/L5ZG-XK8\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477934993357,\n      \"created\" : 1477934993357\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RL\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-7RL\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"L5ZG-XK8\"\n    } ],\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L5ZG-XK8\" ]\n    }\n  }, {\n    \"id\" : \"MMMM-3KC\",\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/memories\/memories\/L58D-MHN\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477016244460,\n      \"created\" : 1477016244460\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-3KC\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-3KC\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"L58D-MHN\"\n    } ],\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L58D-MHN\" ]\n    }\n  } ]\n}"
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\/descriptions",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\/descriptions",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"sourceDescriptions\":[{\"id\":\"MMMM-7RP\"}]}"
+        "body": "{\"sourceDescriptions\":[{\"id\":\"MMMS-X5V\"}]}"
     },
     "response": {
         "status": {
@@ -460,29 +460,29 @@
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
             "Content-Location": "\/sources\/collections\/MMMM-MRY\/descriptions",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:16 GMT",
+            "Date": "Tue, 12 Dec 2017 18:51:55 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "213",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "223",
+            "Content-Length": "9515",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"links\" : {\n    \"self\" : {\n      \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\/descriptions\"\n    },\n    \"collection\" : {\n      \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    }\n  },\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"MMMM-7RL\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RL\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/tree\/source-references?description=MMMM-7RL\"\n      }\n    },\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/sandbox.familysearch.org\/platform\/memories\/memories\/L5ZG-XK8\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"titles\" : [ {\n      \"value\" : \"L5ZG-XK8\"\n    } ],\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477934993357,\n      \"created\" : 1477934993357\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L5ZG-XK8\" ]\n    }\n  }, {\n    \"id\" : \"MMMM-3KC\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-3KC\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/tree\/source-references?description=MMMM-3KC\"\n      }\n    },\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/sandbox.familysearch.org\/platform\/memories\/memories\/L58D-MHN\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"titles\" : [ {\n      \"value\" : \"L58D-MHN\"\n    } ],\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477016244460,\n      \"created\" : 1477016244460\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L58D-MHN\" ]\n    }\n  } ]\n}"
+        "body": "{\n  \"links\" : {\n    \"self\" : {\n      \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\/descriptions\"\n    },\n    \"collection\" : {\n      \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    }\n  },\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"MMMS-X5N\",\n    \"lang\" : \"en\",\n    \"about\" : \"https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58V-JN6\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1513104558236,\n      \"created\" : 1513104558236\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5N\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMS-X5N\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"ark:\/61903\/4:1:L58V-JN6\"\n    } ]\n  }, {\n    \"id\" : \"MMMS-X5F\",\n    \"lang\" : \"en\",\n    \"about\" : \"https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58V-JN6\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1513104520433,\n      \"created\" : 1513104520433\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5F\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMS-X5F\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"ark:\/61903\/4:1:L58V-JN6\"\n    } ]\n  }, {\n    \"id\" : \"MMMS-X5X\",\n    \"lang\" : \"en\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L58V-JN6\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1513103407153,\n      \"created\" : 1513103407153\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5X\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMS-X5X\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L58V-JN6\"\n    } ]\n  }, {\n    \"id\" : \"MMMM-H7B\",\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/memories\/memories\/L58V-MVC\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1478786339388,\n      \"created\" : 1478786339388\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-H7B\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-H7B\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"L58V-MVC\"\n    } ],\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L58V-MVC\" ]\n    }\n  }, {\n    \"id\" : \"MMMM-WXX\",\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/memories\/memories\/L58X-8ZB\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477946536240,\n      \"created\" : 1477946536240\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-WXX\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-WXX\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"L58X-8ZB\"\n    } ],\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L58X-8ZB\" ]\n    }\n  }, {\n    \"id\" : \"MMMM-7RY\",\n    \"lang\" : \"*\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477935046384,\n      \"created\" : 1477935046384\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RY\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-7RY\"\n      }\n    },\n    \"citations\" : [ {\n      \"value\" : \"ISBN: 9780681403222\"\n    } ],\n    \"titles\" : [ {\n      \"value\" : \"Est debitis ea distinctio sunt tempora quos.\"\n    } ],\n    \"notes\" : [ {\n      \"text\" : \"Officiis quaerat nulla unde in perferendis odit est amet et.\"\n    } ]\n  }, {\n    \"id\" : \"MMMM-7RL\",\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/memories\/memories\/L5ZG-XK8\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477934993357,\n      \"created\" : 1477934993357\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RL\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-7RL\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"L5ZG-XK8\"\n    } ],\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L5ZG-XK8\" ]\n    }\n  }, {\n    \"id\" : \"MMMM-3KC\",\n    \"lang\" : \"*\",\n    \"about\" : \"https:\/\/api-integ.familysearch.org\/platform\/memories\/memories\/L58D-MHN\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-MRY\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477016244460,\n      \"created\" : 1477016244460\n    },\n    \"resourceType\" : \"USER_UPLOADED\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMM-3KC\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMM-3KC\"\n      }\n    },\n    \"titles\" : [ {\n      \"value\" : \"L58D-MHN\"\n    } ],\n    \"identifiers\" : {\n      \"fs_memory_id\" : [ \"L58D-MHN\" ]\n    }\n  } ]\n}"
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-9HC\/descriptions",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-H4X\/descriptions",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"sourceDescriptions\":[{\"id\":\"MMMM-7RP\"}]}"
+        "body": "{\"sourceDescriptions\":[{\"id\":\"MMMS-X5V\"}]}"
     },
     "response": {
         "status": {
@@ -492,31 +492,31 @@
         },
         "headers": {
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/sources\/collections\/MMMM-9HC\/descriptions",
+            "Content-Location": "\/sources\/collections\/MMMM-H4X\/descriptions",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:17 GMT",
+            "Date": "Tue, 12 Dec 2017 18:51:55 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "210",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "193",
+            "Content-Length": "1555",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"links\" : {\n    \"self\" : {\n      \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-9HC\/descriptions\"\n    },\n    \"collection\" : {\n      \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-9HC\"\n    }\n  },\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"MMMM-7RP\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RP\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/tree\/source-references?description=MMMM-7RP\"\n      }\n    },\n    \"lang\" : \"*\",\n    \"citations\" : [ {\n      \"value\" : \"ISBN: 9780681403222\"\n    } ],\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-9HC\"\n    },\n    \"titles\" : [ {\n      \"value\" : \"Debitis ea distinctio sunt tempora quos numquam officiis quaerat nulla.\"\n    } ],\n    \"notes\" : [ {\n      \"text\" : \"In perferendis odit est amet et cupiditate nulla sint nulla deserunt ea facilis.\"\n    } ],\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/sandbox.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1477935013822,\n      \"created\" : 1477935013822\n    },\n    \"resourceType\" : \"DEFAULT\"\n  } ]\n}"
+        "body": "{\n  \"links\" : {\n    \"self\" : {\n      \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-H4X\/descriptions\"\n    },\n    \"collection\" : {\n      \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-H4X\"\n    }\n  },\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"MMMS-X5V\",\n    \"lang\" : \"en\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-H4X\"\n    },\n    \"attribution\" : {\n      \"contributor\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"creator\" : {\n        \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/cis.user.MMMM-DT62\",\n        \"resourceId\" : \"cis.user.MMMM-DT62\"\n      },\n      \"modified\" : 1513104713977,\n      \"created\" : 1513104713977\n    },\n    \"resourceType\" : \"DEFAULT\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5V\"\n      },\n      \"source-references-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references?description=MMMS-X5V\"\n      }\n    },\n    \"citations\" : [ {\n      \"value\" : \"ISBN: 9780681403222\"\n    } ],\n    \"titles\" : [ {\n      \"value\" : \"Debitis ea distinctio sunt tempora quos numquam officiis quaerat nulla.\"\n    } ],\n    \"notes\" : [ {\n      \"text\" : \"In perferendis odit est amet et cupiditate nulla sint nulla deserunt ea facilis.\"\n    } ]\n  } ]\n}"
     }
 },{
     "request": {
         "method": "DELETE",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-7RP",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X5V",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"sourceDescriptions\":[{\"id\":\"MMMM-7RP\"}]}"
+        "body": "{\"sourceDescriptions\":[{\"id\":\"MMMS-X5V\"}]}"
     },
     "response": {
         "status": {
@@ -526,29 +526,30 @@
         },
         "headers": {
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/sources\/descriptions\/MMMM-7RP",
+            "Content-Location": "\/sources\/descriptions\/MMMS-X5V",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:18 GMT",
+            "Date": "Tue, 12 Dec 2017 18:51:56 GMT",
+            "Link": "<https:\/\/api-integ.familysearch.org\/links-pages\/sourceVE%3FsourceId=MMMS-X5V>; rel=\"alternate\"",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "897",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "453",
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "DELETE",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\/MMMM-9HC",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\/MMMM-H4X",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSA4C7313485BC2FF70C67B651B62BBC54_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS7C9A4A2FABCBBC8E07F6EF65C289EF3F_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"sourceDescriptions\":[{\"id\":\"MMMM-7RP\"}]}"
+        "body": "{\"sourceDescriptions\":[{\"id\":\"MMMS-X5V\"}]}"
     },
     "response": {
         "status": {
@@ -558,14 +559,14 @@
         },
         "headers": {
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/sources\/collections\/MMMM-9HC",
+            "Content-Location": "\/sources\/collections\/MMMM-H4X",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:19 GMT",
+            "Date": "Tue, 12 Dec 2017 18:51:57 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-ENTITY-ID": "MMMM-9HC",
-            "X-PROCESSING-TIME": "210",
-            "Connection": "Close"
+            "X-ENTITY-ID": "MMMM-H4X",
+            "X-PROCESSING-TIME": "214",
+            "Connection": "keep-alive"
         }
     }
 }]

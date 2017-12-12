@@ -30,7 +30,7 @@ class SourceBoxTests extends ApiTestCase
     {
         $factory = new FamilySearchStateFactory();
         /** @var FamilySearchCollectionState $collection */
-        $collection = $this->collectionState($factory, "https://sandbox.familysearch.org/platform/collections/sources");
+        $collection = $this->collectionState($factory, "https://api-integ.familysearch.org/platform/collections/sources");
         $c = new Collection();
         $c->setTitle(TestBuilder::faker()->sha1);
         $state = $collection->addCollection($c);
@@ -60,7 +60,7 @@ class SourceBoxTests extends ApiTestCase
     {
         $factory = new FamilySearchStateFactory();
         /** @var FamilySearchCollectionState $collection */
-        $collection = $this->collectionState($factory, "https://sandbox.familysearch.org/platform/collections/sources");
+        $collection = $this->collectionState($factory, "https://api-integ.familysearch.org/platform/collections/sources");
         $sds = $this->createSource();
         $this->assertEquals(HttpStatus::CREATED, $sds->getStatus());
         $sub = $collection->readSubcollections();
@@ -88,7 +88,7 @@ class SourceBoxTests extends ApiTestCase
     {
         $factory = new FamilySearchStateFactory();
         /** @var FamilySearchCollectionState $collection */
-        $collection = $this->collectionState($factory, "https://sandbox.familysearch.org/platform/collections/sources");
+        $collection = $this->collectionState($factory, "https://api-integ.familysearch.org/platform/collections/sources");
         /** @var CollectionsState $subcollections */
         $subcollections = $collection->readSubcollections();
 
@@ -106,7 +106,7 @@ class SourceBoxTests extends ApiTestCase
     {
         $factory = new FamilySearchStateFactory();
         /** @var FamilySearchCollectionState $collection */
-        $collection = $this->collectionState($factory, "https://sandbox.familysearch.org/platform/collections/sources");
+        $collection = $this->collectionState($factory, "https://api-integ.familysearch.org/platform/collections/sources");
         $subcollections = $collection->readSubcollections();
         $this->assertEquals(HttpStatus::OK, $subcollections->getStatus());
 
@@ -155,7 +155,7 @@ class SourceBoxTests extends ApiTestCase
     {
         $factory = new FamilySearchStateFactory();
         /** @var FamilySearchCollectionState $collection */
-        $collection = $this->collectionState($factory, "https://sandbox.familysearch.org/platform/collections/sources");
+        $collection = $this->collectionState($factory, "https://api-integ.familysearch.org/platform/collections/sources");
         $c = new Collection();
         $c->setTitle(TestBuilder::faker()->sha1);
         $state = $collection->addCollection($c);
@@ -176,7 +176,7 @@ class SourceBoxTests extends ApiTestCase
     {
         $factory = new FamilySearchStateFactory();
         /** @var FamilySearchCollectionState $collection */
-        $collection = $this->collectionState($factory, "https://sandbox.familysearch.org/platform/collections/sources");
+        $collection = $this->collectionState($factory, "https://api-integ.familysearch.org/platform/collections/sources");
         $c = new Collection();
         $c->setTitle(TestBuilder::faker()->sha1);
         /** @var CollectionState $subcollection */
@@ -206,7 +206,7 @@ class SourceBoxTests extends ApiTestCase
     {
         $factory = new FamilySearchStateFactory();
         /** @var FamilySearchCollectionState $collection */
-        $collection = $this->collectionState($factory, "https://sandbox.familysearch.org/platform/collections/sources");
+        $collection = $this->collectionState($factory, "https://api-integ.familysearch.org/platform/collections/sources");
 
         $sd = SourceBuilder::newSource();
         $description = $collection->addSourceDescription($sd);
@@ -216,7 +216,7 @@ class SourceBoxTests extends ApiTestCase
         $this->assertNotNull($state->ifSuccessful());
         $this->assertEquals(HttpStatus::NO_CONTENT, $state->getStatus());
         $description = $description->get();
-        $this->assertEquals(HttpStatus::NOT_FOUND, $description->getStatus());
+        $this->assertEquals(HttpStatus::GONE, $description->getStatus());
     }
 
     /**
@@ -227,7 +227,7 @@ class SourceBoxTests extends ApiTestCase
     {
         $factory = new FamilySearchStateFactory();
         /** @var FamilySearchCollectionState $collection */
-        $collection = $this->collectionState($factory, "https://sandbox.familysearch.org/platform/collections/sources");
+        $collection = $this->collectionState($factory, "https://api-integ.familysearch.org/platform/collections/sources");
         $c = new Collection();
         $c->setTitle(TestBuilder::faker()->sha1);
         $subcollection = $collection->addCollection($c);
@@ -251,7 +251,7 @@ class SourceBoxTests extends ApiTestCase
     {
         $factory = new FamilySearchStateFactory();
         /** @var FamilySearchCollectionState $collection */
-        $collection = $this->collectionState($factory, "https://sandbox.familysearch.org/platform/collections/sources");
+        $collection = $this->collectionState($factory, "https://api-integ.familysearch.org/platform/collections/sources");
 
         $sd = SourceBuilder::newSource();
 

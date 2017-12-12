@@ -627,10 +627,15 @@ class PersonTests extends ApiTestCase
             $family->getStatus(),
             $this->buildFailMessage(__METHOD__."(family)", $family)
         );
-
         $this->queueForDelete($family);
 
-        $husband->loadSpouseRelationships();
+        // $husband->loadSpouseRelationships();
+        $husband = $husband->get();
+        $this->assertEquals(
+            HttpStatus::OK,
+            $husband->getStatus(),
+            $this->buildFailMessage(__METHOD__."(get)", $husband)
+        );
 
         $this->assertNotNull($husband->getEntity(), "Load failed. Entity is null.");
         $this->assertNotEmpty($husband->getSpouseRelationships(), "No spouse relationships found." );

@@ -168,7 +168,14 @@ class PersonMatchResultsState extends PersonSearchResultsState
         $person = new Person();
         $id = new Identifier();
         $id->setType(IdentifierType::PERSISTENT);
-        $id->setValue($entry->getId());
+        $entryPersonIdentifiers = $entry->getContent()->getGedcomx()->getPersons()[0]->getIdentifiers();
+        $entryPersistentIdentifier = null;
+        foreach($entryPersonIdentifiers as $epi) {
+            if($epi->getType() === IdentifierType::PERSISTENT) {
+                $id->setValue($epi->getValue());
+                break;
+            }
+        }
         $person->setIdentifiers(array($id));
         $entity->setPersons(array($person));
         

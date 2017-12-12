@@ -1,9 +1,9 @@
 [{
     "request": {
         "method": "GET",
-        "url": "https:\/\/integration.familysearch.org\/platform\/collections\/tree",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/collections\/tree",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-fs-v1+json"
@@ -19,14 +19,14 @@
             "Cache-Control": "no-transform, max-age=604800",
             "Content-Location": "\/collections\/tree",
             "Content-Type": "application\/x-fs-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:32:46 GMT",
+            "Date": "Tue, 12 Dec 2017 19:07:06 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
             "X-PROCESSING-TIME": "1",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "Content-Length": "8626",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"SD-FSFT\",\n    \"about\" : \"#FSFT\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/integration.familysearch.org\/platform\/collection\"\n    },\n    \"titles\" : [ {\n      \"value\" : \"FamilySearch Family Tree\"\n    } ],\n    \"resourceType\" : \"http:\/\/gedcomx.org\/Collection\"\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"FSFT\",\n    \"links\" : {\n      \"person\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/{pid}{?sourceDescriptions,skipDateNormalization,relatives,access_token}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml\",\n        \"allow\" : \"HEAD,GET,POST,DELETE\",\n        \"title\" : \"Person\"\n      },\n      \"person-with-relationships\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons-with-relationships{?persons,person,access_token}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET,POST,DELETE\",\n        \"title\" : \"Person With Relationships\"\n      },\n      \"source-references-query\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/source-references{?source,description,access_token}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Source References Query\"\n      },\n      \"descendancy-query\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/descendancy{?spouse,personDetails,generations,marriageDetails,person,access_token}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Descendancy\"\n      },\n      \"self\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/tree\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collection\"\n      },\n      \"person-matches-query\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/matches{?count,q,candidateId,access_token}\",\n        \"type\" : \"application\/atom+xml,application\/json,application\/x-gedcomx-atom+json,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Person Matches Query\"\n      },\n      \"persons\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\"\n      },\n      \"person-search\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/search{?count,start,q,context,access_token}\",\n        \"type\" : \"application\/atom+xml,application\/json,application\/x-gedcomx-atom+json,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Person Search\"\n      },\n      \"artifacts\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/memories\/memories\"\n      },\n      \"discussions\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/discussions\/discussions\"\n      },\n      \"preferred-spouse-relationship\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/users\/{uid}\/preferred-spouse-relationships\/{pid}{?access_token}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml\",\n        \"allow\" : \"HEAD,GET,PUT,DELETE\",\n        \"title\" : \"Preferred Spouse Relationship\"\n      },\n      \"matches\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/{pid}\/matches{?count,start,status,context,includeNotAMatchDeclarations,confidence,collection,access_token}\",\n        \"type\" : \"application\/atom+xml,application\/json,application\/x-gedcomx-atom+json,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml\",\n        \"allow\" : \"GET,POST\",\n        \"title\" : \"Person Matches\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/token\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/token\"\n      },\n      \"logout\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/logout\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/authorize\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/authorization\"\n      },\n      \"ancestry-query\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/ancestry{?spouse,personDetails,generations,descendants,marriageDetails,person,access_token}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Ancestry\"\n      },\n      \"current-user\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/users\/current\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/sources\/descriptions\"\n      },\n      \"relationships\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/relationships\"\n      },\n      \"preferred-parent-relationship\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/users\/{uid}\/preferred-parent-relationships\/{pid}{?access_token}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml\",\n        \"allow\" : \"HEAD,GET,PUT,DELETE\",\n        \"title\" : \"Preferred Parent Relationship\"\n      },\n      \"current-user-person\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/current-person\"\n      },\n      \"person-match-resolutions-query\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/match-resolutions\"\n      }\n    },\n    \"title\" : \"FamilySearch Family Tree\"\n  } ],\n  \"description\" : \"#SD-FSFT\"\n}"
+        "body": "{\n  \"description\" : \"#SD-FSFT\",\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"SD-FSFT\",\n    \"about\" : \"#FSFT\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/collection\"\n    },\n    \"resourceType\" : \"http:\/\/gedcomx.org\/Collection\",\n    \"titles\" : [ {\n      \"value\" : \"FamilySearch Family Tree\"\n    } ]\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"FSFT\",\n    \"title\" : \"FamilySearch Family Tree\",\n    \"links\" : {\n      \"current-user-person\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/current-person\"\n      },\n      \"discussions\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/discussions\/discussions\"\n      },\n      \"source-references-query\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/source-references{?access_token,description,source}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Source References Query\"\n      },\n      \"current-user-ordinance-reservations-template\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/reservations\/users\/{uid}{?access_token,count,start}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml\",\n        \"allow\" : \"GET,POST\",\n        \"title\" : \"User Reservations\"\n      },\n      \"person-matches-query\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/matches{?access_token,count,q}\",\n        \"type\" : \"application\/atom+xml,application\/json,application\/x-gedcomx-atom+json,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Person Matches Query\"\n      },\n      \"relationships\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/relationships\"\n      },\n      \"current-user\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/current\"\n      },\n      \"logout\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/logout\"\n      },\n      \"ordinance-reservations-template\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/{pid}\/reservations{?access_token}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml\",\n        \"allow\" : \"GET,DELETE\",\n        \"title\" : \"Person Reservations\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\"\n      },\n      \"person-match-resolutions-query\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/match-resolutions\"\n      },\n      \"artifacts\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/memories\/memories\"\n      },\n      \"ordinances-status-template\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/ordinances\/status{?access_token,father,mother,person}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Ordinances Status Query\"\n      },\n      \"ancestry-query\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/ancestry{?access_token,descendants,generations,marriageDetails,person,personDetails,spouse}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Ancestry\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collection\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/authorize\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/authorization\"\n      },\n      \"matches\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/{pid}\/matches{?access_token,collection,confidence,context,count,includeNotAMatchDeclarations,start,status}\",\n        \"type\" : \"application\/atom+xml,application\/json,application\/x-gedcomx-atom+json,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml\",\n        \"allow\" : \"GET,POST\",\n        \"title\" : \"Person Matches\"\n      },\n      \"persons\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\"\n      },\n      \"preferred-parent-relationship\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/users\/{uid}\/preferred-parent-relationships\/{pid}{?access_token}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml\",\n        \"allow\" : \"HEAD,GET,PUT,DELETE\",\n        \"title\" : \"Preferred Parent Relationship\"\n      },\n      \"person\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/{pid}{?access_token,relatives,sourceDescriptions}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml\",\n        \"allow\" : \"HEAD,GET,POST,DELETE\",\n        \"title\" : \"Person\"\n      },\n      \"preferred-spouse-relationship\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/users\/{uid}\/preferred-spouse-relationships\/{pid}{?access_token}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml\",\n        \"allow\" : \"HEAD,GET,PUT,DELETE\",\n        \"title\" : \"Preferred Spouse Relationship\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/token\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/token\"\n      },\n      \"ordinances-template\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/{pid}\/ordinances{?access_token}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET,DELETE\",\n        \"title\" : \"Person Ordinances\"\n      },\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/tree\"\n      },\n      \"person-with-relationships\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons-with-relationships{?access_token,person,persons}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET,POST,DELETE\",\n        \"title\" : \"Person With Relationships\"\n      },\n      \"descendancy-query\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/descendancy{?access_token,generations,marriageDetails,person,personDetails,spouse}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/x-gedcomx-v1+json,application\/x-gedcomx-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Descendancy\"\n      },\n      \"person-search\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/search{?access_token,context,count,q,start}\",\n        \"type\" : \"application\/atom+xml,application\/json,application\/x-gedcomx-atom+json,application\/xml,text\/html\",\n        \"accept\" : \"*\/*\",\n        \"allow\" : \"GET\",\n        \"title\" : \"Person Search\"\n      }\n    }\n  } ]\n}"
     }
 },{
     "request": {
@@ -51,29 +51,29 @@
         "headers": {
             "Server": "Apache-Coyote\/1.1",
             "Expires": "Tue, 03 Jul 2001 06:00:00 GMT",
-            "Last-Modified": "Mon Oct 31 17:33:41 GMT+00:00 2016",
+            "Last-Modified": "Tue Dec 12 19:07:07 GMT 2017",
             "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0",
             "Pragma": "no-cache",
             "Content-Type": "application\/json;charset=ISO-8859-1",
             "Content-Language": "en-US",
             "Content-Length": "185",
-            "Date": "Mon, 31 Oct 2016 17:33:41 GMT",
+            "Date": "Tue, 12 Dec 2017 19:07:07 GMT",
             "Connection": "close"
         },
-        "body": "{\"token\":\"USYS58F6F86FF5BA09913B03C74CAC7726F9_idses-int02.a.fsglobal.net\",\"token_type\":\"family_search\",\"access_token\":\"USYS58F6F86FF5BA09913B03C74CAC7726F9_idses-int02.a.fsglobal.net\"}"
+        "body": "{\"access_token\":\"USYS8AAC8905A8038E71A576184DF0EF3470_idses-int02.a.fsglobal.net\",\"token_type\":\"family_search\",\"token\":\"USYS8AAC8905A8038E71A576184DF0EF3470_idses-int02.a.fsglobal.net\"}"
     }
 },{
     "request": {
         "method": "POST",
-        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/persons",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/tree\/persons",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYS58F6F86FF5BA09913B03C74CAC7726F9_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS8AAC8905A8038E71A576184DF0EF3470_idses-int02.a.fsglobal.net"
         },
         "body": "{\"persons\":[{\"living\":false,\"gender\":{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Male\"},\"names\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/BirthName\",\"preferred\":true,\"nameForms\":[{\"lang\":\"en\",\"fullText\":\"Guadalupe Ankunding\",\"parts\":[{\"value\":\"Guadalupe\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Given\"},{\"value\":\"Ankunding\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Surname\"}]}]}],\"facts\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Birth\",\"date\":{\"original\":\"November 12, 1860\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"Faefurt, California, United States\"}},{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Death\",\"date\":{\"original\":\"November 12, 1885\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"East Dejah, Texas, United States\"}}],\"display\":{\"birthDate\":\"12 Nov 1860\",\"birthPlace\":\"Faefurt, California, United States\",\"gender\":\"http:\\\/\\\/gedcomx.org\\\/Male\",\"lifespan\":\"12 Nov 1860 - 12 Nov 1885\",\"name\":\"Guadalupe Ankunding\"}}]}"
     },
@@ -86,32 +86,33 @@
         "headers": {
             "Cache-Control": "no-cache, no-store, no-transform, must-revalidate, max-age=0",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:32:47 GMT",
-            "Link": "<https:\/\/integration.familysearch.org\/platform\/tree\/ancestry?person=L58X-48J>; rel=\"ancestry\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J\/child-relationships>; rel=\"child-relationships\", <https:\/\/integration.familysearch.org\/platform\/tree\/descendancy?person=L58X-48J>; rel=\"descendancy\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J\/discussion-references>; rel=\"discussion-references\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J\/matches>; rel=\"matches\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J\/notes>; rel=\"notes\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J\/parent-relationships>; rel=\"parent-relationships\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons-with-relationships?person=L58X-48J>; rel=\"person-with-relationships\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons>; rel=\"persons\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J\/source-references>; rel=\"source-references\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J\/spouse-relationships>; rel=\"spouse-relationships\"",
-            "Location": "https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J",
+            "Date": "Tue, 12 Dec 2017 19:07:07 GMT",
+            "Link": "<https:\/\/api-integ.familysearch.org\/platform\/tree\/ancestry?person=L5F4-7PF>; rel=\"ancestry\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF\/child-relationships>; rel=\"child-relationships\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/descendancy?person=L5F4-7PF>; rel=\"descendancy\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF\/discussion-references>; rel=\"discussion-references\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF\/matches>; rel=\"matches\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF\/notes>; rel=\"notes\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF\/parent-relationships>; rel=\"parent-relationships\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons>; rel=\"persons\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF\/source-references>; rel=\"source-references\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF\/spouse-relationships>; rel=\"spouse-relationships\"",
+            "Location": "https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-ENTITY-ID": "L58X-48J",
-            "X-PROCESSING-TIME": "301",
-            "X-THROTTLE-MILLIS-LEFT": "1789203",
-            "X-THROTTLE-MILLIS-USED": "10797",
-            "X-THROTTLE-WINDOW-SIZE": "1800000",
+            "Warning": "400 FamilySearch \"Unable to read place reference possibly, maybe, don't know (null).\", 400 FamilySearch \"Unable to read place reference possibly, maybe, don't know (null).\"",
+            "X-ENTITY-ID": "L5F4-7PF",
+            "X-PROCESSING-TIME": "304",
+            "X-THROTTLE-MILLIS-LEFT": "57634",
+            "X-THROTTLE-MILLIS-USED": "2366",
+            "X-THROTTLE-WINDOW-SIZE": "60000",
             "Content-Length": "0",
-            "Connection": "Close"
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "POST",
-        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/persons",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/tree\/persons",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYS58F6F86FF5BA09913B03C74CAC7726F9_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS8AAC8905A8038E71A576184DF0EF3470_idses-int02.a.fsglobal.net"
         },
         "body": "{\"persons\":[{\"living\":false,\"gender\":{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Female\"},\"names\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/BirthName\",\"preferred\":true,\"nameForms\":[{\"lang\":\"en\",\"fullText\":\"Oliver Hane\",\"parts\":[{\"value\":\"Oliver\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Given\"},{\"value\":\"Hane\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Surname\"}]}]}],\"facts\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Birth\",\"date\":{\"original\":\"December 13, 1825\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"Denesikfurt, Montana, United States\"}},{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Death\",\"date\":{\"original\":\"December 13, 1906\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"Lethabury, New York, United States\"}}],\"display\":{\"birthDate\":\"13 Dec 1825\",\"birthPlace\":\"Denesikfurt, Montana, United States\",\"gender\":\"http:\\\/\\\/gedcomx.org\\\/Female\",\"lifespan\":\"13 Dec 1825 - 13 Dec 1906\",\"name\":\"Oliver Hane\"}}]}"
     },
@@ -124,34 +125,35 @@
         "headers": {
             "Cache-Control": "no-cache, no-store, no-transform, must-revalidate, max-age=0",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:32:48 GMT",
-            "Link": "<https:\/\/integration.familysearch.org\/platform\/tree\/ancestry?person=L58X-48V>; rel=\"ancestry\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48V\/child-relationships>; rel=\"child-relationships\", <https:\/\/integration.familysearch.org\/platform\/tree\/descendancy?person=L58X-48V>; rel=\"descendancy\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48V\/discussion-references>; rel=\"discussion-references\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48V\/matches>; rel=\"matches\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48V\/notes>; rel=\"notes\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48V\/parent-relationships>; rel=\"parent-relationships\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons-with-relationships?person=L58X-48V>; rel=\"person-with-relationships\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons>; rel=\"persons\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48V\/source-references>; rel=\"source-references\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48V\/spouse-relationships>; rel=\"spouse-relationships\"",
-            "Location": "https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48V",
+            "Date": "Tue, 12 Dec 2017 19:07:07 GMT",
+            "Link": "<https:\/\/api-integ.familysearch.org\/platform\/tree\/ancestry?person=L5F4-WP2>; rel=\"ancestry\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WP2\/child-relationships>; rel=\"child-relationships\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/descendancy?person=L5F4-WP2>; rel=\"descendancy\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WP2\/discussion-references>; rel=\"discussion-references\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WP2\/matches>; rel=\"matches\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WP2\/notes>; rel=\"notes\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WP2\/parent-relationships>; rel=\"parent-relationships\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons>; rel=\"persons\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WP2\/source-references>; rel=\"source-references\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WP2\/spouse-relationships>; rel=\"spouse-relationships\"",
+            "Location": "https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WP2",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-ENTITY-ID": "L58X-48V",
-            "X-PROCESSING-TIME": "156",
-            "X-THROTTLE-MILLIS-LEFT": "1789053",
-            "X-THROTTLE-MILLIS-USED": "10947",
-            "X-THROTTLE-WINDOW-SIZE": "1800000",
+            "Warning": "400 FamilySearch \"Unable to read place reference possibly, maybe, don't know (null).\", 400 FamilySearch \"Unable to read place reference possibly, maybe, don't know (null).\"",
+            "X-ENTITY-ID": "L5F4-WP2",
+            "X-PROCESSING-TIME": "144",
+            "X-THROTTLE-MILLIS-LEFT": "57490",
+            "X-THROTTLE-MILLIS-USED": "2510",
+            "X-THROTTLE-WINDOW-SIZE": "60000",
             "Content-Length": "0",
-            "Connection": "Close"
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "POST",
-        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/relationships",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/tree\/relationships",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYS58F6F86FF5BA09913B03C74CAC7726F9_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS8AAC8905A8038E71A576184DF0EF3470_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"relationships\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"},\"person2\":{\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48V\"}}]}"
+        "body": "{\"relationships\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"person2\":{\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WP2\"}}]}"
     },
     "response": {
         "status": {
@@ -161,34 +163,34 @@
         },
         "headers": {
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:32:49 GMT",
-            "Link": "<https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD\/notes>; rel=\"notes\", <https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD\/source-references>; rel=\"source-references\"",
-            "Location": "https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD",
+            "Date": "Tue, 12 Dec 2017 19:07:08 GMT",
+            "Link": "<https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC\/notes>; rel=\"notes\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC\/source-references>; rel=\"source-references\"",
+            "Location": "https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-ENTITY-ID": "MJL2-6FD",
-            "X-PROCESSING-TIME": "196",
-            "X-THROTTLE-MILLIS-LEFT": "1788860",
-            "X-THROTTLE-MILLIS-USED": "11140",
-            "X-THROTTLE-WINDOW-SIZE": "1800000",
+            "X-ENTITY-ID": "MJP4-7HC",
+            "X-PROCESSING-TIME": "145",
+            "X-THROTTLE-MILLIS-LEFT": "57345",
+            "X-THROTTLE-MILLIS-USED": "2655",
+            "X-THROTTLE-WINDOW-SIZE": "60000",
             "Content-Length": "0",
-            "Connection": "Close"
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYS58F6F86FF5BA09913B03C74CAC7726F9_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS8AAC8905A8038E71A576184DF0EF3470_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"relationships\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"},\"person2\":{\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48V\"}}]}"
+        "body": "{\"relationships\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"person2\":{\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WP2\"}}]}"
     },
     "response": {
         "status": {
@@ -198,34 +200,31 @@
         },
         "headers": {
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/tree\/couple-relationships\/MJL2-6FD",
+            "Content-Location": "\/tree\/couple-relationships\/MJP4-7HC",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:32:49 GMT",
-            "ETag": "\"136972279688310000\"",
-            "Last-Modified": "Mon, 31 Oct 2016 17:32:48 GMT",
+            "Date": "Tue, 12 Dec 2017 19:07:07 GMT",
+            "ETag": "\"137323984282010000\"",
+            "Last-Modified": "Tue, 12 Dec 2017 19:07:08 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "149",
-            "X-THROTTLE-MILLIS-LEFT": "1788714",
-            "X-THROTTLE-MILLIS-USED": "11286",
-            "X-THROTTLE-WINDOW-SIZE": "1800000",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "164",
+            "Content-Length": "1553",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"relationships\" : [ {\n    \"id\" : \"MJL2-6FD\",\n    \"links\" : {\n      \"relationship\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD\"\n      },\n      \"person1\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J\"\n      },\n      \"person2\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48V\"\n      },\n      \"woman\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48V\"\n      },\n      \"change-history\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD\/changes\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/tree\"\n      },\n      \"notes\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD\/notes\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD\/sources\"\n      },\n      \"man\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J\"\n      }\n    },\n    \"sortKey\" : \"0000000001\",\n    \"type\" : \"http:\/\/gedcomx.org\/Couple\",\n    \"person1\" : {\n      \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J\",\n      \"resourceId\" : \"L58X-48J\"\n    },\n    \"person2\" : {\n      \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48V\",\n      \"resourceId\" : \"L58X-48V\"\n    }\n  } ]\n}"
+        "body": "{\n  \"relationships\" : [ {\n    \"id\" : \"MJP4-7HC\",\n    \"sortKey\" : \"0000000001\",\n    \"type\" : \"http:\/\/gedcomx.org\/Couple\",\n    \"person1\" : {\n      \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF\",\n      \"resourceId\" : \"L5F4-7PF\"\n    },\n    \"person2\" : {\n      \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WP2\",\n      \"resourceId\" : \"L5F4-WP2\"\n    },\n    \"links\" : {\n      \"change-history\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC\/changes\"\n      },\n      \"person2\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WP2\"\n      },\n      \"notes\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC\/notes\"\n      },\n      \"person1\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF\"\n      },\n      \"woman\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WP2\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC\/sources\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/tree\"\n      },\n      \"man\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF\"\n      },\n      \"relationship\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC\"\n      }\n    }\n  } ]\n}"
     }
 },{
     "request": {
         "method": "POST",
-        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/persons",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/tree\/persons",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYS58F6F86FF5BA09913B03C74CAC7726F9_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS8AAC8905A8038E71A576184DF0EF3470_idses-int02.a.fsglobal.net"
         },
         "body": "{\"persons\":[{\"living\":false,\"gender\":{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Female\"},\"names\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/BirthName\",\"preferred\":true,\"nameForms\":[{\"lang\":\"en\",\"fullText\":\"Roy Hettinger\",\"parts\":[{\"value\":\"Roy\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Given\"},{\"value\":\"Hettinger\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Surname\"}]}]}],\"facts\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Birth\",\"date\":{\"original\":\"November 03, 1852\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"Port Johnsonborough, Alaska, United States\"}},{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Death\",\"date\":{\"original\":\"November 03, 1868\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"Lake Emmaton, Rhode Island, United States\"}}],\"display\":{\"birthDate\":\"03 Nov 1852\",\"birthPlace\":\"Port Johnsonborough, Alaska, United States\",\"gender\":\"http:\\\/\\\/gedcomx.org\\\/Female\",\"lifespan\":\"03 Nov 1852 - 03 Nov 1868\",\"name\":\"Roy Hettinger\"}}]}"
     },
@@ -238,32 +237,33 @@
         "headers": {
             "Cache-Control": "no-cache, no-store, no-transform, must-revalidate, max-age=0",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:32:49 GMT",
-            "Link": "<https:\/\/integration.familysearch.org\/platform\/tree\/ancestry?person=L58X-48K>; rel=\"ancestry\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/child-relationships>; rel=\"child-relationships\", <https:\/\/integration.familysearch.org\/platform\/tree\/descendancy?person=L58X-48K>; rel=\"descendancy\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/discussion-references>; rel=\"discussion-references\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/matches>; rel=\"matches\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/notes>; rel=\"notes\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/parent-relationships>; rel=\"parent-relationships\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons-with-relationships?person=L58X-48K>; rel=\"person-with-relationships\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons>; rel=\"persons\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/source-references>; rel=\"source-references\", <https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/spouse-relationships>; rel=\"spouse-relationships\"",
-            "Location": "https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K",
+            "Date": "Tue, 12 Dec 2017 19:07:08 GMT",
+            "Link": "<https:\/\/api-integ.familysearch.org\/platform\/tree\/ancestry?person=L5F4-WC1>; rel=\"ancestry\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/child-relationships>; rel=\"child-relationships\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/descendancy?person=L5F4-WC1>; rel=\"descendancy\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/discussion-references>; rel=\"discussion-references\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/matches>; rel=\"matches\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/notes>; rel=\"notes\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/parent-relationships>; rel=\"parent-relationships\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons>; rel=\"persons\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/source-references>; rel=\"source-references\", <https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/spouse-relationships>; rel=\"spouse-relationships\"",
+            "Location": "https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-ENTITY-ID": "L58X-48K",
-            "X-PROCESSING-TIME": "168",
-            "X-THROTTLE-MILLIS-LEFT": "1788548",
-            "X-THROTTLE-MILLIS-USED": "11452",
-            "X-THROTTLE-WINDOW-SIZE": "1800000",
+            "Warning": "400 FamilySearch \"Unable to read place reference possibly, maybe, don't know (null).\", 400 FamilySearch \"Unable to read place reference possibly, maybe, don't know (null).\"",
+            "X-ENTITY-ID": "L5F4-WC1",
+            "X-PROCESSING-TIME": "167",
+            "X-THROTTLE-MILLIS-LEFT": "57013",
+            "X-THROTTLE-MILLIS-USED": "2987",
+            "X-THROTTLE-WINDOW-SIZE": "60000",
             "Content-Length": "0",
-            "Connection": "Close"
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYS58F6F86FF5BA09913B03C74CAC7726F9_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS8AAC8905A8038E71A576184DF0EF3470_idses-int02.a.fsglobal.net"
         },
         "body": "{\"persons\":[{\"living\":false,\"gender\":{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Female\"},\"names\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/BirthName\",\"preferred\":true,\"nameForms\":[{\"lang\":\"en\",\"fullText\":\"Roy Hettinger\",\"parts\":[{\"value\":\"Roy\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Given\"},{\"value\":\"Hettinger\",\"type\":\"http:\\\/\\\/gedcomx.org\\\/Surname\"}]}]}],\"facts\":[{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Birth\",\"date\":{\"original\":\"November 03, 1852\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"Port Johnsonborough, Alaska, United States\"}},{\"type\":\"http:\\\/\\\/gedcomx.org\\\/Death\",\"date\":{\"original\":\"November 03, 1868\"},\"place\":{\"description\":\"possibly, maybe, don't know\",\"original\":\"Lake Emmaton, Rhode Island, United States\"}}],\"display\":{\"birthDate\":\"03 Nov 1852\",\"birthPlace\":\"Port Johnsonborough, Alaska, United States\",\"gender\":\"http:\\\/\\\/gedcomx.org\\\/Female\",\"lifespan\":\"03 Nov 1852 - 03 Nov 1868\",\"name\":\"Roy Hettinger\"}}]}"
     },
@@ -276,36 +276,33 @@
         "headers": {
             "Allow": "OPTIONS, HEAD, GET, POST, DELETE",
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/tree\/persons\/L58X-48K",
+            "Content-Location": "\/tree\/persons\/L5F4-WC1",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:32:49 GMT",
-            "ETag": "\"136972279698200000\"",
-            "Last-Modified": "Mon, 31 Oct 2016 17:32:49 GMT",
+            "Date": "Tue, 12 Dec 2017 19:07:09 GMT",
+            "ETag": "\"137323984289310000\"",
+            "Last-Modified": "Tue, 12 Dec 2017 19:07:08 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "173",
-            "X-THROTTLE-MILLIS-LEFT": "1788381",
-            "X-THROTTLE-MILLIS-USED": "11619",
-            "X-THROTTLE-WINDOW-SIZE": "1800000",
-            "Content-Length": "8292",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "165",
+            "Content-Length": "8372",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"persons\" : [ {\n    \"id\" : \"L58X-48K\",\n    \"links\" : {\n      \"spouses\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/spouses\"\n      },\n      \"ancestry\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/ancestry?person=L58X-48K\"\n      },\n      \"person\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\"\n      },\n      \"parents\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/parents\"\n      },\n      \"person-with-relationships\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons-with-relationships?person=L58X-48K\"\n      },\n      \"descendancy\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/descendancy?person=L58X-48K\"\n      },\n      \"merge\" : {\n        \"template\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/{pid}\/merges\/{dpid}{?filter,access_token}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml\",\n        \"allow\" : \"OPTIONS,GET,POST\",\n        \"title\" : \"Person Merge\"\n      },\n      \"change-history\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/changes\"\n      },\n      \"children\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/children\"\n      },\n      \"spouse-relationships\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/spouse-relationships\"\n      },\n      \"child-relationships\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/child-relationships\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/tree\"\n      },\n      \"families\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/families\"\n      },\n      \"ordinance-reservations\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/reservations\"\n      },\n      \"portrait\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/portrait\"\n      },\n      \"parent-relationships\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/parent-relationships\"\n      },\n      \"artifacts\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/memories\"\n      },\n      \"matches\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/matches\"\n      },\n      \"ordinances\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/ordinances\"\n      },\n      \"non-matches\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/not-a-match\"\n      },\n      \"portraits\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/portraits\"\n      },\n      \"notes\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/notes\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/sources\"\n      }\n    },\n    \"sortKey\" : \"0000000000\",\n    \"identifiers\" : {\n      \"http:\/\/gedcomx.org\/Persistent\" : [ \"https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58X-48K\" ]\n    },\n    \"living\" : false,\n    \"gender\" : {\n      \"id\" : \"86ec9240-8387-4386-84c4-fc5669a865ef\",\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/conclusions\/86ec9240-8387-4386-84c4-fc5669a865ef\"\n        }\n      },\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1477935169820\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/Female\"\n    },\n    \"names\" : [ {\n      \"id\" : \"dcd65c08-5fc6-4e26-b0e5-535a35d7b5b9\",\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/conclusions\/dcd65c08-5fc6-4e26-b0e5-535a35d7b5b9\"\n        }\n      },\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1477935169820\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/BirthName\",\n      \"nameForms\" : [ {\n        \"fullText\" : \"Roy Hettinger\",\n        \"parts\" : [ {\n          \"type\" : \"http:\/\/gedcomx.org\/Given\",\n          \"value\" : \"Roy\"\n        }, {\n          \"type\" : \"http:\/\/gedcomx.org\/Surname\",\n          \"value\" : \"Hettinger\"\n        } ],\n        \"nameFormInfo\" : [ {\n          \"order\" : \"http:\/\/familysearch.org\/v1\/Eurotypic\"\n        } ]\n      } ],\n      \"preferred\" : true\n    } ],\n    \"facts\" : [ {\n      \"id\" : \"13054821-4c78-4786-a9d1-c903e76ad9de\",\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/conclusions\/13054821-4c78-4786-a9d1-c903e76ad9de\"\n        }\n      },\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1477935169820\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/Birth\",\n      \"date\" : {\n        \"original\" : \"November 03, 1852\",\n        \"formal\" : \"+1852-11-03\",\n        \"normalized\" : [ {\n          \"lang\" : \"en-US\",\n          \"value\" : \"3 November 1852\"\n        }, {\n          \"value\" : \"3 November 1852\"\n        } ]\n      },\n      \"place\" : {\n        \"original\" : \"Port Johnsonborough, Alaska, United States\"\n      }\n    }, {\n      \"id\" : \"9a0f3cfe-4c92-4c7a-adab-b258722e7317\",\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\/conclusions\/9a0f3cfe-4c92-4c7a-adab-b258722e7317\"\n        }\n      },\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1477935169820\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/Death\",\n      \"date\" : {\n        \"original\" : \"November 03, 1868\",\n        \"formal\" : \"+1868-11-03\",\n        \"normalized\" : [ {\n          \"lang\" : \"en-US\",\n          \"value\" : \"3 November 1868\"\n        }, {\n          \"value\" : \"3 November 1868\"\n        } ]\n      },\n      \"place\" : {\n        \"original\" : \"Lake Emmaton, Rhode Island, United States\"\n      }\n    } ],\n    \"display\" : {\n      \"name\" : \"Roy Hettinger\",\n      \"gender\" : \"Female\",\n      \"lifespan\" : \"1852-1868\",\n      \"birthDate\" : \"3 November 1852\",\n      \"birthPlace\" : \"Port Johnsonborough, Alaska, United States\",\n      \"deathDate\" : \"3 November 1868\",\n      \"deathPlace\" : \"Lake Emmaton, Rhode Island, United States\",\n      \"ascendancyNumber\" : \"1\",\n      \"descendancyNumber\" : \"1\"\n    }\n  } ],\n  \"relationships\" : [ ],\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"SD-L58X-48K\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/sources\/descriptions\/SD-L58X-48K\"\n      }\n    },\n    \"citations\" : [ {\n      \"lang\" : \"en\",\n      \"value\" : \"\\\"Family Tree,\\\" database, <i>FamilySearch<\/i> (http:\/\/familysearch.org : modified 31 October 2016, 17:32), entry for Roy Hettinger(PID https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58X-48K); contributed by various users.\"\n    } ],\n    \"about\" : \"#L58X-48K\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/tree\"\n    },\n    \"titles\" : [ {\n      \"value\" : \"Roy Hettinger\"\n    } ],\n    \"resourceType\" : \"http:\/\/gedcomx.org\/Person\",\n    \"identifiers\" : {\n      \"http:\/\/gedcomx.org\/Persistent\" : [ \"https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L58X-48K\" ]\n    },\n    \"modified\" : 1477935169000,\n    \"version\" : \"136972279698200000\"\n  } ],\n  \"description\" : \"#SD-L58X-48K\"\n}"
+        "body": "{\n  \"links\" : {\n    \"alternate\" : [ {\n      \"href\" : \"https:\/\/api-integ.familysearch.org\/tree\/person\/L5F4-WC1\/details\"\n    } ]\n  },\n  \"description\" : \"#SD-L5F4-WC1\",\n  \"persons\" : [ {\n    \"id\" : \"L5F4-WC1\",\n    \"sortKey\" : \"0000000000\",\n    \"living\" : false,\n    \"gender\" : {\n      \"id\" : \"f0bc53dc-ee70-440d-b50d-37b4b5bb502a\",\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1513105628931\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/Female\",\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/conclusions\/f0bc53dc-ee70-440d-b50d-37b4b5bb502a\"\n        }\n      }\n    },\n    \"links\" : {\n      \"spouses\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/spouses\"\n      },\n      \"change-history\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/changes\"\n      },\n      \"ancestry\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/ancestry?person=L5F4-WC1\"\n      },\n      \"notes\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/notes\"\n      },\n      \"non-matches\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/not-a-match\"\n      },\n      \"portraits\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/portraits\"\n      },\n      \"ordinances\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/ordinances\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/tree\"\n      },\n      \"families\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/families\"\n      },\n      \"portrait\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/portrait\"\n      },\n      \"matches\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/matches\"\n      },\n      \"children\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/children\"\n      },\n      \"descendancy\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/descendancy?person=L5F4-WC1\"\n      },\n      \"person\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/sources\"\n      },\n      \"merge\" : {\n        \"template\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/{pid}\/merges\/{dpid}{?access_token,filter}\",\n        \"type\" : \"application\/json,application\/x-fs-v1+json,application\/x-fs-v1+xml,application\/xml,text\/html\",\n        \"accept\" : \"application\/x-fs-v1+json,application\/x-fs-v1+xml\",\n        \"allow\" : \"OPTIONS,GET,POST\",\n        \"title\" : \"Person Merge\"\n      },\n      \"ordinance-reservations\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/reservations\"\n      },\n      \"artifacts\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/memories\"\n      },\n      \"parents\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/parents\"\n      }\n    },\n    \"identifiers\" : {\n      \"http:\/\/gedcomx.org\/Persistent\" : [ \"https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L5F4-WC1\" ]\n    },\n    \"names\" : [ {\n      \"id\" : \"a907d4d6-191e-46b1-9bb6-192b9b2c67b1\",\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1513105628931\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/BirthName\",\n      \"preferred\" : true,\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/conclusions\/a907d4d6-191e-46b1-9bb6-192b9b2c67b1\"\n        }\n      },\n      \"nameForms\" : [ {\n        \"lang\" : \"en\",\n        \"fullText\" : \"Roy Hettinger\",\n        \"parts\" : [ {\n          \"type\" : \"http:\/\/gedcomx.org\/Given\",\n          \"value\" : \"Roy\"\n        }, {\n          \"type\" : \"http:\/\/gedcomx.org\/Surname\",\n          \"value\" : \"Hettinger\"\n        } ],\n        \"nameFormInfo\" : [ {\n          \"order\" : \"http:\/\/familysearch.org\/v1\/Eurotypic\"\n        } ]\n      } ]\n    } ],\n    \"facts\" : [ {\n      \"id\" : \"837151f8-d717-4f59-b991-b93a341522f6\",\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1513105628931\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/Birth\",\n      \"date\" : {\n        \"original\" : \"November 03, 1852\",\n        \"formal\" : \"+1852-11-03\",\n        \"normalized\" : [ {\n          \"lang\" : \"en-US\",\n          \"value\" : \"3 November 1852\"\n        }, {\n          \"value\" : \"3 November 1852\"\n        } ]\n      },\n      \"place\" : {\n        \"original\" : \"Port Johnsonborough, Alaska, United States\",\n        \"description\" : \"#350\",\n        \"normalized\" : [ {\n          \"lang\" : \"en-US\",\n          \"value\" : \"Alaska, United States\"\n        } ]\n      },\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/conclusions\/837151f8-d717-4f59-b991-b93a341522f6\"\n        }\n      }\n    }, {\n      \"id\" : \"1a22508f-0607-4ef8-a207-4aed54ea37d5\",\n      \"attribution\" : {\n        \"contributor\" : {\n          \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/users\/agents\/MM6M-8QJ\",\n          \"resourceId\" : \"MM6M-8QJ\"\n        },\n        \"modified\" : 1513105628931\n      },\n      \"type\" : \"http:\/\/gedcomx.org\/Death\",\n      \"date\" : {\n        \"original\" : \"November 03, 1868\",\n        \"formal\" : \"+1868-11-03\",\n        \"normalized\" : [ {\n          \"lang\" : \"en-US\",\n          \"value\" : \"3 November 1868\"\n        }, {\n          \"value\" : \"3 November 1868\"\n        } ]\n      },\n      \"place\" : {\n        \"original\" : \"Lake Emmaton, Rhode Island, United States\",\n        \"description\" : \"#341\",\n        \"normalized\" : [ {\n          \"lang\" : \"en-US\",\n          \"value\" : \"Rhode Island, United States\"\n        } ]\n      },\n      \"links\" : {\n        \"conclusion\" : {\n          \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\/conclusions\/1a22508f-0607-4ef8-a207-4aed54ea37d5\"\n        }\n      }\n    } ],\n    \"display\" : {\n      \"name\" : \"Roy Hettinger\",\n      \"gender\" : \"Female\",\n      \"lifespan\" : \"1852-1868\",\n      \"birthDate\" : \"3 November 1852\",\n      \"birthPlace\" : \"Alaska, United States\",\n      \"deathDate\" : \"3 November 1868\",\n      \"deathPlace\" : \"Rhode Island, United States\",\n      \"ascendancyNumber\" : \"1\",\n      \"descendancyNumber\" : \"1\"\n    }\n  } ],\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"SD-L5F4-WC1\",\n    \"about\" : \"#L5F4-WC1\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/tree\"\n    },\n    \"resourceType\" : \"http:\/\/gedcomx.org\/Person\",\n    \"modified\" : 1513105628000,\n    \"version\" : \"137323984289310000\",\n    \"links\" : {\n      \"description\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/SD-L5F4-WC1\"\n      }\n    },\n    \"citations\" : [ {\n      \"lang\" : \"en\",\n      \"value\" : \"\\\"Family Tree,\\\" database, <i>FamilySearch<\/i> (http:\/\/familysearch.org : modified 12 December 2017, 19:07), entry for Roy Hettinger(PID https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L5F4-WC1); contributed by various users.\"\n    } ],\n    \"titles\" : [ {\n      \"value\" : \"Roy Hettinger\"\n    } ],\n    \"identifiers\" : {\n      \"http:\/\/gedcomx.org\/Persistent\" : [ \"https:\/\/integration.familysearch.org\/ark:\/61903\/4:1:L5F4-WC1\" ]\n    }\n  } ],\n  \"places\" : [ {\n    \"id\" : \"350\",\n    \"latitude\" : 64.00028,\n    \"longitude\" : -150.00028,\n    \"names\" : [ {\n      \"lang\" : \"en-US\",\n      \"value\" : \"Alaska, United States\"\n    } ]\n  }, {\n    \"id\" : \"341\",\n    \"latitude\" : 41.7,\n    \"longitude\" : -71.5,\n    \"names\" : [ {\n      \"lang\" : \"en-US\",\n      \"value\" : \"Rhode Island, United States\"\n    } ]\n  } ]\n}"
     }
 },{
     "request": {
         "method": "POST",
-        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYS58F6F86FF5BA09913B03C74CAC7726F9_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS8AAC8905A8038E71A576184DF0EF3470_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"relationships\":[{\"id\":\"MJL2-6FD\",\"links\":{\"relationship\":{\"rel\":\"relationship\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\"},\"person1\":{\"rel\":\"person1\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"},\"person2\":{\"rel\":\"person2\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48V\"},\"woman\":{\"rel\":\"woman\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48V\"},\"change-history\":{\"rel\":\"change-history\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/changes\"},\"collection\":{\"rel\":\"collection\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/collections\\\/tree\"},\"notes\":{\"rel\":\"notes\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/notes\"},\"source-descriptions\":{\"rel\":\"source-descriptions\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/sources\"},\"man\":{\"rel\":\"man\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"}},\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resourceId\":\"L58X-48J\",\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"},\"person2\":{\"resourceId\":\"L58X-48K\",\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48K\"}}]}"
+        "body": "{\"relationships\":[{\"id\":\"MJP4-7HC\",\"links\":{\"change-history\":{\"rel\":\"change-history\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/changes\"},\"person2\":{\"rel\":\"person2\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WP2\"},\"notes\":{\"rel\":\"notes\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/notes\"},\"person1\":{\"rel\":\"person1\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"woman\":{\"rel\":\"woman\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WP2\"},\"source-descriptions\":{\"rel\":\"source-descriptions\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/sources\"},\"collection\":{\"rel\":\"collection\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/collections\\\/tree\"},\"man\":{\"rel\":\"man\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"relationship\":{\"rel\":\"relationship\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\"}},\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resourceId\":\"L5F4-7PF\",\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"person2\":{\"resourceId\":\"L5F4-WC1\",\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WC1\"}}]}"
     },
     "response": {
         "status": {
@@ -315,32 +312,32 @@
         },
         "headers": {
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/tree\/couple-relationships\/MJL2-6FD",
+            "Content-Location": "\/tree\/couple-relationships\/MJP4-7HC",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:32:51 GMT",
+            "Date": "Tue, 12 Dec 2017 19:07:09 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "168",
-            "X-THROTTLE-MILLIS-LEFT": "1788217",
-            "X-THROTTLE-MILLIS-USED": "11783",
-            "X-THROTTLE-WINDOW-SIZE": "1800000",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "163",
+            "X-THROTTLE-MILLIS-LEFT": "56684",
+            "X-THROTTLE-MILLIS-USED": "3316",
+            "X-THROTTLE-WINDOW-SIZE": "60000",
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD?_=574539",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC?_=574539",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYS58F6F86FF5BA09913B03C74CAC7726F9_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS8AAC8905A8038E71A576184DF0EF3470_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"relationships\":[{\"id\":\"MJL2-6FD\",\"links\":{\"relationship\":{\"rel\":\"relationship\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\"},\"person1\":{\"rel\":\"person1\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"},\"person2\":{\"rel\":\"person2\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48V\"},\"woman\":{\"rel\":\"woman\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48V\"},\"change-history\":{\"rel\":\"change-history\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/changes\"},\"collection\":{\"rel\":\"collection\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/collections\\\/tree\"},\"notes\":{\"rel\":\"notes\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/notes\"},\"source-descriptions\":{\"rel\":\"source-descriptions\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/sources\"},\"man\":{\"rel\":\"man\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"}},\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resourceId\":\"L58X-48J\",\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"},\"person2\":{\"resourceId\":\"L58X-48K\",\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48K\"}}]}"
+        "body": "{\"relationships\":[{\"id\":\"MJP4-7HC\",\"links\":{\"change-history\":{\"rel\":\"change-history\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/changes\"},\"person2\":{\"rel\":\"person2\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WP2\"},\"notes\":{\"rel\":\"notes\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/notes\"},\"person1\":{\"rel\":\"person1\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"woman\":{\"rel\":\"woman\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WP2\"},\"source-descriptions\":{\"rel\":\"source-descriptions\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/sources\"},\"collection\":{\"rel\":\"collection\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/collections\\\/tree\"},\"man\":{\"rel\":\"man\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"relationship\":{\"rel\":\"relationship\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\"}},\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resourceId\":\"L5F4-7PF\",\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"person2\":{\"resourceId\":\"L5F4-WC1\",\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WC1\"}}]}"
     },
     "response": {
         "status": {
@@ -350,36 +347,33 @@
         },
         "headers": {
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/tree\/couple-relationships\/MJL2-6FD",
+            "Content-Location": "\/tree\/couple-relationships\/MJP4-7HC",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:32:51 GMT",
-            "ETag": "\"136972279708570000\"",
-            "Last-Modified": "Mon, 31 Oct 2016 17:32:50 GMT",
+            "Date": "Tue, 12 Dec 2017 19:07:09 GMT",
+            "ETag": "\"137323984295980000\"",
+            "Last-Modified": "Tue, 12 Dec 2017 19:07:09 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "192",
-            "X-THROTTLE-MILLIS-LEFT": "1788029",
-            "X-THROTTLE-MILLIS-USED": "11971",
-            "X-THROTTLE-WINDOW-SIZE": "1800000",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "167",
+            "Content-Length": "1553",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"relationships\" : [ {\n    \"id\" : \"MJL2-6FD\",\n    \"links\" : {\n      \"relationship\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD\"\n      },\n      \"person1\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J\"\n      },\n      \"person2\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\"\n      },\n      \"woman\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\"\n      },\n      \"change-history\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD\/changes\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/collections\/tree\"\n      },\n      \"notes\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD\/notes\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD\/sources\"\n      },\n      \"man\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J\"\n      }\n    },\n    \"sortKey\" : \"0000000001\",\n    \"type\" : \"http:\/\/gedcomx.org\/Couple\",\n    \"person1\" : {\n      \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J\",\n      \"resourceId\" : \"L58X-48J\"\n    },\n    \"person2\" : {\n      \"resource\" : \"https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K\",\n      \"resourceId\" : \"L58X-48K\"\n    }\n  } ]\n}"
+        "body": "{\n  \"relationships\" : [ {\n    \"id\" : \"MJP4-7HC\",\n    \"sortKey\" : \"0000000001\",\n    \"type\" : \"http:\/\/gedcomx.org\/Couple\",\n    \"person1\" : {\n      \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF\",\n      \"resourceId\" : \"L5F4-7PF\"\n    },\n    \"person2\" : {\n      \"resource\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\",\n      \"resourceId\" : \"L5F4-WC1\"\n    },\n    \"links\" : {\n      \"change-history\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC\/changes\"\n      },\n      \"person2\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\"\n      },\n      \"notes\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC\/notes\"\n      },\n      \"person1\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF\"\n      },\n      \"woman\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC\/sources\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/tree\"\n      },\n      \"man\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF\"\n      },\n      \"relationship\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC\"\n      }\n    }\n  } ]\n}"
     }
 },{
     "request": {
         "method": "DELETE",
-        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48J",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-7PF",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYS58F6F86FF5BA09913B03C74CAC7726F9_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS8AAC8905A8038E71A576184DF0EF3470_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"relationships\":[{\"id\":\"MJL2-6FD\",\"links\":{\"relationship\":{\"rel\":\"relationship\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\"},\"person1\":{\"rel\":\"person1\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"},\"person2\":{\"rel\":\"person2\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48V\"},\"woman\":{\"rel\":\"woman\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48V\"},\"change-history\":{\"rel\":\"change-history\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/changes\"},\"collection\":{\"rel\":\"collection\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/collections\\\/tree\"},\"notes\":{\"rel\":\"notes\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/notes\"},\"source-descriptions\":{\"rel\":\"source-descriptions\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/sources\"},\"man\":{\"rel\":\"man\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"}},\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resourceId\":\"L58X-48J\",\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"},\"person2\":{\"resourceId\":\"L58X-48K\",\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48K\"}}]}"
+        "body": "{\"relationships\":[{\"id\":\"MJP4-7HC\",\"links\":{\"change-history\":{\"rel\":\"change-history\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/changes\"},\"person2\":{\"rel\":\"person2\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WP2\"},\"notes\":{\"rel\":\"notes\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/notes\"},\"person1\":{\"rel\":\"person1\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"woman\":{\"rel\":\"woman\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WP2\"},\"source-descriptions\":{\"rel\":\"source-descriptions\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/sources\"},\"collection\":{\"rel\":\"collection\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/collections\\\/tree\"},\"man\":{\"rel\":\"man\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"relationship\":{\"rel\":\"relationship\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\"}},\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resourceId\":\"L5F4-7PF\",\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"person2\":{\"resourceId\":\"L5F4-WC1\",\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WC1\"}}]}"
     },
     "response": {
         "status": {
@@ -389,32 +383,33 @@
         },
         "headers": {
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/tree\/persons\/L58X-48J",
+            "Content-Location": "\/tree\/persons\/L5F4-7PF",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:32:51 GMT",
+            "Date": "Tue, 12 Dec 2017 19:07:09 GMT",
+            "Link": "<https:\/\/api-integ.familysearch.org\/tree\/person\/L5F4-7PF\/details>; rel=\"alternate\"",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "169",
-            "X-THROTTLE-MILLIS-LEFT": "1787862",
-            "X-THROTTLE-MILLIS-USED": "12138",
-            "X-THROTTLE-WINDOW-SIZE": "1800000",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "142",
+            "X-THROTTLE-MILLIS-LEFT": "56373",
+            "X-THROTTLE-MILLIS-USED": "3627",
+            "X-THROTTLE-WINDOW-SIZE": "60000",
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "DELETE",
-        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48V",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WP2",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYS58F6F86FF5BA09913B03C74CAC7726F9_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS8AAC8905A8038E71A576184DF0EF3470_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"relationships\":[{\"id\":\"MJL2-6FD\",\"links\":{\"relationship\":{\"rel\":\"relationship\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\"},\"person1\":{\"rel\":\"person1\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"},\"person2\":{\"rel\":\"person2\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48V\"},\"woman\":{\"rel\":\"woman\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48V\"},\"change-history\":{\"rel\":\"change-history\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/changes\"},\"collection\":{\"rel\":\"collection\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/collections\\\/tree\"},\"notes\":{\"rel\":\"notes\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/notes\"},\"source-descriptions\":{\"rel\":\"source-descriptions\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/sources\"},\"man\":{\"rel\":\"man\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"}},\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resourceId\":\"L58X-48J\",\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"},\"person2\":{\"resourceId\":\"L58X-48K\",\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48K\"}}]}"
+        "body": "{\"relationships\":[{\"id\":\"MJP4-7HC\",\"links\":{\"change-history\":{\"rel\":\"change-history\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/changes\"},\"person2\":{\"rel\":\"person2\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WP2\"},\"notes\":{\"rel\":\"notes\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/notes\"},\"person1\":{\"rel\":\"person1\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"woman\":{\"rel\":\"woman\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WP2\"},\"source-descriptions\":{\"rel\":\"source-descriptions\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/sources\"},\"collection\":{\"rel\":\"collection\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/collections\\\/tree\"},\"man\":{\"rel\":\"man\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"relationship\":{\"rel\":\"relationship\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\"}},\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resourceId\":\"L5F4-7PF\",\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"person2\":{\"resourceId\":\"L5F4-WC1\",\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WC1\"}}]}"
     },
     "response": {
         "status": {
@@ -424,32 +419,33 @@
         },
         "headers": {
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/tree\/persons\/L58X-48V",
+            "Content-Location": "\/tree\/persons\/L5F4-WP2",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:32:52 GMT",
+            "Date": "Tue, 12 Dec 2017 19:07:10 GMT",
+            "Link": "<https:\/\/api-integ.familysearch.org\/tree\/person\/L5F4-WP2\/details>; rel=\"alternate\"",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "171",
-            "X-THROTTLE-MILLIS-LEFT": "1787697",
-            "X-THROTTLE-MILLIS-USED": "12303",
-            "X-THROTTLE-WINDOW-SIZE": "1800000",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "142",
+            "X-THROTTLE-MILLIS-LEFT": "56231",
+            "X-THROTTLE-MILLIS-USED": "3769",
+            "X-THROTTLE-WINDOW-SIZE": "60000",
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "DELETE",
-        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/couple-relationships\/MJL2-6FD",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/tree\/couple-relationships\/MJP4-7HC",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYS58F6F86FF5BA09913B03C74CAC7726F9_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS8AAC8905A8038E71A576184DF0EF3470_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"relationships\":[{\"id\":\"MJL2-6FD\",\"links\":{\"relationship\":{\"rel\":\"relationship\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\"},\"person1\":{\"rel\":\"person1\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"},\"person2\":{\"rel\":\"person2\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48V\"},\"woman\":{\"rel\":\"woman\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48V\"},\"change-history\":{\"rel\":\"change-history\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/changes\"},\"collection\":{\"rel\":\"collection\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/collections\\\/tree\"},\"notes\":{\"rel\":\"notes\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/notes\"},\"source-descriptions\":{\"rel\":\"source-descriptions\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/sources\"},\"man\":{\"rel\":\"man\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"}},\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resourceId\":\"L58X-48J\",\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"},\"person2\":{\"resourceId\":\"L58X-48K\",\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48K\"}}]}"
+        "body": "{\"relationships\":[{\"id\":\"MJP4-7HC\",\"links\":{\"change-history\":{\"rel\":\"change-history\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/changes\"},\"person2\":{\"rel\":\"person2\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WP2\"},\"notes\":{\"rel\":\"notes\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/notes\"},\"person1\":{\"rel\":\"person1\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"woman\":{\"rel\":\"woman\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WP2\"},\"source-descriptions\":{\"rel\":\"source-descriptions\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/sources\"},\"collection\":{\"rel\":\"collection\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/collections\\\/tree\"},\"man\":{\"rel\":\"man\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"relationship\":{\"rel\":\"relationship\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\"}},\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resourceId\":\"L5F4-7PF\",\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"person2\":{\"resourceId\":\"L5F4-WC1\",\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WC1\"}}]}"
     },
     "response": {
         "status": {
@@ -459,35 +455,32 @@
         },
         "headers": {
             "Cache-Control": "no-cache, no-store, no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/tree\/couple-relationships\/MJL2-6FD",
+            "Content-Location": "\/tree\/couple-relationships\/MJP4-7HC",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:32:53 GMT",
+            "Date": "Tue, 12 Dec 2017 19:07:11 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
             "Warning": "400 FamilySearch \"Unable to  delete tf entity.\"",
-            "X-PROCESSING-TIME": "150",
-            "X-THROTTLE-MILLIS-LEFT": "1787551",
-            "X-THROTTLE-MILLIS-USED": "12449",
-            "X-THROTTLE-WINDOW-SIZE": "1800000",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "168",
+            "Content-Length": "246",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"errors\" : [ {\n    \"code\" : 410,\n    \"message\" : \"Unable to  delete tf entity.\",\n    \"stacktrace\" : \"DELETE http:\/\/tf.integ.us-east-1.dev.fslocal.org\/tf\/couple\/MJL2-6FD returned a response status of 410 Gone:\\n{\\n\\\"410\\\": \\\"Gone\\\"\\n}\"\n  } ]\n}"
+        "body": "{\n  \"errors\" : [ {\n    \"code\" : 410,\n    \"message\" : \"Unable to  delete tf entity.\",\n    \"stacktrace\" : \"DELETE http:\/\/tf.integ.us-east-1.dev.fslocal.org\/tf\/couple\/MJP4-7HC returned a response status of 410 Gone:\\n{\\n\\\"410\\\": \\\"Gone\\\"\\n}\"\n  } ]\n}"
     }
 },{
     "request": {
         "method": "DELETE",
-        "url": "https:\/\/integration.familysearch.org\/platform\/tree\/persons\/L58X-48K",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/tree\/persons\/L5F4-WC1",
         "headers": {
-            "Host": "integration.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYS58F6F86FF5BA09913B03C74CAC7726F9_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYS8AAC8905A8038E71A576184DF0EF3470_idses-int02.a.fsglobal.net"
         },
-        "body": "{\"relationships\":[{\"id\":\"MJL2-6FD\",\"links\":{\"relationship\":{\"rel\":\"relationship\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\"},\"person1\":{\"rel\":\"person1\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"},\"person2\":{\"rel\":\"person2\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48V\"},\"woman\":{\"rel\":\"woman\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48V\"},\"change-history\":{\"rel\":\"change-history\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/changes\"},\"collection\":{\"rel\":\"collection\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/collections\\\/tree\"},\"notes\":{\"rel\":\"notes\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/notes\"},\"source-descriptions\":{\"rel\":\"source-descriptions\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJL2-6FD\\\/sources\"},\"man\":{\"rel\":\"man\",\"href\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"}},\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resourceId\":\"L58X-48J\",\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48J\"},\"person2\":{\"resourceId\":\"L58X-48K\",\"resource\":\"https:\\\/\\\/integration.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L58X-48K\"}}]}"
+        "body": "{\"relationships\":[{\"id\":\"MJP4-7HC\",\"links\":{\"change-history\":{\"rel\":\"change-history\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/changes\"},\"person2\":{\"rel\":\"person2\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WP2\"},\"notes\":{\"rel\":\"notes\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/notes\"},\"person1\":{\"rel\":\"person1\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"woman\":{\"rel\":\"woman\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WP2\"},\"source-descriptions\":{\"rel\":\"source-descriptions\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\\\/sources\"},\"collection\":{\"rel\":\"collection\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/collections\\\/tree\"},\"man\":{\"rel\":\"man\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"relationship\":{\"rel\":\"relationship\",\"href\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/couple-relationships\\\/MJP4-7HC\"}},\"type\":\"http:\\\/\\\/gedcomx.org\\\/Couple\",\"person1\":{\"resourceId\":\"L5F4-7PF\",\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-7PF\"},\"person2\":{\"resourceId\":\"L5F4-WC1\",\"resource\":\"https:\\\/\\\/api-integ.familysearch.org\\\/platform\\\/tree\\\/persons\\\/L5F4-WC1\"}}]}"
     },
     "response": {
         "status": {
@@ -497,16 +490,17 @@
         },
         "headers": {
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/tree\/persons\/L58X-48K",
+            "Content-Location": "\/tree\/persons\/L5F4-WC1",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:32:53 GMT",
+            "Date": "Tue, 12 Dec 2017 19:07:10 GMT",
+            "Link": "<https:\/\/api-integ.familysearch.org\/tree\/person\/L5F4-WC1\/details>; rel=\"alternate\"",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "149",
-            "X-THROTTLE-MILLIS-LEFT": "1787406",
-            "X-THROTTLE-MILLIS-USED": "12594",
-            "X-THROTTLE-WINDOW-SIZE": "1800000",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "162",
+            "X-THROTTLE-MILLIS-LEFT": "55900",
+            "X-THROTTLE-MILLIS-USED": "4100",
+            "X-THROTTLE-WINDOW-SIZE": "60000",
+            "Connection": "keep-alive"
         }
     }
 }]

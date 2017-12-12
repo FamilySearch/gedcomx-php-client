@@ -11,8 +11,8 @@ use Gedcomx\Tests\ApiTestCase;
 
 class OrdinanceTests extends ApiTestCase
 {
-    private $ordinanceUri = "https://sandbox.familysearch.org/platform/ordinances/ordinances";
-    private $policyUri = "https://sandbox.familysearch.org/platform/ordinances/policy";
+    private $ordinanceUri = "https://api-integ.familysearch.org/platform/ordinances/ordinances";
+    private $policyUri = "https://api-integ.familysearch.org/platform/ordinances/policy";
 
     /**
      * @vcr OrdinanceTests/testReadOrdinancePolicy.json

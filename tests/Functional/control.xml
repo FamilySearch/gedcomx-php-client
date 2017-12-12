@@ -11,6 +11,7 @@
         <gx:link rel="mother-role" href="https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships/MMMT-13L/mother"/>
         <gx:link rel="father" href="https://sandbox.familysearch.org/platform/tree/persons/KWWB-CH3"/>
         <gx:link rel="father-role" href="https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships/MMMT-13L/father"/>
+        <gx:identifier type="http://gedcomx.org/Primary">https://sandbox.familysearch.org/platform/tree/child-and-parents-relationships/MYKR-PDC</gx:identifier>
         <fs:father resourceId="KWWB-CH3" resource="https://sandbox.familysearch.org/platform/tree/persons/KWWB-CH3"/>
         <fs:mother resourceId="KWWB-CHQ" resource="https://sandbox.familysearch.org/platform/tree/persons/KWWB-CHQ"/>
         <fs:child resourceId="KWWB-CH7" resource="https://sandbox.familysearch.org/platform/tree/persons/KWWB-CH7"/>

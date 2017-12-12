@@ -1,9 +1,9 @@
 [{
     "request": {
         "method": "GET",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/collections\/sources",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/collections\/sources",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-fs-v1+json"
@@ -19,14 +19,14 @@
             "Cache-Control": "no-transform, max-age=604800",
             "Content-Location": "\/collections\/sources",
             "Content-Type": "application\/x-fs-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:25 GMT",
+            "Date": "Tue, 12 Dec 2017 18:54:08 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
             "X-PROCESSING-TIME": "0",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "Content-Length": "1331",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"SD-FSUDS\",\n    \"about\" : \"#FSUDS\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/sandbox.familysearch.org\/platform\/collection\"\n    },\n    \"titles\" : [ {\n      \"value\" : \"FamilySearch User-Defined Sources\"\n    } ],\n    \"resourceType\" : \"http:\/\/gedcomx.org\/Collection\"\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"FSUDS\",\n    \"links\" : {\n      \"logout\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/logout\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/token\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/token\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/authorize\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/authorization\"\n      },\n      \"subcollections\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/collections\"\n      },\n      \"self\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/collections\/sources\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/collection\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\"\n      }\n    },\n    \"title\" : \"FamilySearch User-Defined Sources\"\n  } ],\n  \"description\" : \"#SD-FSUDS\"\n}"
+        "body": "{\n  \"description\" : \"#SD-FSUDS\",\n  \"sourceDescriptions\" : [ {\n    \"id\" : \"SD-FSUDS\",\n    \"about\" : \"#FSUDS\",\n    \"componentOf\" : {\n      \"description\" : \"https:\/\/api-integ.familysearch.org\/platform\/collection\"\n    },\n    \"resourceType\" : \"http:\/\/gedcomx.org\/Collection\",\n    \"titles\" : [ {\n      \"value\" : \"FamilySearch User-Defined Sources\"\n    } ]\n  } ],\n  \"collections\" : [ {\n    \"id\" : \"FSUDS\",\n    \"title\" : \"FamilySearch User-Defined Sources\",\n    \"links\" : {\n      \"subcollections\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/collections\"\n      },\n      \"logout\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/logout\"\n      },\n      \"source-descriptions\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/token\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/token\"\n      },\n      \"self\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collections\/sources\"\n      },\n      \"collection\" : {\n        \"href\" : \"https:\/\/api-integ.familysearch.org\/platform\/collection\"\n      },\n      \"http:\/\/oauth.net\/core\/2.0\/endpoint\/authorize\" : {\n        \"href\" : \"https:\/\/integration.familysearch.org\/cis-web\/oauth2\/v3\/authorization\"\n      }\n    }\n  } ]\n}"
     }
 },{
     "request": {
@@ -51,29 +51,29 @@
         "headers": {
             "Server": "Apache-Coyote\/1.1",
             "Expires": "Tue, 03 Jul 2001 06:00:00 GMT",
-            "Last-Modified": "Mon Oct 31 17:31:20 GMT+00:00 2016",
+            "Last-Modified": "Tue Dec 12 18:54:08 GMT 2017",
             "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0",
             "Pragma": "no-cache",
             "Content-Type": "application\/json;charset=ISO-8859-1",
             "Content-Language": "en-US",
             "Content-Length": "185",
-            "Date": "Mon, 31 Oct 2016 17:31:20 GMT",
+            "Date": "Tue, 12 Dec 2017 18:54:08 GMT",
             "Connection": "close"
         },
-        "body": "{\"token\":\"USYSCCCCABB4F941F20968873D8CB7DE25BC_idses-int02.a.fsglobal.net\",\"token_type\":\"family_search\",\"access_token\":\"USYSCCCCABB4F941F20968873D8CB7DE25BC_idses-int02.a.fsglobal.net\"}"
+        "body": "{\"access_token\":\"USYSDB830A6B237230587DBCCAB0EA4E1010_idses-int01.a.fsglobal.net\",\"token_type\":\"family_search\",\"token\":\"USYSDB830A6B237230587DBCCAB0EA4E1010_idses-int01.a.fsglobal.net\"}"
     }
 },{
     "request": {
         "method": "POST",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSCCCCABB4F941F20968873D8CB7DE25BC_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYSDB830A6B237230587DBCCAB0EA4E1010_idses-int01.a.fsglobal.net"
         },
         "body": "{\"sourceDescriptions\":[{\"notes\":[{\"text\":\"Officiis quaerat nulla unde in perferendis odit est amet et.\"}],\"attribution\":{\"contributor\":{\"resourceId\":\"MM6M-8QJ\",\"resource\":\"https:\\\/\\\/familysearch.org\\\/platform\\\/users\\\/agents\\\/MM6M-8QJ\"},\"changeMessage\":\"Illo est corrupti pariatur commodi deserunt in aut deserunt cum perspiciatis.\"},\"citations\":[{\"value\":\"ISBN: 9780681403222\"}],\"titles\":[{\"value\":\"Est debitis ea distinctio sunt tempora quos.\"}],\"description\":[{\"value\":\"Sint nulla deserunt ea facilis odio voluptas voluptas. Sequi itaque autem sed ipsam. Quia quasi maxime repellat.\"}]}]}"
     },
@@ -86,28 +86,28 @@
         "headers": {
             "Cache-Control": "no-cache, no-store, no-transform, must-revalidate, max-age=0",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:26 GMT",
-            "Location": "https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-7R5",
+            "Date": "Tue, 12 Dec 2017 18:54:08 GMT",
+            "Location": "https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X52",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-ENTITY-ID": "MMMM-7R5",
-            "X-PROCESSING-TIME": "528",
+            "X-ENTITY-ID": "MMMS-X52",
+            "X-PROCESSING-TIME": "284",
             "Content-Length": "0",
-            "Connection": "Close"
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "DELETE",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-7R5",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X52",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSCCCCABB4F941F20968873D8CB7DE25BC_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYSDB830A6B237230587DBCCAB0EA4E1010_idses-int01.a.fsglobal.net"
         },
         "body": "{\"sourceDescriptions\":[{\"notes\":[{\"text\":\"Officiis quaerat nulla unde in perferendis odit est amet et.\"}],\"attribution\":{\"contributor\":{\"resourceId\":\"MM6M-8QJ\",\"resource\":\"https:\\\/\\\/familysearch.org\\\/platform\\\/users\\\/agents\\\/MM6M-8QJ\"},\"changeMessage\":\"Illo est corrupti pariatur commodi deserunt in aut deserunt cum perspiciatis.\"},\"citations\":[{\"value\":\"ISBN: 9780681403222\"}],\"titles\":[{\"value\":\"Est debitis ea distinctio sunt tempora quos.\"}],\"description\":[{\"value\":\"Sint nulla deserunt ea facilis odio voluptas voluptas. Sequi itaque autem sed ipsam. Quia quasi maxime repellat.\"}]}]}"
     },
@@ -119,48 +119,49 @@
         },
         "headers": {
             "Cache-Control": "no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/sources\/descriptions\/MMMM-7R5",
+            "Content-Location": "\/sources\/descriptions\/MMMS-X52",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:28 GMT",
+            "Date": "Tue, 12 Dec 2017 18:54:09 GMT",
+            "Link": "<https:\/\/api-integ.familysearch.org\/links-pages\/sourceVE%3FsourceId=MMMS-X52>; rel=\"alternate\"",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "X-PROCESSING-TIME": "886",
-            "Connection": "Close"
+            "X-PROCESSING-TIME": "395",
+            "Connection": "keep-alive"
         }
     }
 },{
     "request": {
         "method": "GET",
-        "url": "https:\/\/sandbox.familysearch.org\/platform\/sources\/descriptions\/MMMM-7R5",
+        "url": "https:\/\/api-integ.familysearch.org\/platform\/sources\/descriptions\/MMMS-X52",
         "headers": {
-            "Host": "sandbox.familysearch.org",
+            "Host": "api-integ.familysearch.org",
             "Accept-Encoding": null,
             "User-Agent": "GuzzleHttp\/6.2.1 curl\/7.35.0 PHP\/5.5.9-1ubuntu4.19",
             "Accept": "application\/x-gedcomx-v1+json",
             "Expect": null,
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Authorization": "Bearer USYSCCCCABB4F941F20968873D8CB7DE25BC_idses-int02.a.fsglobal.net"
+            "Authorization": "Bearer USYSDB830A6B237230587DBCCAB0EA4E1010_idses-int01.a.fsglobal.net"
         },
         "body": "{\"sourceDescriptions\":[{\"notes\":[{\"text\":\"Officiis quaerat nulla unde in perferendis odit est amet et.\"}],\"attribution\":{\"contributor\":{\"resourceId\":\"MM6M-8QJ\",\"resource\":\"https:\\\/\\\/familysearch.org\\\/platform\\\/users\\\/agents\\\/MM6M-8QJ\"},\"changeMessage\":\"Illo est corrupti pariatur commodi deserunt in aut deserunt cum perspiciatis.\"},\"citations\":[{\"value\":\"ISBN: 9780681403222\"}],\"titles\":[{\"value\":\"Est debitis ea distinctio sunt tempora quos.\"}],\"description\":[{\"value\":\"Sint nulla deserunt ea facilis odio voluptas voluptas. Sequi itaque autem sed ipsam. Quia quasi maxime repellat.\"}]}]}"
     },
     "response": {
         "status": {
             "http_version": "1.1",
-            "code": "404",
-            "message": "Not Found"
+            "code": "410",
+            "message": "Gone"
         },
         "headers": {
             "Cache-Control": "no-cache, no-store, no-transform, must-revalidate, max-age=0",
-            "Content-Location": "\/sources\/descriptions\/MMMM-7R5",
+            "Content-Location": "\/sources\/descriptions\/MMMS-X52",
             "Content-Type": "application\/x-gedcomx-v1+json",
-            "Date": "Mon, 31 Oct 2016 17:30:28 GMT",
+            "Date": "Tue, 12 Dec 2017 18:54:09 GMT",
             "Server": "Apache-Coyote\/1.1",
             "Vary": "Accept, Accept-Language, Accept-Encoding, Expect, Accept-Encoding",
-            "Warning": "400 FamilySearch \"Unable to  read source.\", 001 \/source\/MMMM-7R5 \"[404.001] Not Found",
-            "X-PROCESSING-TIME": "230",
-            "transfer-encoding": "chunked",
-            "Connection": "Close"
+            "Warning": "400 FamilySearch \"Unable to  read source.\"",
+            "X-PROCESSING-TIME": "214",
+            "Content-Length": "1520",
+            "Connection": "keep-alive"
         },
-        "body": "{\n  \"errors\" : [ {\n    \"code\" : 404,\n    \"message\" : \"Unable to  read source.\",\n    \"stacktrace\" : \"GET http:\/\/links.tree.service.integ.us-east-1.dev.fslocal.org\/source\/MMMM-7R5?readExternalData=true&sessionId=USYSCCCCABB4F941F20968873D8CB7DE25BC_idses-int02.a.fsglobal.net returned a response status of 404 Not Found:\\n<html><head><title>Source Links Error Status Report<\/title><style><!-- body, p, h1, h2, th, td { font-family: \\\"Palatino Linotype\\\", \\\"Book Antiqua\\\", Palatino, serif; font-weight: normal; } body, table, tr, th, td, pre { color: black; background-color: white; font-size: medium; } h1 { color: #467276; font-size: large; } h2 { color: #467276; font-size: small; } hr { background-color: #E8E8E5; color: #E8E8E5; border: 0 none; height: 1px; clear: both; } table { border: 0 none; } th { text-align: right; vertical-align: top; padding-right: 1em; font-weight: bold; } pre { font-family: Andale Mono, monospace; } --> <\/style><\/head><body><h1>Error Status Report<\/h1><hr\/> <table> <tr><th>status<\/th><td>404 Not Found<\/td><\/tr><tr> <tr><th>code<\/th><td>001<\/td><\/tr><tr> <th>message<\/th><td>[404.001] Not Found: Source: MMMM-7R5 (NotFoundException: Not Found: Source: MMMM-7R5)<\/td><\/tr> <tr><th>description<\/th><td><pre>\\n\\norg.familysearch.links.common.exceptions.NotFoundException: Not Found: Source: MMMM-7R5\\n\\tat org.familysearch.links.domain.impl.LinksServiceHibernate.readSource(LinksServiceHibernate.java:389)\\n\\tat org.familysearch.links.domain.impl.LinksServiceHibernate$$FastClassBySpringCGLIB$$f853f2e5.invoke(<generated>)\\n\\tat org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)\\n\\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)\\n\\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)\\n\\tat org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)\\n\\tat org.familysearch.links.domain.timing.TimingAspect.timeMethodExecution(TimingAspect.java:47)\\n\\tat org.familysearch.links.domain.timing.TimingAspect.recordDataBaseTiming(TimingAspect.java:38)\\n\\tat sun.reflect.GeneratedMethodAccessor226.invoke(Unknown Source)\\n\\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\n\\tat java.lang.reflect.Method.invoke(Method.java:498)\\n\\tat org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)\\n\\tat org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)\\n\\tat org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:68)\\n\\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)\\n\\tat org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)\\n\\tat org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)\\n\\tat org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)\\n\\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)\\n\\tat org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)\\n\\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)\\n\\tat org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)\\n\\tat org.familysearch.links.domain.impl.LinksServiceHibernate$$EnhancerBySpringCGLIB$$93aba314.readSource(<generated>)\\n\\tat org.familysearch.links.domain.impl.LinksServiceHibernate$$FastClassBySpringCGLIB$$f853f2e5.invoke(<generated>)\\n\\tat org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)\\n\\tat org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:720)\\n\\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)\\n\\tat org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:133)\\n\\tat org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:121)\\n\\tat org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)\\n\\tat org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:655)\\n\\tat org.familysearch.links.domain.impl.LinksServiceHibernate$$EnhancerBySpringCGLIB$$b1a3ed18.readSource(<generated>)\\n\\tat org.familysearch.links.impl.SourceServiceImpl.readSource(SourceServiceImpl.java:127)\\n\\tat sun.reflect.GeneratedMethodAccessor318.invoke(Unknown Source)\\n\\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\n\\tat java.lang.reflect.Method.invoke(Method.java:498)\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)\\n\\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:860)\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:622)\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:729)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.familysearch.links.impl.filter.PostOperationAtomPublisherFilter.doFilter(PostOperationAtomPublisherFilter.java:41)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.familysearch.links.impl.filter.ExperimentFilter.doFilter(ExperimentFilter.java:30)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.familysearch.links.impl.filter.NoCacheFilter.doFilter(NoCacheFilter.java:33)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.familysearch.links.impl.filter.LinksIdentityRequestContextFilter.doFilter(LinksIdentityRequestContextFilter.java:20)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.familysearch.ciscas.integration.IdentityContextFilter.handleIdentity(IdentityContextFilter.java:197)\\n\\tat org.familysearch.ciscas.integration.IdentityContextFilter.handleSessionId(IdentityContextFilter.java:139)\\n\\tat org.familysearch.ciscas.integration.SessionFilterBase.doFilter(SessionFilterBase.java:77)\\n\\tat org.familysearch.ciscas.integration.IdentityContextFilter.doFilter(IdentityContextFilter.java:93)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.familysearch.links.impl.filter.RequestIdFilter.doFilter(RequestIdFilter.java:57)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.familysearch.links.impl.filter.LinksRequestContextFilter.doFilter(LinksRequestContextFilter.java:57)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.familysearch.links.impl.filter.TimingFilter.doFilter(TimingFilter.java:35)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.familysearch.links.impl.filter.ExceptionFilter.doFilter(ExceptionFilter.java:96)\\n [wrapped] org.familysearch.links.common.LinksWebServiceException: Not Found: Source: MMMM-7R5\\n\\tat org.familysearch.links.common.log.ErrorResponseBuilder.mapException(ErrorResponseBuilder.java:244)\\n\\tat org.familysearch.links.common.log.ErrorResponseBuilder.createErrorResponse(ErrorResponseBuilder.java:118)\\n\\tat org.familysearch.links.common.log.ErrorResponseBuilder.initializeResponse(ErrorResponseBuilder.java:84)\\n\\tat org.familysearch.links.impl.filter.ExceptionFilter.doFilter(ExceptionFilter.java:107)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.familysearch.links.impl.filter.LoggingFilter.doFilter(LoggingFilter.java:63)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.springframework.boot.context.web.ErrorPageFilter.doFilter(ErrorPageFilter.java:120)\\n\\tat org.springframework.boot.context.web.ErrorPageFilter.access$000(ErrorPageFilter.java:61)\\n\\tat org.springframework.boot.context.web.ErrorPageFilter$1.doFilterInternal(ErrorPageFilter.java:95)\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)\\n\\tat org.springframework.boot.context.web.ErrorPageFilter.doFilter(ErrorPageFilter.java:113)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)\\n\\tat org.apache.catalina.valves.RemoteIpValve.invoke(RemoteIpValve.java:676)\\n\\tat org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:616)\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:528)\\n\\tat org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1099)\\n\\tat org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1520)\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1476)\\n\\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)\\n\\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\n\\tat java.lang.Thread.run(Thread.java:745)\\n\\n\\n<\/pre><\/td><\/tr> <\/table> <hr\/><h2>Family Tree Source Links Web Service<\/h2><\/body><\/html>\"\n  } ]\n}"
+        "body": "{\n  \"errors\" : [ {\n    \"code\" : 410,\n    \"message\" : \"Unable to  read source.\",\n    \"stacktrace\" : \"GET http:\/\/links.tree.service.integ.us-east-1.dev.fslocal.org\/source\/MMMS-X52?readExternalData=true&sessionId=USYSDB830A6B237230587DBCCAB0EA4E1010_idses-int01.a.fsglobal.net returned a response status of 410 Gone:\\n{\\\"id\\\":\\\"MMMS-X52\\\",\\\"title\\\":\\\"Est debitis ea distinctio sunt tempora quos.\\\",\\\"titleJustification\\\":null,\\\"titleUserContributed\\\":false,\\\"tombstoned\\\":true,\\\"titleUpdatedBy\\\":null,\\\"titleSubmittedBy\\\":null,\\\"titleUpdatedOn\\\":null,\\\"citation\\\":\\\"ISBN: 9780681403222\\\",\\\"citationJustification\\\":\\\"Illo est corrupti pariatur commodi deserunt in aut deserunt cum perspiciatis.\\\",\\\"citationUpdatedBy\\\":null,\\\"citationSubmittedBy\\\":null,\\\"citationUpdatedOn\\\":null,\\\"information\\\":null,\\\"uri\\\":{\\\"uri\\\":null,\\\"mimeType\\\":null},\\\"uriJustification\\\":null,\\\"uriUpdatedBy\\\":null,\\\"uriSubmittedBy\\\":null,\\\"uriUpdatedOn\\\":null,\\\"notes\\\":\\\"Officiis quaerat nulla unde in perferendis odit est amet et.\\\",\\\"notesJustification\\\":\\\"Illo est corrupti pariatur commodi deserunt in aut deserunt cum perspiciatis.\\\",\\\"notesUpdatedBy\\\":null,\\\"notesSubmittedBy\\\":null,\\\"notesUpdatedOn\\\":null,\\\"updatedOn\\\":1513104849774,\\\"updatedBy\\\":\\\"cis.user.MMMM-DT62\\\",\\\"submittedBy\\\":null,\\\"createdOn\\\":null,\\\"createdBy\\\":null,\\\"changeFields\\\":[],\\\"sourceType\\\":\\\"DEFAULT\\\",\\\"folderId\\\":null,\\\"lang\\\":null,\\\"resourceType\\\":null,\\\"eventDate\\\":null,\\\"sortYear\\\":null,\\\"eventPlace\\\":null,\\\"eventType\\\":null,\\\"personEvidence\\\":null}\"\n  } ]\n}"
     }
 }]

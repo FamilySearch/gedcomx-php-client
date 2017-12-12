@@ -25,7 +25,7 @@ class UtilitiesTests extends ApiTestCase
 
         $person = $this->createPerson()->get();
         $id = $person->getPerson()->getId();
-        $uri = "https://sandbox.familysearch.org/platform/redirect?person=" . $id;
+        $uri = "https://api-integ.familysearch.org/platform/redirect?person=" . $id;
         $request = new Request('GET', $uri);
         $response = GedcomxApplicationState::send($person->getClient(), $request);
 
@@ -44,7 +44,7 @@ class UtilitiesTests extends ApiTestCase
 
         $person = $this->createPerson()->get();
         $id = $person->getPerson()->getId();
-        $uri = "https://sandbox.familysearch.org/platform/redirect?context=memories&person=" . $id;
+        $uri = "https://api-integ.familysearch.org/platform/redirect?context=memories&person=" . $id;
         $request = new Request('GET', $uri);
         $response = GedcomxApplicationState::send($person->getClient(), $request);
 
@@ -66,7 +66,7 @@ class UtilitiesTests extends ApiTestCase
         $person = $this->createPerson()->get();
 
         $identifiers = $person->getPerson()->getIdentifiers();
-        $uri = sprintf("https://sandbox.familysearch.org/platform/redirect?context=sourcelinker&person=%s&hintId=%s", $person->getPerson()->getId(), array_shift($identifiers)->getValue());
+        $uri = sprintf("https://api-integ.familysearch.org/platform/redirect?context=sourcelinker&person=%s&hintId=%s", $person->getPerson()->getId(), array_shift($identifiers)->getValue());
         $request = new Request('GET', $uri);
         $response = GedcomxApplicationState::send($person->getClient(), $request);
 
@@ -83,7 +83,7 @@ class UtilitiesTests extends ApiTestCase
         $factory = new FamilyTreeStateFactory();
         $this->collectionState($factory);
 
-        $uri = "https://sandbox.familysearch.org/platform/redirect?uri=https://familysearch.org/some/path?p1%3Dp1-value%26p2%3Dp2-value";
+        $uri = "https://api-integ.familysearch.org/platform/redirect?uri=https://familysearch.org/some/path?p1%3Dp1-value%26p2%3Dp2-value";
         $request = new Request('GET', $uri);
         $response = GedcomxApplicationState::send($this->collectionState()->getClient(), $request);
 
