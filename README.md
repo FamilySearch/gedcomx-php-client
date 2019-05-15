@@ -1,3 +1,5 @@
+⚠️ *This project is deprecated and no longer supported*
+
 # GedcomX - PHP SDK  
 
 [![Packagist](https://img.shields.io/packagist/v/gedcomx/gedcomx-php-client.svg)](https://packagist.org/packages/gedcomx/gedcomx-php-client)
